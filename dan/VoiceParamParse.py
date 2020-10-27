@@ -1,14 +1,20 @@
 import parselmouth
 import numpy as np
 import glob
-import os.path
+import os
+
+def str_to_float(str_val):
+    if str_val == '--undefined--':
+        return -1.0
+    else:
+        return float(str_val)
 
 # Choose which year to run this for
 year = "2015"
-yearFolderPath = "C:/Users/Webs/Documents/CSE/Machine Learn/Project/" + year + "/"
+yearFolderPath = os.path.join("D:", "Datasets", "SC_Audio", year)
 
 # Output file info
-outputFile = "C:/Users/Webs/Documents/CSE/Machine Learn/Project/featureOutput/" + year + ".txt"
+outputFile = year + ".txt"
 np.set_printoptions(linewidth=np.inf)
 
 # Get the list of all the case folder paths.  Have to do this as the case numbers aren't contiguous.
@@ -47,37 +53,37 @@ for casePath in casePaths:
         feature_list = []
     
         # append all the parsed features into the list.  I counted the strings manually assuming the report would always have the same format.
-        feature_list.append(float(VPRsplit[11]))
-        feature_list.append(float(VPRsplit[15]))
-        feature_list.append(float(VPRsplit[19]))
-        feature_list.append(float(VPRsplit[23]))
-        feature_list.append(float(VPRsplit[27]))
+        feature_list.append(str_to_float(VPRsplit[11]))
+        feature_list.append(str_to_float(VPRsplit[15]))
+        feature_list.append(str_to_float(VPRsplit[19]))
+        feature_list.append(str_to_float(VPRsplit[23]))
+        feature_list.append(str_to_float(VPRsplit[27]))
     
-        feature_list.append(float(VPRsplit[33]))
-        feature_list.append(float(VPRsplit[37]))
-        feature_list.append(float(VPRsplit[40]))
-        feature_list.append(float(VPRsplit[46]))
+        feature_list.append(str_to_float(VPRsplit[33]))
+        feature_list.append(str_to_float(VPRsplit[37]))
+        feature_list.append(str_to_float(VPRsplit[40]))
+        feature_list.append(str_to_float(VPRsplit[46]))
     
-        feature_list.append(float(VPRsplit[54].strip('%')))
-        feature_list.append(float(VPRsplit[62]))
-        feature_list.append(float(VPRsplit[67].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[54].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[62]))
+        feature_list.append(str_to_float(VPRsplit[67].strip('%')))
     
-        feature_list.append(float(VPRsplit[76].strip('%')))
-        feature_list.append(float(VPRsplit[80]))
-        feature_list.append(float(VPRsplit[84].strip('%')))
-        feature_list.append(float(VPRsplit[87].strip('%')))
-        feature_list.append(float(VPRsplit[90].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[76].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[80]))
+        feature_list.append(str_to_float(VPRsplit[84].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[87].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[90].strip('%')))
     
-        feature_list.append(float(VPRsplit[94].strip('%')))
-        feature_list.append(float(VPRsplit[98]))
-        feature_list.append(float(VPRsplit[102].strip('%')))
-        feature_list.append(float(VPRsplit[105].strip('%')))
-        feature_list.append(float(VPRsplit[108].strip('%')))
-        feature_list.append(float(VPRsplit[111].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[94].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[98]))
+        feature_list.append(str_to_float(VPRsplit[102].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[105].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[108].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[111].strip('%')))
     
-        feature_list.append(float(VPRsplit[120]))
-        feature_list.append(float(VPRsplit[124]))
-        feature_list.append(float(VPRsplit[128]))
+        feature_list.append(str_to_float(VPRsplit[120]))
+        feature_list.append(str_to_float(VPRsplit[124]))
+        feature_list.append(str_to_float(VPRsplit[128]))
 
         # Copy the feature list into the correct cells of the numpy array
         for i in range(26):
