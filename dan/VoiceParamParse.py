@@ -1,21 +1,20 @@
 import parselmouth
 import numpy as np
-import glob
-import os
+import os.path
 
 def str_to_float(str_val):
     if str_val == '--undefined--':
+        print("undefined!")
         return -1.0
     else:
         return float(str_val)
 
 # Choose which year to run this for
 year = "2015"
-yearFolderPath = os.path.join("D:", "Datasets", "SC_Audio", year)
+yearFolderPath = "C:/Users/Webs/Documents/CSE/MachineLearn/Project/" + year + "/"
 
 # Output file info
-outputFile = year + ".txt"
-np.set_printoptions(linewidth=np.inf)
+outputPath = "C:/Users/Webs/Documents/CSE/MachineLearn/Project/featureOutput/" + year
 
 # Get the list of all the case folder paths.  Have to do this as the case numbers aren't contiguous.
 # Also counting the number of case folders.
@@ -30,29 +29,31 @@ for casePath in casePaths:
     # Count case files in folder and preallocate a NumPy vector.  Doing this to avoid returning new arrays with .append().
     # Also declare a list for the feature values
     num_files = len([f for f in os.listdir(casePath) if os.path.isfile(os.path.join(casePath, f))])
-    num_features = num_files * 26
-    feature_vector = np.zeros(num_features, dtype='float32')
+    feature_matrix = np.zeros([num_files, 26], dtype='float32')
 
     fileIndex = 0
-
-    # test code
-    fileCount = 0
     print (casePath)
 
-    # Loop over all the mp3 files in the case folder
-    for mp3 in glob.glob(casePath + "/*.mp3"):
+    # Loop over all the cases in the specified year.  The + 20 is to compensate for any missing files.
+    # This is problemetic, as there might be more than 20 missing files from a case.  Come back to this.
+    for file_number in range(num_files + 20):
+        
+        filePath = casePath + "/" + casePath[-10:] + "_" + str(file_number) + ".mp3"
+        
+        # These are apparently the 3 objects you need.  The try block is because some of the files are missing.
+        try:
+            sound = parselmouth.Sound(filePath)
+        except:
+            print(f'file {filePath} is missing!')
+            continue
 
-        # These are apparently the 3 objects you need
-        sound = parselmouth.Sound(mp3)
         pitch = sound.to_pitch()
         pulses = parselmouth.praat.call([sound, pitch], "To PointProcess (cc)")
 
-        # get voice report and create a list for the features
         voice_report_str = parselmouth.praat.call([sound, pitch, pulses], "Voice report", 0.0, 0.0, 75, 600, 1.3, 1.6, 0.03, 0.45)
         VPRsplit = voice_report_str.split()
         feature_list = []
     
-        # append all the parsed features into the list.  I counted the strings manually assuming the report would always have the same format.
         feature_list.append(str_to_float(VPRsplit[11]))
         feature_list.append(str_to_float(VPRsplit[15]))
         feature_list.append(str_to_float(VPRsplit[19]))
@@ -64,22 +65,22 @@ for casePath in casePaths:
         feature_list.append(str_to_float(VPRsplit[40]))
         feature_list.append(str_to_float(VPRsplit[46]))
     
-        feature_list.append(str_to_float(VPRsplit[54].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[54].strip('%')) / 100.0)
         feature_list.append(str_to_float(VPRsplit[62]))
-        feature_list.append(str_to_float(VPRsplit[67].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[67].strip('%')) / 100.0)
     
-        feature_list.append(str_to_float(VPRsplit[76].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[76].strip('%')) / 100.0)
         feature_list.append(str_to_float(VPRsplit[80]))
-        feature_list.append(str_to_float(VPRsplit[84].strip('%')))
-        feature_list.append(str_to_float(VPRsplit[87].strip('%')))
-        feature_list.append(str_to_float(VPRsplit[90].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[84].strip('%')) / 100.0)
+        feature_list.append(str_to_float(VPRsplit[87].strip('%')) / 100.0)
+        feature_list.append(str_to_float(VPRsplit[90].strip('%')) / 100.0)
     
-        feature_list.append(str_to_float(VPRsplit[94].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[94].strip('%')) / 100.0)
         feature_list.append(str_to_float(VPRsplit[98]))
-        feature_list.append(str_to_float(VPRsplit[102].strip('%')))
-        feature_list.append(str_to_float(VPRsplit[105].strip('%')))
-        feature_list.append(str_to_float(VPRsplit[108].strip('%')))
-        feature_list.append(str_to_float(VPRsplit[111].strip('%')))
+        feature_list.append(str_to_float(VPRsplit[102].strip('%')) / 100.0)
+        feature_list.append(str_to_float(VPRsplit[105].strip('%')) / 100.0)
+        feature_list.append(str_to_float(VPRsplit[108].strip('%')) / 100.0)
+        feature_list.append(str_to_float(VPRsplit[111].strip('%')) / 100.0)
     
         feature_list.append(str_to_float(VPRsplit[120]))
         feature_list.append(str_to_float(VPRsplit[124]))
@@ -87,16 +88,14 @@ for casePath in casePaths:
 
         # Copy the feature list into the correct cells of the numpy array
         for i in range(26):
-            feature_vector[i + fileIndex] = feature_list[i]
+            feature_matrix[fileIndex, i] = feature_list[i]
 
-        # up the index by 26 to find the next section of the array to fill
-        fileIndex = fileIndex + 26
+        fileIndex = fileIndex + 1
         
-        # this is test code
-        print ("file " + str(mp3) + " completed!")
-        print (fileCount)
-        fileCount = fileCount + 1
+        #print (f'file {filePath} completed!')
 
-    # finally write the array as one line in the output file.
-    with open(outputFile, 'ab') as f:
-        np.savetxt(f, [feature_vector], delimiter=" ")
+    outputFile = outputPath + "/" + casePath[-10:] + ".txt"
+    np.savetxt(outputFile, feature_matrix)
+    
+    print (casePath + " completed!")
+    break
