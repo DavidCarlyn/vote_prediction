@@ -169,17 +169,17 @@ def combine_features(text_features, audio_features):
     text_i = 0
     audio_i = 0
     while not done:
-        if text_i >= len(text_features) and audio_features < len(audio_features):
+        if text_i >= len(text_features) and audio_i < len(audio_features):
             metadata.append({ "case" : audio_features[audio_i][1][0], "valid" : False })
             all_features.append(None)
             audio_i += 1
             continue
-        elif text_i < len(text_features) and audio_features >= len(audio_features):
+        elif text_i < len(text_features) and audio_i >= len(audio_features):
             metadata.append({ "case" : test_features[text_i][1][0], "valid" : False })
             all_features.append(None)
             text_i += 1
             continue
-        elif text_i >= len(text_features) and audio_features >= len(audio_features):
+        elif text_i >= len(text_features) and audio_i >= len(audio_features):
             done = True
             continue
 
