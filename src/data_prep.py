@@ -1,5 +1,6 @@
 import os
 import csv
+import json
 import parselmouth
 import nltk
 nltk.download('punkt')
@@ -8,6 +9,8 @@ from pathlib import Path
 from argparse import ArgumentParser
 from torchtext.vocab import GloVe
 from progress.bar import Bar
+
+TEXT_FEATURES = 200
 
 # Assert required parameters
 def run_assertions(args):
@@ -31,7 +34,7 @@ def str_to_float(str_val, path):
 # [row_idx, speaker_ID, speaker_role, start, stop, byte_start, byte_stop, [[word_embeddings], [word_embeddings], ...words..., [word_embeddings]]]
 def extract_text_features(text_data_dir):
     cases = []
-    glove = GloVe(name='twitter.27B', dim=200)
+    glove = GloVe(name='twitter.27B', dim=TEXT_FEATURES)
     for root, dirs, files in os.walk(text_data_dir):
         for f in Bar(f"Reading files from {root}").iter(files):
             case = f.split('_')[1]
@@ -67,7 +70,9 @@ def extract_text_features(text_data_dir):
                         if i != 1:
                             rows.append([i, None])
 
-            cases.append([case, rows])
+            cases.append([int(case), rows])
+        #TMP
+        return cases
 
     return cases
 
@@ -90,11 +95,11 @@ def extract_audio_features(audio_data_dir):
     missing_files = []
     undefined_audio_files = []
     for year in audio_map:
-        for case in Bar(f"Processing Year: {year} Case: {case}").iter(audio_map[year].keys()):
+        for case in audio_map[year]:
             sentence_features = []
             sentences = audio_map[year][case]
             sentences.sort(key=lambda x: x[0])
-            for sen in sentences:
+            for sen in Bar(f"Processing Year: {year} Case: {case}").iter(sentences):
                 path = sen[1]
                 try:
                     fileSize = Path(path).stat().st_size
@@ -148,10 +153,102 @@ def extract_audio_features(audio_data_dir):
                 feature_list.append(str_to_float(VPRsplit[124], path))
                 feature_list.append(str_to_float(VPRsplit[128], path))
 
-                sentence_features.append([sen[0], feature_list])
-            cases.append([case, sentence_features])
+                sentence_features.append([int(sen[0]), feature_list])
+            cases.append([int(case), sentence_features])
+            #TEMP
+            return cases
                 
     return cases
+
+def combine_features(text_features, audio_features):
+    text_features.sort(key=lambda x: x[0])
+    audio_features.sort(key=lambda x: x[0])
+    metadata = []
+    all_features = []
+    done = False
+    text_i = 0
+    audio_i = 0
+    while not done:
+        if text_i >= len(text_features) and audio_features < len(audio_features):
+            metadata.append({ "case" : audio_features[audio_i][1][0], "valid" : False })
+            all_features.append(None)
+            audio_i += 1
+            continue
+        elif text_i < len(text_features) and audio_features >= len(audio_features):
+            metadata.append({ "case" : test_features[text_i][1][0], "valid" : False })
+            all_features.append(None)
+            text_i += 1
+            continue
+        elif text_i >= len(text_features) and audio_features >= len(audio_features):
+            done = True
+            continue
+
+        case_audio_features = audio_features[audio_i][1]
+        case_text_features = text_features[text_i][1]
+        text_case = case_text_features[0]
+        audio_case = case_audio_features[0]
+        if text_case != audio_case:
+            if text_case < audio_case:
+                metadata.append({ "case" : text_case, "valid" : False })
+                all_features.append(None)
+                text_i += 1
+            else:
+                metadata.append({ "case" : audio_case, "valid" : False })
+                all_features.append(None)
+                audio_i += 1
+        else:
+            sen_i = 0
+            sen_j = 0
+            sen_done = False
+            sen_meta = []
+            sen_features = []
+            while not sen_done:
+                if sen_i >= len(case_text_features) and sen_j < len(case_audio_features):
+                    sen_features.append(None)
+                    sen_meta.append({"sentence_num" : case_audio_features[sen_j], "valid" : False})
+                    sen_j += 1
+                    continue
+                elif sen_i < len(case_text_features) and sen_j >= len(case_audio_features):
+                    sen_features.append(None)
+                    sen_meta.append({"sentence_num" : case_text_features[sen_i], "valid" : False})
+                    sen_i += 1
+                    continue
+                elif sen_i >= len(case_text_features) and sen_j >= len(case_audio_features):
+                    sen_done = True
+                    continue
+
+                text_sen = case_text_features[sen_i]
+                audio_sen = case_audio_features[sen_j]
+                if text_sen[0]-1 != audio_sen[0]:
+                    sen_features.append(None)
+                    if text_sen[0]-1 < audio_sen[0]:
+                        sen_meta.append({ "sentence_num" : text_sen, "valid" : False })
+                        sen_i += 1
+                    else:
+                        sen_meta.append({ "sentence_num" : audio_sen, "valid" : False })
+                        sen_j += 1
+                else:
+                    combined = audio_sen[-1]
+                    combined.extend(text_sen[-1])
+                    sen_features.append(combined)
+                    sen_meta.append({
+                        "valid" : True,
+                        "sentence_num" : audio_sen[1][0],
+                        "speaker_id" : text_sen[1][1],
+                        "speaker_role" : text_sen[1][2]
+                    })
+
+                    sen_i += 1
+                    sen_j += 1
+
+            metadata.append(sen_meta)
+            all_features.append(sen_features)
+
+            text_i += 1
+            audio_i += 1
+
+    return metadata, all_features
+
 
 if __name__ == "__main__":
     parser = ArgumentParser()
@@ -168,7 +265,17 @@ if __name__ == "__main__":
         os.makedirs(args.output_data_dir)
 
     # Extracting text features
-    #text_features = extract_text_features(args.text_data_dir)
+    text_features = extract_text_features(args.text_data_dir)
 
     # Extracting audio features
     audio_features = extract_audio_features(args.audio_data_dir)
+
+    # Combine features
+    metadata, features = combine_features(text_features, audio_features)
+
+    # Save Results
+    with open('metadata.json', 'w') as outfile:
+        json.dump(metadata, outfile)
+
+    with open('features.json', 'w') as outfile:
+        json.dump(features, outfile)
