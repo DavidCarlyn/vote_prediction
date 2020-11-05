@@ -1,8 +1,10 @@
 import os
 import csv
+import parselmouth
 import nltk
 nltk.download('punkt')
 
+from pathlib import Path
 from argparse import ArgumentParser
 from torchtext.vocab import GloVe
 from progress.bar import Bar
@@ -14,9 +16,9 @@ def run_assertions(args):
 
 # Str to float middle function
 # --undefined-- is set to a numerical value
-def str_to_float(str_val, fileNum):
+def str_to_float(str_val, path):
     if str_val == '--undefined--':
-        print(f'{fileNum} chucked undefined!')
+        #print(f'{path} chucked undefined!')
         return -1.0
     else:
         return float(str_val)
@@ -71,8 +73,85 @@ def extract_text_features(text_data_dir):
 
 # Extract audio features given directory for audio data
 def extract_audio_features(audio_data_dir):
+    audio_map = {}
+    for root, dirs, files in os.walk(audio_data_dir):
+        for f in files:
+            year, case, sentence = f.split('_')
+            sentence, ext = sentence.split('.')
+            if year not in audio_map:
+                audio_map[year] = {}
+            if case not in audio_map[year]:
+                audio_map[year][case] = []
+            audio_map[year][case].append([int(sentence), os.path.join(root, f)])
 
-    return None
+    cases = []
+    broken_trans_files = []
+    more_audio = []
+    missing_files = []
+    undefined_audio_files = []
+    for year in audio_map:
+        for case in Bar(f"Processing Year: {year} Case: {case}").iter(audio_map[year].keys()):
+            sentence_features = []
+            sentences = audio_map[year][case]
+            sentences.sort(key=lambda x: x[0])
+            for sen in sentences:
+                path = sen[1]
+                try:
+                    fileSize = Path(path).stat().st_size
+                    if fileSize > 2000:
+                        sound = parselmouth.Sound(path)
+                    else:
+                        print(f'Unable to process {path}!')
+                        undefined_audio_files.append(path)
+                        continue
+                except:
+                    print(f'{path} is missing!')
+                    missing_files.append(path)
+                    continue
+
+                pitch = sound.to_pitch()
+                pulses = parselmouth.praat.call([sound, pitch], "To PointProcess (cc)")
+
+                voice_report_str = parselmouth.praat.call([sound, pitch, pulses], "Voice report", 0.0, 0.0, 75, 600, 1.3, 1.6, 0.03, 0.45)
+                VPRsplit = voice_report_str.split()
+                feature_list = []
+
+                feature_list.append(str_to_float(VPRsplit[11], path))
+                feature_list.append(str_to_float(VPRsplit[15], path))
+                feature_list.append(str_to_float(VPRsplit[19], path))
+                feature_list.append(str_to_float(VPRsplit[23], path))
+                feature_list.append(str_to_float(VPRsplit[27], path))
+
+                feature_list.append(str_to_float(VPRsplit[33], path))
+                feature_list.append(str_to_float(VPRsplit[37], path))
+                feature_list.append(str_to_float(VPRsplit[40], path))
+                feature_list.append(str_to_float(VPRsplit[46], path))
+
+                feature_list.append(str_to_float(VPRsplit[54].strip('%'), path) / 100.0)
+                feature_list.append(str_to_float(VPRsplit[62], path))
+                feature_list.append(str_to_float(VPRsplit[67].strip('%'), path) / 100.0)
+
+                feature_list.append(str_to_float(VPRsplit[76].strip('%'), path) / 100.0)
+                feature_list.append(str_to_float(VPRsplit[80], path))
+                feature_list.append(str_to_float(VPRsplit[84].strip('%'), path) / 100.0)
+                feature_list.append(str_to_float(VPRsplit[87].strip('%'), path) / 100.0)
+                feature_list.append(str_to_float(VPRsplit[90].strip('%'), path) / 100.0)
+
+                feature_list.append(str_to_float(VPRsplit[94].strip('%'), path) / 100.0)
+                feature_list.append(str_to_float(VPRsplit[98], path))
+                feature_list.append(str_to_float(VPRsplit[102].strip('%'), path) / 100.0)
+                feature_list.append(str_to_float(VPRsplit[105].strip('%'), path) / 100.0)
+                feature_list.append(str_to_float(VPRsplit[108].strip('%'), path) / 100.0)
+                feature_list.append(str_to_float(VPRsplit[111].strip('%'), path) / 100.0)
+
+                feature_list.append(str_to_float(VPRsplit[120], path))
+                feature_list.append(str_to_float(VPRsplit[124], path))
+                feature_list.append(str_to_float(VPRsplit[128], path))
+
+                sentence_features.append([sen[0], feature_list])
+            cases.append([case, sentence_features])
+                
+    return cases
 
 if __name__ == "__main__":
     parser = ArgumentParser()
@@ -89,7 +168,7 @@ if __name__ == "__main__":
         os.makedirs(args.output_data_dir)
 
     # Extracting text features
-    text_features = extract_text_features(args.text_data_dir)
+    #text_features = extract_text_features(args.text_data_dir)
 
     # Extracting audio features
     audio_features = extract_audio_features(args.audio_data_dir)
