@@ -39,6 +39,7 @@ def extract_text_features(text_data_dir):
         for f in Bar(f"Reading files from {root}").iter(files):
             case = f.split('_')[1]
             case = case.split('.')[0]
+            if int(case) != 19779: continue
 
             rows = []
             with open(os.path.join(root, f)) as csv_file:
@@ -56,11 +57,11 @@ def extract_text_features(text_data_dir):
                             tokens = nltk.tokenize.word_tokenize(sentence)
                             embeddings = []
                             for t in tokens:
-                                embeddings.append(glove[t])
-                            row[-1] = embeddings
+                                embeddings.append(glove[t].cpu().numpy().tolist())
+                            row.append(embeddings)
                         except:
                             print(f"Error. Can't tokenize: {sentence}")
-                            row[-1] = None
+                            row.append(None)
                         finally:
                             if i != 1:
                                 row.insert(0, i)
@@ -71,8 +72,6 @@ def extract_text_features(text_data_dir):
                             rows.append([i, None])
 
             cases.append([int(case), rows])
-        #TMP
-        return cases
 
     return cases
 
@@ -155,8 +154,6 @@ def extract_audio_features(audio_data_dir):
 
                 sentence_features.append([int(sen[0]), feature_list])
             cases.append([int(case), sentence_features])
-            #TEMP
-            return cases
                 
     return cases
 
@@ -170,12 +167,13 @@ def combine_features(text_features, audio_features):
     audio_i = 0
     while not done:
         if text_i >= len(text_features) and audio_i < len(audio_features):
-            metadata.append({ "case" : audio_features[audio_i][1][0], "valid" : False })
+            print("Audio")
+            metadata.append({ "case" : audio_features[audio_i][0], "valid" : False })
             all_features.append(None)
             audio_i += 1
             continue
         elif text_i < len(text_features) and audio_i >= len(audio_features):
-            metadata.append({ "case" : test_features[text_i][1][0], "valid" : False })
+            metadata.append({ "case" : text_features[text_i][0], "valid" : False })
             all_features.append(None)
             text_i += 1
             continue
@@ -185,8 +183,8 @@ def combine_features(text_features, audio_features):
 
         case_audio_features = audio_features[audio_i][1]
         case_text_features = text_features[text_i][1]
-        text_case = case_text_features[0]
-        audio_case = case_audio_features[0]
+        text_case = text_features[text_i][0]
+        audio_case = audio_features[audio_i][0]
         if text_case != audio_case:
             if text_case < audio_case:
                 metadata.append({ "case" : text_case, "valid" : False })
@@ -205,12 +203,12 @@ def combine_features(text_features, audio_features):
             while not sen_done:
                 if sen_i >= len(case_text_features) and sen_j < len(case_audio_features):
                     sen_features.append(None)
-                    sen_meta.append({"sentence_num" : case_audio_features[sen_j], "valid" : False})
+                    sen_meta.append({"sentence_num" : case_audio_features[sen_j][0]+1, "valid" : False})
                     sen_j += 1
                     continue
                 elif sen_i < len(case_text_features) and sen_j >= len(case_audio_features):
                     sen_features.append(None)
-                    sen_meta.append({"sentence_num" : case_text_features[sen_i], "valid" : False})
+                    sen_meta.append({"sentence_num" : case_text_features[sen_i][0]-1, "valid" : False})
                     sen_i += 1
                     continue
                 elif sen_i >= len(case_text_features) and sen_j >= len(case_audio_features):
@@ -219,29 +217,35 @@ def combine_features(text_features, audio_features):
 
                 text_sen = case_text_features[sen_i]
                 audio_sen = case_audio_features[sen_j]
-                if text_sen[0]-1 != audio_sen[0]:
+                if text_sen[0]-1 != audio_sen[0]+1:
                     sen_features.append(None)
-                    if text_sen[0]-1 < audio_sen[0]:
-                        sen_meta.append({ "sentence_num" : text_sen, "valid" : False })
+                    if text_sen[0]-1 < audio_sen[0]+1:
+                        sen_meta.append({ "sentence_num" : text_sen[0]-1, "valid" : False })
                         sen_i += 1
                     else:
-                        sen_meta.append({ "sentence_num" : audio_sen, "valid" : False })
+                        sen_meta.append({ "sentence_num" : audio_sen[0]+1, "valid" : False })
                         sen_j += 1
                 else:
-                    combined = audio_sen[-1]
-                    combined.extend(text_sen[-1])
-                    sen_features.append(combined)
-                    sen_meta.append({
-                        "valid" : True,
-                        "sentence_num" : audio_sen[1][0],
-                        "speaker_id" : text_sen[1][1],
-                        "speaker_role" : text_sen[1][2]
-                    })
+                    if text_sen[-1] is not None:
+                        combined = audio_sen[-1]
+                        combined.extend(text_sen[-1])
+                        sen_features.append(combined)
+                        sen_meta.append({
+                            "valid" : True,
+                            "sentence_num" : audio_sen[0]+1,
+                            "speaker_id" : text_sen[1],
+                            "speaker_role" : text_sen[2],
+                            "sentence" : text_sen[-2]
+                        })
+                    else:
+                        sen_meta.append({ "sentence_num" : audio_sen, "valid" : False })
+                        sen_features.append(None)
+
 
                     sen_i += 1
                     sen_j += 1
 
-            metadata.append(sen_meta)
+            metadata.append({"case": text_case, "valid" : True, "sentences" : sen_meta})
             all_features.append(sen_features)
 
             text_i += 1
@@ -274,8 +278,8 @@ if __name__ == "__main__":
     metadata, features = combine_features(text_features, audio_features)
 
     # Save Results
-    with open('metadata.json', 'w') as outfile:
+    with open(os.path.join(args.output_data_dir, 'metadata.json'), 'w') as outfile:
         json.dump(metadata, outfile)
 
-    with open('features.json', 'w') as outfile:
+    with open(os.path.join(args.output_data_dir, 'features.json'), 'w') as outfile:
         json.dump(features, outfile)
