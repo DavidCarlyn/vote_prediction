@@ -160,7 +160,7 @@ def extract_audio_features(audio_data_dir, output_data_dir):
                 sentence_features.append([int(sen[0]), feature_list])
             cases.append([int(case), sentence_features])
 
-            if num_files % 200 == 0:
+            if num_files % 50 == 0:
                 print("Saving Cases")
                 for case in cases:
                     with open(os.path.join(output_data_dir, f"audio_{case[0]}.json"), 'w') as outfile:
