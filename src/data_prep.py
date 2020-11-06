@@ -96,8 +96,10 @@ def extract_audio_features(audio_data_dir, output_data_dir):
     more_audio = []
     missing_files = []
     undefined_audio_files = []
+    num_files = 0
     for year in audio_map:
         for case in audio_map[year]:
+            num_files += 1
             sentence_features = []
             sentences = audio_map[year][case]
             sentences.sort(key=lambda x: x[0])
