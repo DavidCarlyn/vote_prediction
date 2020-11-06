@@ -1,6 +1,7 @@
 import os
 import csv
 import json
+import gc
 import parselmouth
 import nltk
 nltk.download('punkt')
@@ -26,57 +27,59 @@ def str_to_float(str_val, path):
     else:
         return float(str_val)
 
+def process_text_file(f, glove):
+    rows = []
+    with open(f) as csv_file:
+        reader = csv.reader(csv_file)
+        i = 0
+        row = 0
+        while row is not None:
+            try:
+                i += 1
+                row = next(reader, None)
+                if i == 1 or row == None: continue
+                try:
+                    sentence = row[-1]
+                    tokens = nltk.tokenize.word_tokenize(sentence)
+                    embeddings = []
+                    for t in tokens:
+                        embeddings.append(glove[t].cpu().numpy().tolist())
+                    row.append(embeddings)
+                except:
+                    print(f"Error. Can't tokenize: {sentence}")
+                    row.append(None)
+                finally:
+                    if i != 1:
+                        row.insert(0, i)
+                        rows.append(row)
+            except:
+                print(f"Can't read row {i} from {f}")
+                if i != 1:
+                    rows.append([i, None])
+
+    return rows
+
 # Extract text features given directory for textual data
 # Header rows are skipped (so starting rows will have # = 2)
 # If a row can't be read, only the row # and a None value will be in place there [row_idx, None]
 # If a row can be read, but the sentence/word can't be tokenized, the last value will be None (for no features)
 # If a row can be read, and the sentence is tokenizable, then the row will be as follows:
 # [row_idx, speaker_ID, speaker_role, start, stop, byte_start, byte_stop, [[word_embeddings], [word_embeddings], ...words..., [word_embeddings]]]
-def extract_text_features(text_data_dir):
-    cases = []
+def extract_text_features(text_data_dir, output_data_dir):
+    num_files = 0
     glove = GloVe(name='twitter.27B', dim=TEXT_FEATURES)
     for root, dirs, files in os.walk(text_data_dir):
         for f in Bar(f"Reading files from {root}").iter(files):
+            num_files += 1
             case = f.split('_')[1]
             case = case.split('.')[0]
-            if int(case) != 19779: continue
 
-            rows = []
-            with open(os.path.join(root, f)) as csv_file:
-                reader = csv.reader(csv_file)
-                i = 0
-
-                row = 0
-                while row is not None:
-                    try:
-                        i += 1
-                        row = next(reader, None)
-                        if i == 1 or row == None: continue
-                        try:
-                            sentence = row[-1]
-                            tokens = nltk.tokenize.word_tokenize(sentence)
-                            embeddings = []
-                            for t in tokens:
-                                embeddings.append(glove[t].cpu().numpy().tolist())
-                            row.append(embeddings)
-                        except:
-                            print(f"Error. Can't tokenize: {sentence}")
-                            row.append(None)
-                        finally:
-                            if i != 1:
-                                row.insert(0, i)
-                                rows.append(row)
-                    except:
-                        print(f"Can't read row {i} from {os.path.join(root, f)}")
-                        if i != 1:
-                            rows.append([i, None])
-
-            cases.append([int(case), rows])
-
-    return cases
+            rows = process_text_file(os.path.join(root, f), glove)
+            with open(os.path.join(output_data_dir, f"text_{case}.json"), 'w') as outfile:
+                json.dump(rows, outfile)
 
 # Extract audio features given directory for audio data
-def extract_audio_features(audio_data_dir):
+def extract_audio_features(audio_data_dir, output_data_dir):
     audio_map = {}
     for root, dirs, files in os.walk(audio_data_dir):
         for f in files:
@@ -154,37 +157,63 @@ def extract_audio_features(audio_data_dir):
 
                 sentence_features.append([int(sen[0]), feature_list])
             cases.append([int(case), sentence_features])
-                
-    return cases
 
-def combine_features(text_features, audio_features):
-    text_features.sort(key=lambda x: x[0])
-    audio_features.sort(key=lambda x: x[0])
+            if num_files % 200 == 0:
+                print("Saving Cases")
+                for case in cases:
+                    with open(os.path.join(output_data_dir, f"audio_{case[0]}.json"), 'w') as outfile:
+                        json.dump(case[1], outfile)
+                cases = []
+    
+    print("Saving Final Cases")
+    for case in cases:
+        with open(os.path.join(output_data_dir, f"audio_{case[0]}.json"), 'w') as outfile:
+            json.dump(case[1], outfile)
+
+def read_json(path):
+    with open(path) as f:
+        return json.load(f)
+
+def combine_features(text_features, audio_features, output_data_dir):
+    text_paths = []
+    audio_paths = []
+    for root, dirs, files in os.walk(os.path.join(output_data_dir, 'tmp')):
+        for f in files:
+            f_type, case = f.split('_')
+            case, ext = case.split('.')
+            if f_type == "text":
+                text_paths.append([case, f])
+            elif f_type == "audio":
+                audio_paths.append([case, f])
+            else:
+                print(f"Error: {f} will not be computed.")
+    text_paths.sort(key=lambda x: x[0])
+    audio_paths.sort(key=lambda x: x[0])
     metadata = []
     all_features = []
     done = False
     text_i = 0
     audio_i = 0
     while not done:
-        if text_i >= len(text_features) and audio_i < len(audio_features):
+        if text_i >= len(text_paths) and audio_i < len(audio_paths):
             print("Audio")
-            metadata.append({ "case" : audio_features[audio_i][0], "valid" : False })
+            metadata.append({ "case" : audio_paths[audio_i][0], "valid" : False })
             all_features.append(None)
             audio_i += 1
             continue
-        elif text_i < len(text_features) and audio_i >= len(audio_features):
-            metadata.append({ "case" : text_features[text_i][0], "valid" : False })
+        elif text_i < len(text_paths) and audio_i >= len(audio_paths):
+            metadata.append({ "case" : text_paths[text_i][0], "valid" : False })
             all_features.append(None)
             text_i += 1
             continue
-        elif text_i >= len(text_features) and audio_i >= len(audio_features):
+        elif text_i >= len(text_paths) and audio_i >= len(audio_paths):
             done = True
             continue
 
-        case_audio_features = audio_features[audio_i][1]
-        case_text_features = text_features[text_i][1]
-        text_case = text_features[text_i][0]
-        audio_case = audio_features[audio_i][0]
+        case_audio_features =  read_json(audio_paths[audio_i])
+        case_text_features = read_json(text_paths[text_i])
+        text_case = text_paths[text_i][0]
+        audio_case = audio_paths[audio_i][0]
         if text_case != audio_case:
             if text_case < audio_case:
                 metadata.append({ "case" : text_case, "valid" : False })
@@ -267,15 +296,16 @@ if __name__ == "__main__":
     # Create output dir if it does not exist
     if not os.path.isdir(args.output_data_dir):
         os.makedirs(args.output_data_dir)
+        os.makedirs(os.path.join(args.output_data_dir, 'tmp'))
 
     # Extracting text features
-    text_features = extract_text_features(args.text_data_dir)
+    extract_text_features(args.text_data_dir, os.path.join(args.output_data_dir, 'tmp'))
 
     # Extracting audio features
-    audio_features = extract_audio_features(args.audio_data_dir)
+    extract_audio_features(args.audio_data_dir, os.path.join(args.output_data_dir, 'tmp'))
 
     # Combine features
-    metadata, features = combine_features(text_features, audio_features)
+    metadata, features = combine_features(text_features, audio_features, args.output_data_dir)
 
     # Save Results
     with open(os.path.join(args.output_data_dir, 'metadata.json'), 'w') as outfile:
