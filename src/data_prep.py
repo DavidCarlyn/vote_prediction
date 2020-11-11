@@ -1,9 +1,12 @@
 import os
+import sys
 import csv
 import json
 import gc
+import pickle
 import parselmouth
 import nltk
+import numpy as np
 nltk.download('punkt')
 
 from pathlib import Path
@@ -41,12 +44,16 @@ def process_text_file(f, glove):
                 try:
                     sentence = row[-1]
                     tokens = nltk.tokenize.word_tokenize(sentence)
-                    embeddings = []
-                    for t in tokens:
-                        embeddings.append(glove[t].cpu().numpy().tolist())
-                    row.append(embeddings)
+                    embeddings = None
+                    for k, t in enumerate(tokens):
+                        if k == 0:
+                            embeddings = glove[t].cpu().numpy().reshape(1, -1)
+                        else:
+                            new_embeddings = glove[t].cpu().numpy().reshape(1, -1)
+                            embeddings = np.concatenate((embeddings, new_embeddings), axis=0)
+                    row.append(embeddings.mean(0).tolist())
                 except:
-                    print(f"Error. Can't tokenize: {sentence}")
+                    print(f"Error. Can't tokenize {i}: {sentence}")
                     row.append(None)
                 finally:
                     if i != 1:
@@ -75,8 +82,8 @@ def extract_text_features(text_data_dir, output_data_dir):
             case = case.split('.')[0]
 
             rows = process_text_file(os.path.join(root, f), glove)
-            with open(os.path.join(output_data_dir, f"text_{case}.json"), 'w') as outfile:
-                json.dump(rows, outfile)
+            with open(os.path.join(output_data_dir, f"text_{case}.pkl"), 'wb') as outfile:
+                pickle.dump(rows, outfile)
 
 # Extract audio features given directory for audio data
 def extract_audio_features(audio_data_dir, output_data_dir):
@@ -163,18 +170,18 @@ def extract_audio_features(audio_data_dir, output_data_dir):
             if num_files % 50 == 0:
                 print("Saving Cases")
                 for case in cases:
-                    with open(os.path.join(output_data_dir, f"audio_{case[0]}.json"), 'w') as outfile:
-                        json.dump(case[1], outfile)
+                    with open(os.path.join(output_data_dir, f"audio_{case[0]}.pkl"), 'wb') as outfile:
+                        pickle.dump(case[1], outfile)
                 cases = []
     
     print("Saving Final Cases")
     for case in cases:
-        with open(os.path.join(output_data_dir, f"audio_{case[0]}.json"), 'w') as outfile:
+        with open(os.path.join(output_data_dir, f"audio_{case[0]}.pkl"), 'wb') as outfile:
             json.dump(case[1], outfile)
 
-def read_json(path):
-    with open(path) as f:
-        return json.load(f)
+def read_pkl(path):
+    with open(path, 'rb') as f:
+        return pickle.load(f)
 
 def combine_features(text_features, audio_features, output_data_dir):
     text_paths = []
@@ -212,8 +219,8 @@ def combine_features(text_features, audio_features, output_data_dir):
             done = True
             continue
 
-        case_audio_features =  read_json(audio_paths[audio_i])
-        case_text_features = read_json(text_paths[text_i])
+        case_audio_features =  read_pkl(audio_paths[audio_i])
+        case_text_features = read_pkl(text_paths[text_i])
         text_case = text_paths[text_i][0]
         audio_case = audio_paths[audio_i][0]
         if text_case != audio_case:
@@ -282,7 +289,12 @@ def combine_features(text_features, audio_features, output_data_dir):
             text_i += 1
             audio_i += 1
 
-    return metadata, all_features
+    with open(os.path.join(args.output_data_dir, 'metadata.pkl'), 'wb') as outfile:
+        pickle.dump(metadata, outfile)
+
+    with open(os.path.join(args.output_data_dir, 'features.pkl'), 'wb') as outfile:
+        pickle.dump(features, outfile)
+
 
 
 if __name__ == "__main__":
@@ -307,11 +319,4 @@ if __name__ == "__main__":
     extract_audio_features(args.audio_data_dir, os.path.join(args.output_data_dir, 'tmp'))
 
     # Combine features
-    metadata, features = combine_features(text_features, audio_features, args.output_data_dir)
-
-    # Save Results
-    with open(os.path.join(args.output_data_dir, 'metadata.json'), 'w') as outfile:
-        json.dump(metadata, outfile)
-
-    with open(os.path.join(args.output_data_dir, 'features.json'), 'w') as outfile:
-        json.dump(features, outfile)
+    combine_features(args.output_data_dir)
