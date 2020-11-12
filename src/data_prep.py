@@ -177,23 +177,26 @@ def extract_audio_features(audio_data_dir, output_data_dir):
     print("Saving Final Cases")
     for case in cases:
         with open(os.path.join(output_data_dir, f"audio_{case[0]}.pkl"), 'wb') as outfile:
-            json.dump(case[1], outfile)
+            pickle.dump(case[1], outfile)
 
 def read_pkl(path):
     with open(path, 'rb') as f:
         return pickle.load(f)
 
-def combine_features(text_features, audio_features, output_data_dir):
+def combine_features(output_data_dir):
     text_paths = []
     audio_paths = []
     for root, dirs, files in os.walk(os.path.join(output_data_dir, 'tmp')):
         for f in files:
+            if os.path.getsize(os.path.join(root, f)) <= 0: 
+                print(f)
+                continue
             f_type, case = f.split('_')
             case, ext = case.split('.')
             if f_type == "text":
-                text_paths.append([case, f])
+                text_paths.append([case, os.path.join(root, f)])
             elif f_type == "audio":
-                audio_paths.append([case, f])
+                audio_paths.append([case, os.path.join(root, f)])
             else:
                 print(f"Error: {f} will not be computed.")
     text_paths.sort(key=lambda x: x[0])
@@ -205,7 +208,6 @@ def combine_features(text_features, audio_features, output_data_dir):
     audio_i = 0
     while not done:
         if text_i >= len(text_paths) and audio_i < len(audio_paths):
-            print("Audio")
             metadata.append({ "case" : audio_paths[audio_i][0], "valid" : False })
             all_features.append(None)
             audio_i += 1
@@ -219,8 +221,8 @@ def combine_features(text_features, audio_features, output_data_dir):
             done = True
             continue
 
-        case_audio_features =  read_pkl(audio_paths[audio_i])
-        case_text_features = read_pkl(text_paths[text_i])
+        case_audio_features =  read_pkl(audio_paths[audio_i][1])
+        case_text_features = read_pkl(text_paths[text_i][1])
         text_case = text_paths[text_i][0]
         audio_case = audio_paths[audio_i][0]
         if text_case != audio_case:
@@ -289,11 +291,11 @@ def combine_features(text_features, audio_features, output_data_dir):
             text_i += 1
             audio_i += 1
 
-    with open(os.path.join(args.output_data_dir, 'metadata.pkl'), 'wb') as outfile:
+    with open(os.path.join(output_data_dir, 'metadata.pkl'), 'wb') as outfile:
         pickle.dump(metadata, outfile)
 
-    with open(os.path.join(args.output_data_dir, 'features.pkl'), 'wb') as outfile:
-        pickle.dump(features, outfile)
+    with open(os.path.join(output_data_dir, 'features.pkl'), 'wb') as outfile:
+        pickle.dump(all_features, outfile)
 
 
 

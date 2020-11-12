@@ -1,0 +1,1240 @@
+year,ID_docket,ID,ID_audio,1st_party,1st_party_label,2nd_party,2nd_party_label,WinningParty,majority_vote,minority_vote,decision_type
+1998,97-1130,54670,21259,Pfaff,Petitioner,"Wells Electronics, Inc.",Respondent,0,9,0,majority opinion
+1998,97-2048,54671,20892,O'Sullivan,Petitioner,Boerckel,Respondent,1,6,3,majority opinion
+1998,98-531,54672,19963,Florida Prepaid Post-Secondary Education Expense Board,Petitioner,College Savings Bank,Respondent,1,5,4,majority opinion
+1998,97-1287,54673,20389,Hughes Aircraft Company,Petitioner,Jacobson,Respondent,1,9,0,majority opinion
+1998,97-1536,54675,20623,Arizona Department of Revenue,Petitioner,Blaze Construction Company,Respondent,1,9,0,majority opinion
+1998,98-10,54676,20382,Jefferson County,Petitioner,Acker,Respondent,1,7,2,majority opinion
+1998,97-2044,54678,21056,United States,Petitioner,Haggar Apparel Company,Respondent,1,9,0,majority opinion
+1998,98-347,54680,21165,Clinton,Petitioner,Goldsmith,Respondent,1,9,0,majority opinion
+1998,97-826,54681,21238,AT&T Corporation,Petitioner,Iowa Utilities Board,Respondent,1,7,1,majority opinion
+1998,97-53,54683,19964,No. 97-53 Roberts,Petitioner,"Galen of Virginia, Inc.",Respondent,1,9,0,per curiam
+1998,97-1625,54684,20002,California Dental Association,Petitioner,Federal Trade Commission,Respondent,1,5,4,majority opinion
+1998,97-1252,54685,20305,Reno,Petitioner,American-Arab Anti-Discrimination Committee,Respondent,1,8,1,majority opinion
+1998,97-889,54686,21185,Wright,Petitioner,Universal Maritime Service Corporation,Respondent,1,9,0,majority opinion
+1998,98-6,54687,20293,El Paso Natural Gas Company,Petitioner,Neztsosie,Respondent,1,9,0,majority opinion
+1998,97-2045,54688,20412,South Central Bell Telephone Company,Petitioner,Alabama,Respondent,1,9,0,majority opinion
+1998,97-1927,54689,20441,Hanlon,Petitioner,Berger,Respondent,1,8,1,majority opinion
+1998,98-5864,54690,20813,Strickler,Petitioner,Greene,Respondent,0,7,2,majority opinion
+1998,97-1147,54692,20690,Minnesota,Petitioner,Carter,Respondent,1,6,3,majority opinion
+1998,98-231,54695,19908,"Grupo Mexicano de Desarrollo, S. A.",Petitioner,"Alliance Bond Fund, Inc.",Respondent,1,5,4,majority opinion
+1998,98-149,54696,19905,College Savings Bank,Petitioner,Florida Prepaid Post-Secondary Education Expense Board,Respondent,0,5,4,majority opinion
+1998,97-303,54697,20023,Humana Inc.,Petitioner,Forsyth,Respondent,0,9,0,majority opinion
+1998,98-184,54698,20698,Wyoming,Petitioner,Houghton,Respondent,1,6,3,majority opinion
+1998,97-1802,54700,20976,Conn,Petitioner,Gabbert,Respondent,1,9,0,majority opinion
+1998,97-843,54701,19948,Davis,Petitioner,Monroe County Board of Education,Respondent,1,5,4,majority opinion
+1998,97-1489,54702,21139,"Your Home Visiting Nurse Services, Inc.",Petitioner,Shalala,Respondent,0,9,0,majority opinion
+1998,97-7541,54703,20153,Mitchell,Petitioner,United States,Respondent,1,5,4,majority opinion
+1998,98-436,54704,20291,Alden,Petitioner,Maine,Respondent,0,5,4,majority opinion
+1998,97-1704,54705,20550,Ortiz,Petitioner,Fibreboard Corporation,Respondent,1,7,2,majority opinion
+1998,97-1396,54706,19779,Lopez,Appellant,Monterey County,Appellee,1,8,1,majority opinion
+1998,98-5881,54707,20185,Lilly,Petitioner,Virginia,Respondent,1,9,0,majority opinion
+1998,98-208,54708,21135,Kolstad,Petitioner,American Dental Association,Respondent,0,5,4,majority opinion
+1998,98-591,54709,20486,Albertsons Inc.,Petitioner,Kirkingburg,Respondent,1,7,2,majority opinion
+1998,97-7213,54710,20547,Mosley,Petitioner,United States,Respondent,0,9,0,per curiam
+1998,97-1868,54711,21093,UNUM Life Insurance Company of America,Petitioner,Ward,Respondent,0,9,0,majority opinion
+1998,97-1139,54712,20045,United States,Petitioner,Rodriguez-Moreno,Respondent,1,7,2,majority opinion
+1998,98-262,54713,21103,Martin,Petitioner,Hadix,Respondent,1,7,2,majority opinion
+1998,97-6203,54718,20520,Jones,Petitioner,United States,Respondent,1,5,4,majority opinion
+1998,98-830,54719,20360,Amoco Production Company,Petitioner,Southern Ute Indian Tribe,Respondent,1,7,1,majority opinion
+1998,98-223,54720,21038,Florida,Petitioner,White,Respondent,1,7,2,majority opinion
+1998,97-1472,54722,20353,Haddle,Petitioner,Garrison,Respondent,1,9,0,majority opinion
+1998,98-131,54723,21133,United States,Petitioner,Sun-Diamond Growers of California,Respondent,0,9,0,majority opinion
+1998,98-536,54724,20057,Olmstead,Petitioner,L. C.,Respondent,0,6,3,majority opinion
+1998,97-1230,54725,20517,City of West Covina,Petitioner,Perkins,Respondent,1,9,0,majority opinion
+1998,97-2000,54726,20800,American Manufacturers' Mutual Insurance Company,Petitioner,Sullivan,Respondent,1,8,1,majority opinion
+1998,98-85,54728,21163,Hunt,Appellant,Cromartie,Appellee,1,9,0,majority opinion
+1998,97-1709,54729,20852,"Kumho Tire Company, Ltd.",Petitioner,Carmichael,Respondent,1,9,0,majority opinion
+1998,97-930,54730,20455,Buckley,Petitioner,American Constitutional Law Foundation Inc.,Respondent,0,6,3,majority opinion
+1998,98-470,54731,20130,Ruhrgas AG,Petitioner,Marathon Oil Company,Respondent,1,9,0,majority opinion
+1998,97-1184,54732,20316,"National Federation of Federal Employees , Local 1309",Petitioner,Department of Interior,Respondent,1,5,4,majority opinion
+1998,97-1056,54734,20546,Marquez,Petitioner,"Screen Actors Guild, Inc.",Respondent,0,9,0,majority opinion
+1998,97-1732,54735,19906,California Public Employees' Retirement System,Petitioner,Felzen,Respondent,0,0,0,equally divided
+1998,97-9217,54736,21201,Peguero,Petitioner,United States,Respondent,0,9,0,majority opinion
+1998,98-377,54737,20636,Dickinson,Petitioner,Zurko,Respondent,1,6,3,majority opinion
+1998,97-1418,54738,20334,Bank of America,Petitioner,203 North LaSalle Partnership,Respondent,1,8,1,majority opinion
+1998,98-97,54739,19831,Saenz,Petitioner,Roe,Respondent,0,7,2,majority opinion
+1998,98-238,54740,21046,West,Petitioner,Gibson,Respondent,1,5,4,majority opinion
+1998,98-404,54742,20014,Department of Commerce,Appellant,United States House of Representatives,Appellee,0,6,3,majority opinion
+1998,97-9361,54743,20496,Jones,Petitioner,United States,Respondent,0,5,4,majority opinion
+1998,97-7597,54744,20890,Knowles,Petitioner,Iowa,Respondent,1,9,0,majority opinion
+1998,97-1992,54745,20691,Murphy,Petitioner,"United Parcel Service, Inc.",Respondent,0,7,2,majority opinion
+1998,97-1642,54746,20438,Department of the Army,Petitioner,"Blue Fox, Inc.",Respondent,1,9,0,majority opinion
+1998,97-1754,54748,20924,Immigration & Naturalization Service,Petitioner,Aguirre-Aguirre,Respondent,1,9,0,majority opinion
+1998,96-1793,54749,20658,Cedar Rapids Community School Dist.,Petitioner,Garret F.,Respondent,0,7,2,majority opinion
+1998,97-1235,54750,20067,City of Monterey,Petitioner,Del Monte Dunes at Monterey,Respondent,0,9,0,majority opinion
+1998,97-8629,54751,20384,Richardson,Petitioner,United States,Respondent,1,6,3,majority opinion
+1998,97-1909,54752,20878,"Murphy Brothers, Inc.",Petitioner,"Michetti Pipe Stringing, Inc.",Respondent,1,6,3,majority opinion
+1998,97-475,54753,20525,"El Al Israel Airlines, Ltd.",Petitioner,Tsui Yuan Tseng,Respondent,1,8,1,majority opinion
+1998,97-1337,54754,20532,Minnesota,Petitioner,Mille Lacs Band of Chippewa Indians,Respondent,0,5,4,majority opinion
+1998,97-7164,54755,20773,Holloway Aka Ali,Petitioner,United States,Respondent,0,7,2,majority opinion
+1998,97-1008,54756,20146,Cleveland,Petitioner,Policy Management Systems Corporation,Respondent,1,9,0,majority opinion
+1998,98-387,54757,20425,"Greater New Orleans Broadcasting Assn., Inc.",Petitioner,United States,Respondent,1,9,0,majority opinion
+1998,97-1121,54758,20448,Chicago,Petitioner,Morales,Respondent,0,6,3,majority opinion
+1998,98-84,54759,20854,NCAA,Petitioner,Smith,Respondent,1,9,0,majority opinion
+1998,98-369,54760,20869,National Aeronautics and Space Administration,Petitioner,Federal Labor Relations Authority,Respondent,0,5,4,majority opinion
+1998,98-727,54761,20576,Cunningham,Petitioner,Hamilton County,Respondent,0,9,0,majority opinion
+1998,97-1985,54763,20180,Neder,Petitioner,United States,Respondent,0,6,3,majority opinion
+1998,96-1570,54765,20244,Nynex Corporation,Petitioner,"Discon, Inc.",Respondent,1,9,0,majority opinion
+1998,97-1943,54766,21130,Sutton,Petitioner,"United Air Lines, Inc.",Respondent,0,7,2,majority opinion
+1999,99-5716,54767,20238,Carter,Petitioner,United States,Respondent,0,5,4,majority opinion
+1999,98-678,54768,20032,Los Angeles Police Department,Petitioner,United Reporting Publishing Corp.,Respondent,1,7,2,majority opinion
+1999,99-312,54769,20191,Norfolk Southern Railway Company,Petitioner,Shanklin,Respondent,1,7,2,majority opinion
+1999,98-1101,54771,21026,Drye,Petitioner,United States,Respondent,0,9,0,majority opinion
+1999,98-1152,54772,21127,Food and Drug Administration,Petitioner,Brown & Williamson Tobacco Corporation,Respondent,0,5,4,majority opinion
+1999,98-1960,54773,21083,"Cortez Byrd Chips, Inc.",Petitioner,Harbert Construction Company,Respondent,1,9,0,majority opinion
+1999,99-116,54774,19784,Fischer,Petitioner,United States,Respondent,0,7,2,majority opinion
+1999,99-62,54775,19900,Santa Fe Independent School District,Petitioner,Doe,Respondent,0,6,3,majority opinion
+1999,98-7540,54776,19785,Carmell,Petitioner,Texas,Respondent,1,5,4,majority opinion
+1999,98-1441,54777,20392,Roe,Petitioner,Flores-Ortega,Respondent,1,6,3,majority opinion
+1999,98-1667,54779,20952,Baral,Petitioner,United States,Respondent,0,9,0,majority opinion
+1999,98-1949,54781,20225,Pegram,Petitioner,Herdrich,Respondent,1,9,0,majority opinion
+1999,99-387,54785,21024,Raleigh,Petitioner,Illinois Dept. of Revenue,Respondent,0,9,0,majority opinion
+1999,99-699,54787,19883,Boy Scouts of America,Petitioner,Dale,Respondent,1,5,4,majority opinion
+1999,99-244,54788,19894,"Mobil Oil Exploration & Producing Southeast, Inc.",Petitioner,United States,Respondent,1,7,1,majority opinion
+1999,98-1037,54789,20029,Smith,Petitioner,Robbins,Respondent,1,5,4,majority opinion
+1999,99-401,54790,20523,California Democratic Party,Petitioner,Jones,Respondent,1,7,2,majority opinion
+1999,98-1856,54791,20786,Hill,Petitioner,Colorado,Respondent,0,6,3,majority opinion
+1999,99-391,54792,20304,Free,Petitioner,Abbott Laboratories Inc.,Respondent,0,0,0,equally divided
+1999,98-818,54793,20126,Rice,Petitioner,Cayetano,Respondent,1,7,2,majority opinion
+1999,98-1828,54794,20695,Vermont Agency of Natural Resources,Petitioner,United States ex rel. Stevens,Respondent,1,9,0,majority opinion
+1999,99-137,54795,20145,Garner,Petitioner,Jones,Respondent,1,6,3,majority opinion
+1999,98-7809,54796,20737,Martinez,Petitioner,"Court of Appeals of Cal., Fourth Appellate Dist.",Respondent,0,9,0,majority opinion
+1999,99-5739,54797,21128,Jones,Petitioner,United States,Respondent,1,9,0,majority opinion
+1999,98-1109,54798,20715,Shalala,Petitioner,"Illinois Council on Long Term Care, Inc.",Respondent,1,5,4,majority opinion
+1999,98-1991,54800,21233,Public Lands Council,Petitioner,Babbitt,Respondent,0,9,0,majority opinion
+1999,99-478,54801,20747,Apprendi,Petitioner,New Jersey,Respondent,1,5,4,majority opinion
+1999,99-830,54802,20358,Stenberg,Petitioner,Carhart,Respondent,0,5,4,majority opinion
+1999,99-150,54803,20162,Wal-Mart Stores Inc.,Petitioner,Samara Bros. Inc.,Respondent,1,9,0,majority opinion
+1999,98-896,54804,19863,Rotella,Petitioner,Wood,Respondent,0,9,0,majority opinion
+1999,98-1480,54805,19891,Beck,Petitioner,Prupis,Respondent,0,7,2,majority opinion
+1999,98-1993,54806,19930,Florida,Petitioner,J. L.,Respondent,0,9,0,majority opinion
+1999,98-1464,54807,20428,Reno,Petitioner,Condon,Respondent,1,9,0,majority opinion
+1999,99-161,54808,19922,Weisgram,Petitioner,Marley Company,Respondent,0,9,0,majority opinion
+1999,98-963,54809,19952,Nixon,Petitioner,Shrink Missouri Government PAC,Respondent,1,6,3,majority opinion
+1999,98-1648,54810,20006,Mitchell,Petitioner,Helms,Respondent,1,6,3,plurality opinion
+1999,98-791,54811,20074,Kimel,Petitioner,Florida Board of Regents,Respondent,0,5,4,majority opinion
+1999,99-224,54812,20776,Miller,Petitioner,French,Respondent,1,5,4,majority opinion
+1999,99-166,54813,21048,United States,Petitioner,Hubbell,Respondent,0,8,1,majority opinion
+1999,98-1299,54815,20256,New York,Petitioner,Hill,Respondent,1,9,0,majority opinion
+1999,99-138,54816,20734,Troxel,Petitioner,Granville,Respondent,0,6,3,plurality opinion
+1999,98-9349,54817,20760,Bond,Petitioner,United States,Respondent,1,7,2,majority opinion
+1999,98-1811,54818,20650,Geier,Petitioner,"American Honda Motor Company, Inc.",Respondent,0,5,4,majority opinion
+1999,99-5,54819,20939,United States,Petitioner,Morrison,Respondent,0,5,4,majority opinion
+1999,98-1170,54820,19936,Portuondo,Petitioner,Agard,Respondent,1,7,2,majority opinion
+1999,99-5153,54821,20124,Johnson,Petitioner,United States,Respondent,0,8,1,majority opinion
+1999,99-579,54822,20914,Harris Trust & Savings Bank,Petitioner,"Salomon Smith Barney, Inc.",Respondent,1,9,0,majority opinion
+1999,99-409,54823,19802,Hartford Underwriters Ins. Company,Petitioner,"Union Planters Bank, N.A.",Respondent,0,9,0,majority opinion
+1999,99-51,54824,20977,Gutierrez,Petitioner,Ada,Respondent,1,9,0,majority opinion
+1999,99-5746,54825,21217,Weeks,Petitioner,Angelone,Respondent,0,5,4,majority opinion
+1999,98-2060,54827,20111,Edwards,Petitioner,Carpenter,Respondent,1,7,2,majority opinion
+1999,98-1696,54828,20362,United States,Petitioner,Johnson,Respondent,1,9,0,majority opinion
+1999,98-9537,54831,21070,Sims,Petitioner,Apfel,Respondent,1,5,4,majority opinion
+1999,98-1701,54833,20432,United States,Petitioner,Locke,Respondent,1,9,0,majority opinion
+1999,98-1167,54834,20654,Christensen,Petitioner,Harris County,Respondent,0,6,3,majority opinion
+1999,99-474,54835,21285,Crosby,Petitioner,National Foreign Trade Council,Respondent,0,9,0,majority opinion
+1999,98-1255,54836,19830,United States,Petitioner,Martinez-Salazar,Respondent,1,9,0,majority opinion
+1999,99-6615,54837,19932,Williams,Petitioner,Taylor,Respondent,1,9,0,majority opinion
+1999,98-2043,54838,20862,"Hunt-Wesson, Inc.",Petitioner,Franchise Tax Board of California,Respondent,1,9,0,majority opinion
+1999,98-1288,54839,20015,Village of Willowbrook,Petitioner,Olechon,Respondent,0,9,0,per curiam
+1999,99-536,54840,20247,Reeves,Petitioner,"Sanderson Plumbing Products, Inc.",Respondent,1,9,0,majority opinion
+1999,98-9828,54841,20761,Ohler,Petitioner,United States,Respondent,0,5,4,majority opinion
+1999,98-1036,54842,20161,Illinois,Petitioner,Wardlow,Respondent,1,5,4,majority opinion
+1999,8 ORIG,54843,20043,Arizona,Petitioner,California,Respondent,1,6,3,majority opinion
+1999,98-1161,54844,21150,City of Erie,Petitioner,Pap's A.M.,Respondent,1,6,3,majority opinion
+1999,98-6322,54845,20400,Slack,Petitioner,McDaniel,Respondent,1,7,2,majority opinion
+1999,99-502,54847,20524,Nelson,Petitioner,"Adams USA, Inc.",Respondent,1,9,0,majority opinion
+1999,98-8384,54849,20215,Williams,Petitioner,Taylor,Respondent,1,6,3,majority opinion
+1999,99-5525,54850,21090,Dickerson,Petitioner,United States,Respondent,1,7,2,majority opinion
+1999,99-7000,54851,21095,Ramdass,Petitioner,Angelone,Respondent,0,5,4,plurality opinion
+1999,98-1189,54852,20915,"Board of Regents , University of Wisconsin System",Petitioner,Southworth,Respondent,1,9,0,majority opinion
+1999,98-822,54853,20300,"Friends of the Earth, Inc.",Petitioner,"Laidlaw Environmental Services (TOC), Inc.",Respondent,1,7,2,majority opinion
+1999,99-658,54854,20085,Castillo,Petitioner,United States,Respondent,1,9,0,majority opinion
+1999,98-1682,54855,20075,United States,Appellant,"Playboy Entertainment Group, Inc.",Appellee,0,5,4,majority opinion
+2000,99-1434,54856,23122,United States,Petitioner,Mead Corporation,Respondent,0,8,1,majority opinion
+2000,99-2035,54857,21358,"Cooper Industries, Inc.",Petitioner,"Leatherman Tool Group, Inc.",Respondent,1,8,1,majority opinion
+2000,99-7504,54858,21837,Lopez,Petitioner,Davis,Respondent,0,6,3,majority opinion
+2000,99-1529,54859,22771,Egelhoff,Petitioner,Egelhoff,Respondent,1,7,2,majority opinion
+2000,99-1238,54860,21446,Artuz,Petitioner,Bennett,Respondent,0,9,0,majority opinion
+2000,00-292,54861,21985,"C. & L. Enterprises, Inc.",Petitioner,Citizen Band Potawatomi Indian Tribe of Oklahoma,Respondent,1,9,0,majority opinion
+2000,99-936,54862,22240,Ferguson,Petitioner,City of Charleston,Respondent,1,6,3,majority opinion
+2000,99-1864,54863,21839,Hunt,Appellant,Cromartie,Appellee,1,5,4,majority opinion
+2000,99-9136,54864,23094,Daniels,Petitioner,United States,Respondent,0,5,4,majority opinion
+1999,98-942,54865,23663,William Fiore,Petitioner,"Gregory White, Warden, et al.",Respondent,1,9,0,majority opinion
+2000,00-1011,54866,21477,Calcano-Martinez et al.,Petitioner,INS,Respondent,1,5,4,majority opinion
+2000,00-276,54867,22948,United States,Petitioner,"United Foods, Inc.",Respondent,0,6,3,majority opinion
+2000,105 ORIG,54868,21807,Kansas,Petitioner,Colorado,Respondent,1,6,3,majority opinion
+2000,99-1680,54869,21911,"City News & Novelty, Inc.",Petitioner,City of Waukesha,Respondent,0,9,0,majority opinion
+2000,99-1908,54870,22864,Alexander,Petitioner,Sandoval,Respondent,1,5,4,majority opinion
+2000,99-804,54871,22313,Cleveland,Petitioner,United States,Respondent,1,9,0,majority opinion
+2000,99-7791,54872,21316,Zadvydas,Petitioner,Davis,Respondent,1,5,4,majority opinion
+2000,99-1240,54873,21796,Board of Trustees of University of Alabama,Petitioner,Garrett,Respondent,1,5,4,majority opinion
+2000,99-1871,54874,22005,Department of Interior,Petitioner,Klamath Water Users Protective Association,Respondent,0,9,0,majority opinion
+2000,98-1768,54875,22883,Buckman Company,Petitioner,Plaintiffs' Legal Committee,Respondent,1,9,0,majority opinion
+2000,99-929,54876,21828,Cook,Petitioner,Gralike,Respondent,0,9,0,majority opinion
+2000,99-1379,54877,22867,"Circuit City Stores, Inc.",Petitioner,Adams,Respondent,1,5,4,majority opinion
+2000,99-1964,54878,21541,Booth,Petitioner,Churner,Respondent,0,9,0,majority opinion
+2000,99-1185,54879,21720,Seling,Petitioner,Young,Respondent,1,8,1,majority opinion
+2000,00-836,54881,22370,Bush,Petitioner,Palm Beach County Canvassing Board,Respondent,1,9,0,per curiam
+2000,00-201,54885,22722,"New York Times Company, Inc.",Petitioner,Tasini,Respondent,0,7,2,majority opinion
+2000,99-1884,54886,22329,Lackawanna County District Attorney,Petitioner,Coss,Respondent,1,5,4,majority opinion
+2000,00-391,54887,21568,Florida,Petitioner,Thomas,Respondent,0,9,0,majority opinion
+2000,00-203,54888,22517,United States,Petitioner,Cleveland Indians Baseball Company,Respondent,1,9,0,majority opinion
+2000,99-1178,54889,21942,Solid Waste Agency of Northern Cook County,Petitioner,United States Army Corps of Engineers,Respondent,1,5,4,majority opinion
+2000,00-596,54890,22671,Lorillard Tobacco Company,Petitioner,Thomas F. Reilly,Respondent,1,5,4,majority opinion
+2000,99-1953,54891,21766,District of Columbia,Petitioner,"Tri County Industries, Inc.",Respondent,0,9,0,per curiam
+2000,00-6374,54892,22528,Becker,Petitioner,Montgomery,Respondent,1,9,0,majority opinion
+2000,99-1613,54893,22489,Shaw,Petitioner,Murphy,Respondent,1,9,0,majority opinion
+2000,00-152,54894,21555,Lujan,Petitioner,"G & G Fire Sprinklers, Inc.",Respondent,1,9,0,majority opinion
+2000,00-24,54895,22753,"PGA TOUR, Inc.",Petitioner,Martin,Respondent,0,7,2,majority opinion
+2000,99-901,54896,22698,Brentwood Academy,Petitioner,Tennessee Secondary School Athletic Assn.,Respondent,1,5,4,majority opinion
+2000,00-151,54897,23003,United States,Petitioner,Oakland Cannabis Buyers' Coop,Respondent,1,8,0,majority opinion
+2000,00-492,54898,22757,Alabama,Petitioner,Bozeman,Respondent,0,9,0,majority opinion
+2000,99-1702,54899,21636,Texas,Petitioner,Cobb,Respondent,1,5,4,majority opinion
+2000,00-454,54900,22074,"Atkinson Trading Company, Inc.",Petitioner,Shirley,Respondent,1,9,0,majority opinion
+2000,00-5250,54901,22319,Shafer,Petitioner,S. Carolina,Respondent,1,7,2,majority opinion
+2000,99-1235,54902,21778,Green Tree Financial Corporation-Alabama,Petitioner,Randolph,Respondent,1,9,0,majority opinion
+2000,00-157,54904,22865,"United Dominion Industries, Inc.",Petitioner,United States,Respondent,1,8,1,majority opinion
+2000,99-1571,54905,22458,TrafFix Devices Inc.,Petitioner,Marketing Displays Inc.,Respondent,1,9,0,majority opinion
+2000,99-1257,54906,22560,Whitman,Petitioner,"American Trucking Associations, Inc.",Respondent,1,9,0,majority opinion
+2000,00-949,54907,22571,George W. Bush,Petitioner,Albert Gore,Respondent,1,5,4,per curiam
+2000,130 ORIG,54908,22286,New Hampshire,Petitioner,Maine,Respondent,0,8,0,majority opinion
+2000,00-5961,54909,22158,Tyler,Petitioner,Cain,Respondent,0,5,4,majority opinion
+2000,99-1977,54910,21887,Saucier,Petitioner,Katz,Respondent,1,9,0,majority opinion
+2000,99-1994,54911,22320,Nevada,Petitioner,Hicks,Respondent,1,9,0,majority opinion
+2000,99-1792,54912,23156,Director of Revenue of Missouri,Petitioner,CoBank ACB,Respondent,1,9,0,majority opinion
+2000,00-763,54913,21691,Pollard,Petitioner,E. I. du Pont de Nemours & Company,Respondent,1,8,0,majority opinion
+2000,99-9073,54914,22006,Buford,Petitioner,United States,Respondent,0,9,0,majority opinion
+2000,99-8508,54915,22003,Kyllo,Petitioner,United States,Respondent,1,5,4,majority opinion
+2000,99-603,54916,21737,Legal Services Corporation,Petitioner,Velazquez,Respondent,0,5,4,majority opinion
+2000,99-1331,54917,22581,Lewis,Petitioner,"Lewis & Clark Marine, Inc.",Respondent,1,9,0,majority opinion
+2000,99-1030,54918,21294,City of Indianapolis,Petitioner,Edmond,Respondent,0,6,3,majority opinion
+2000,00-191,54919,21452,Federal Election Commission,Petitioner,Colorado Republican Federal Campaign Committee,Respondent,1,5,4,majority opinion
+2000,99-859,54920,21311,Central Green Company,Petitioner,United States,Respondent,1,9,0,majority opinion
+2000,99-6218,54921,22088,Rogers,Petitioner,Tennessee,Respondent,0,5,4,majority opinion
+2000,00-347,54922,21968,The Wharf (Holdings) Ltd.,Petitioner,United International Holdings,Respondent,0,9,0,majority opinion
+2000,99-1815,54923,23134,National Labor Relations Board,Petitioner,"Kentucky River Community Care, Inc.",Respondent,0,5,4,majority opinion
+2000,99-1848,54924,22682,"Buckhannon Board & Care Home, Inc.",Petitioner,West Virginia Department of Health & Human Resources,Respondent,0,5,4,majority opinion
+2000,99-2047,54925,22023,Palazzolo,Petitioner,Rhode Island,Respondent,1,5,4,majority opinion
+2000,00-767,54926,22888,Immigration and Naturalization Service,Petitioner,St. Cyr,Respondent,0,5,4,majority opinion
+2000,99-8576,54927,22697,Glover,Petitioner,United States,Respondent,1,9,0,majority opinion
+2000,00-6677,54928,22081,Penry,Petitioner,Johnson,Respondent,1,6,3,majority opinion
+2000,99-1038,54930,22251,Eastern Associated Coal Corporation,Petitioner,"United Mine Workers of America, District 17",Respondent,0,9,0,majority opinion
+2000,99-1551,54931,21517,"Semtek International, Inc.",Petitioner,Lockheed Martin Corporation,Respondent,1,9,0,majority opinion
+2000,00-549,54932,21435,"Cedric Kushner Promotions, Ltd.",Petitioner,King,Respondent,0,9,0,majority opinion
+2000,99-2071,54933,21572,Tuan Anh Nguyen,Petitioner,Immigration and Naturalization Service,Respondent,0,5,4,majority opinion
+2000,00-346,54934,21866,Norfolk Shipbuilding Drydock Corporation,Petitioner,Garris,Respondent,0,9,0,majority opinion
+2000,99-2036,54935,22492,Good News Club,Petitioner,Milford Central School,Respondent,1,6,3,majority opinion
+2000,99-1132,54936,21355,Illinois,Petitioner,McArthur,Respondent,1,8,1,majority opinion
+2000,99-1295,54937,21884,Gitlitz,Petitioner,Commissioner of Internal Revenue,Respondent,1,8,1,majority opinion
+2000,99-1408,54938,21413,Atwater,Petitioner,City of Lago Vista,Respondent,0,5,4,majority opinion
+2000,00-189,54939,22584,Idaho,Petitioner,United States,Respondent,0,5,4,majority opinion
+2000,99-1978,54940,22529,United States,Petitioner,Hatter,Respondent,1,5,2,majority opinion
+2000,99-1687,54941,22162,Bartnicki,Petitioner,Vopper,Respondent,0,6,3,majority opinion
+2001,00-507,54944,21306,Chickasaw Nation,Petitioner,United States,Respondent,0,7,2,majority opinion
+2001,00-1853,54946,23077,Swierkiewicz,Petitioner,Sorema N.A.,Respondent,1,9,0,majority opinion
+2001,00-1089,54947,22234,"Toyota Manufacturing, Kentucky, Inc.",Petitioner,Williams,Respondent,1,9,0,majority opinion
+2001,00-1250,54948,21472,"US Airways, Inc.",Petitioner,Barnett,Respondent,1,7,2,majority opinion
+2001,00-927,54949,21524,Chao,Petitioner,"Mallard Bay Drilling, Inc.",Respondent,1,8,0,majority opinion
+2001,01-344,54950,22196,Thompson,Petitioner,Western States Medical Center,Respondent,0,5,4,majority opinion
+2001,00-6567,54951,21717,Dusenbery,Petitioner,United States,Respondent,0,5,4,majority opinion
+2001,01-584,54952,22149,Adams,Petitioner,Florida Power Corp.,Respondent,0,9,0,per curiam
+2001,00-1751,54953,21485,Zelman,Petitioner,Simmons-Harris,Respondent,1,5,4,majority opinion
+2001,00-1406,54954,21456,"Chevron U.S.A., Inc.",Petitioner,Echazabal,Respondent,1,9,0,majority opinion
+2001,00-878,54956,22597,Mathias,Petitioner,"WorldCom Technologies, Inc.",Respondent,2,,,
+2001,00-1770,54957,23124,Department of Housing and Urban Development,Petitioner,Rucker,Respondent,1,8,0,majority opinion
+2001,01-518,54958,22390,BE & K Construction Company,Petitioner,National Labor Relations Board,Respondent,1,9,0,majority opinion
+2001,01-147,54959,22161,Securities and Exchange Commission,Petitioner,Zandford,Respondent,1,9,0,majority opinion
+2001,01-394,54960,22912,Christopher,Petitioner,Harbury,Respondent,1,9,0,majority opinion
+2001,01-131,54961,21457,Gisbrecht,Petitioner,Barnhart,Respondent,1,8,1,majority opinion
+2001,01-332,54962,22577,Board of Ed. of Independent School Dist. No. 92 of Pottawatomie Cty.,Petitioner,Earls,Respondent,1,5,4,majority opinion
+2001,00-952,54963,21670,Wisconsin Department of Health and Family Services,Petitioner,Blumer,Respondent,1,6,3,majority opinion
+2001,00-9280,54964,22625,Kelly,Petitioner,South Carolina,Respondent,1,5,4,majority opinion
+2001,00-10666,54965,21628,Harris,Petitioner,United States,Respondent,0,5,4,majority opinion
+2001,00-1214,54966,21448,Alabama,Petitioner,Shelton,Respondent,0,5,4,majority opinion
+2001,00-1187,54967,21776,McKune,Petitioner,Lile,Respondent,1,5,4,plurality opinion
+2001,Jan-46,54968,21345,Federal Maritime Commission,Petitioner,South Carolina State Ports Authority,Respondent,0,5,4,majority opinion
+2001,00-9285,54969,21863,Mickens,Petitioner,Taylor,Respondent,0,5,4,majority opinion
+2001,01-687,54970,21803,United States,Petitioner,Cotton,Respondent,1,9,0,majority opinion
+2001,00-1021,54971,22569,"Rush Prudential HMO, Inc.",Petitioner,Moran,Respondent,0,5,4,majority opinion
+2001,00-1249,54972,22187,Thomas,Petitioner,Chicago Park District,Respondent,0,9,0,majority opinion
+2001,00-730,54975,22721,"Adarand Constructors, Inc.",Petitioner,Mineta,Respondent,0,9,0,per curiam
+2001,99-1823,54976,22322,Equal Employment Opportunity Commission,Petitioner,"Waffle House, Inc.",Respondent,1,6,3,majority opinion
+2001,99-1786,54978,22512,Great-West Life and Annuity Insurance Company,Petitioner,Knudson,Respondent,0,5,4,majority opinion
+2001,01-301,54979,22804,Carey,Petitioner,Saffold,Respondent,1,5,4,majority opinion
+2001,00-853,54980,22537,Porter,Petitioner,Nussle,Respondent,1,9,0,majority opinion
+2001,00-1045,54981,23040,TRW Inc.,Petitioner,Andrews,Respondent,1,9,0,majority opinion
+2001,00-1937,54982,21464,Barnhart,Petitioner,Walton,Respondent,1,9,0,majority opinion
+2001,00-1595,54985,22428,"Hoffman Plastic Compounds, Inc.",Petitioner,National Labor Relations Board,Respondent,1,5,4,majority opinion
+2001,00-1307,54986,22826,Barnhart,Petitioner,"Sigmon Coal Company, Inc.",Respondent,0,6,3,majority opinion
+2001,01-408,54987,23018,"Holmes Group, Inc.",Petitioner,"Vornado Air Circulation Systems, Inc.",Respondent,1,9,0,majority opinion
+2001,00-957,54988,22976,Kansas,Petitioner,Crane,Respondent,1,7,2,majority opinion
+2001,00-1543,54989,23191,Festo Corporation,Petitioner,Shoketsu Kinzoku Kogyo Kabushiki Company,Respondent,0,9,0,majority opinion
+2001,01-463,54990,22772,United States,Petitioner,"Fior D'Italia, Inc.",Respondent,1,6,3,majority opinion
+2001,01-651,54991,23510,JPMorgan Chase Bank,Petitioner,Traffic Stream (BVI) Infrastructure Ltd.,Respondent,1,9,0,majority opinion
+2001,00-1519,54992,22510,United States,Petitioner,Arvizu,Respondent,1,9,0,majority opinion
+2001,00-1167,54993,22263,"Tahoe-Sierra Preservation Council, Inc.",Petitioner,Tahoe Regional Planning Agency,Respondent,0,6,3,majority opinion
+2001,00-1293,54994,22788,Ashcroft,Petitioner,American Civil Liberties Union,Respondent,1,8,1,majority opinion
+2001,00-1614,54996,22813,National Railroad Passenger Corporation,Petitioner,Morgan,Respondent,0,5,4,majority opinion
+2001,00-8452,54998,23138,Atkins,Petitioner,Virginia,Respondent,1,6,3,majority opinion
+2001,00-860,54999,23067,Correctional Services Corporation,Petitioner,Malesko,Respondent,1,5,4,majority opinion
+2001,00-1073,55000,22780,Owasso Independent School District No. I-011,Petitioner,Falvo,Respondent,1,9,0,majority opinion
+2001,00-1260,55001,21934,United States,Petitioner,Knights,Respondent,1,9,0,majority opinion
+2001,00-6029,55002,22394,Ragsdale,Petitioner,"Wolverine World Wide, Inc.",Respondent,0,5,4,majority opinion
+2001,00-568,55003,21735,New York,Petitioner,Federal Energy Regulatory Commission,Respondent,0,6,3,majority opinion
+2001,00-795,55004,21372,Ashcroft,Petitioner,Free Speech Coalition,Respondent,0,6,3,majority opinion
+2001,00-832,55005,22567,National Cable and Telecommunications Association,Petitioner,Gulf Power Company,Respondent,1,6,2,majority opinion
+2001,01-631,55006,22212,United States,Petitioner,Drayton,Respondent,1,6,3,majority opinion
+2001,00-511,55007,21940,"Verizon Communications, Inc.",Petitioner,Federal Communications Commission,Respondent,0,6,2,majority opinion
+2001,00-799,55008,22066,City of Los Angeles,Petitioner,"Alameda Books, Inc.",Respondent,1,5,4,plurality opinion
+2001,01-419,55009,21585,City of Columbus,Petitioner,"Ours Garage and Wrecker Service, Inc.",Respondent,1,7,2,majority opinion
+2001,99-1996,55010,21309,"J. E. M. Ag Supply, Inc.",Petitioner,"Pioneer Hi-Bred International, Inc.",Respondent,0,6,2,majority opinion
+2001,00-1737,55013,22858,"Watchtower Bible & Tract Soc'y of New York, Inc.",Petitioner,Village of Stratton,Respondent,1,8,1,majority opinion
+2001,01-714,55014,22845,Utah,Appellant,Evans,Appellee,0,5,4,majority opinion
+2001,01-298,55015,22265,Lapides,Petitioner,Board of Regents of University System of Georgia,Respondent,1,9,0,majority opinion
+2001,01-679,55016,22007,Gonzaga University,Petitioner,Doe,Respondent,1,7,2,majority opinion
+2001,00-1831,55017,22501,United States,Petitioner,Craft,Respondent,1,6,3,majority opinion
+2001,01-595,55018,22694,United States,Petitioner,Ruiz,Respondent,1,9,0,majority opinion
+2001,00-1531,55019,23050,"Verizon Maryland, Inc.",Petitioner,Public Service Commission of Maryland,Respondent,1,8,0,majority opinion
+2001,00-1567,55020,22971,Young,Petitioner,United States,Respondent,0,9,0,majority opinion
+2001,01-682,55022,22128,Barnes,Petitioner,Gorman,Respondent,1,9,0,majority opinion
+2001,01-417,55023,22983,Devlin,Petitioner,Scardelletti,Respondent,1,6,3,majority opinion
+2001,00-973,55024,21912,United States,Petitioner,Vonn,Respondent,1,8,1,majority opinion
+2001,00-758,55025,22444,United States Postal Service,Petitioner,Gregory,Respondent,1,9,0,majority opinion
+2001,01-400,55026,23488,"Ricky Bell, Warden",Petitioner,Gary Bradford Cone,Respondent,1,8,1,majority opinion
+2001,00-1072,55027,22278,Edelman,Petitioner,Lynchburg College,Respondent,1,9,0,majority opinion
+2001,00-1514,55028,21588,Raygor,Petitioner,Regents of University of Minnesota,Respondent,0,6,3,majority opinion
+2001,00-6933,55029,23119,Lee,Petitioner,Kemna,Respondent,1,6,3,majority opinion
+2002,Jan-78,55030,22124,Gary Ewing,Petitioner,California,Respondent,0,5,4,plurality opinion
+2002,01-1289,55031,22129,State Farm Mutual Automobile Insurance Company,Petitioner,Campbell,Respondent,1,6,3,majority opinion
+2002,02-299,55032,23479,"Entergy Louisiana, Inc.",Petitioner,Louisiana Public Service Commission,Respondent,1,9,0,majority opinion
+2002,01-1491,55034,22662,Demore,Petitioner,Kim,Respondent,1,5,4,majority opinion
+2002,02-575,55035,22381,"Nike, Inc.",Petitioner,Marc Kasky,Respondent,0,6,3,per curiam
+2002,01-1229,55036,23154,Pierce County,Petitioner,Guillen,Respondent,1,9,0,majority opinion
+2002,02-337,55037,23646,Breuer,Petitioner,"Jim's Concrete of Brevard, Inc.",Respondent,0,9,0,majority opinion
+2002,01-1500,55038,21806,Clay,Petitioner,United States,Respondent,1,9,0,majority opinion
+2002,01-270,55039,21876,"Yellow Transportation, Inc.",Petitioner,Michigan,Respondent,1,9,0,majority opinion
+2002,01-1418,55042,22048,Archer,Petitioner,Warner,Respondent,1,7,2,majority opinion
+2002,01-653,55043,21712,Federal Communications Commission,Petitioner,"Nextwave Personal Communications, Inc.",Respondent,0,8,1,majority opinion
+2002,01-704,55044,21451,United States,Petitioner,Bean,Respondent,1,9,0,majority opinion
+2002,02-306,55045,22755,Beneficial National Bank,Petitioner,Marie Anderson et al.,Respondent,1,7,2,majority opinion
+2002,02-371,55046,23566,Virginia,Petitioner,Kevin Lamont Hicks,Respondent,1,9,0,majority opinion
+2002,Feb-64,55047,22460,Sell,Petitioner,United States,Respondent,1,6,3,majority opinion
+2002,01-1120,55048,22260,Meyer,Petitioner,Holley,Respondent,1,9,0,majority opinion
+2002,01-1435,55049,22380,"Clackamas Gastroenterology Associates, P. C.",Petitioner,Wells,Respondent,1,7,2,majority opinion
+2002,00-1471,55050,22101,"Kentucky Association of Health Plans, Inc.",Petitioner,Miller,Respondent,0,9,0,majority opinion
+2002,01-1444,55051,21789,Chavez,Petitioner,Martinez,Respondent,1,6,3,plurality opinion
+2002,02-196,55053,21843,National Park Hospitality Assn.,Petitioner,Dept. of the Interior,Respondent,0,7,2,majority opinion
+2002,Jan-62,55054,22639,Miller-El,Petitioner,Cockrell,Respondent,1,8,1,majority opinion
+2002,02-241,55055,21432,Grutter,Petitioner,Bollinger,Respondent,0,5,4,majority opinion
+2002,Jan-94,55056,23489,Abu-Ali Abdur'Rahman,Petitioner,"Ricky Bell, Warden",Respondent,0,8,1,per curiam
+2002,02-361,55058,22544,United States,Appellant,"American Library Assn., Inc.",Appellee,1,6,3,plurality opinion
+2002,02-271,55059,21731,Dow Chemical Company,Petitioner,Stephenson,Respondent,1,8,0,per curiam
+2002,01-10873,55060,23592,Khanh Phuong Nguyen,Petitioner,United States,Respondent,1,5,4,majority opinion
+2002,01-1243,55061,22554,Borden Ranch Partnership,Petitioner,Army Corps of Engineers,Respondent,0,0,0,equally divided
+2002,01-1325,55062,22691,Brown,Petitioner,Legal Foundation of Washington,Respondent,0,5,4,majority opinion
+2002,01-1015,55063,23015,Moseley,Petitioner,"V Secret Catalogue, Inc.",Respondent,1,9,0,majority opinion
+2002,02-428,55064,22051,Dastar Corporation,Petitioner,Twentieth Century Fox Film Corporation,Respondent,1,8,0,majority opinion
+2002,01-950,55065,23545,"Hillside Dairy, Inc.",Petitioner,Lyons,Respondent,1,8,1,majority opinion
+2002,01-1572,55066,22338,Cook County,Petitioner,United States ex rel. Chandler,Respondent,0,9,0,majority opinion
+2002,Feb-69,55067,22013,Roell,Petitioner,Withrow,Respondent,1,5,4,majority opinion
+2002,01-705,55068,21883,Barnhart,Petitioner,Peabody Coal Company,Respondent,1,6,3,majority opinion
+2002,01-1209,55069,22910,Boeing Company,Petitioner,United States,Respondent,0,7,2,majority opinion
+2002,02-403,55072,21891,Federal Election Commission,Petitioner,Beaumont,Respondent,1,7,2,majority opinion
+2002,01-1757,55073,21352,Stogner,Petitioner,California,Respondent,1,5,4,majority opinion
+2002,02-695,55074,23541,"Michael Fitzgerald, Treasurer of Iowa",Petitioner,Racing Association of Central Iowa,Respondent,1,9,0,majority opinion
+2002,01-1118,55076,21964,Scheidler,Petitioner,"National Organization for Women, Inc.",Respondent,1,8,1,majority opinion
+2002,01-1067,55077,23184,United States,Petitioner,White Mt. Apache Tribe,Respondent,0,5,4,majority opinion
+2002,02-258,55078,23580,Susan Jinks,Petitioner,"Richland County, South Carolnia",Respondent,1,9,0,majority opinion
+2002,01-618,55081,21893,Eldred,Petitioner,Ashcroft,Respondent,0,7,2,majority opinion
+2002,02-722,55085,22437,American Insurance Ass'n,Petitioner,Garamendi,Respondent,1,5,4,majority opinion
+2002,01-1127,55087,21958,Lockyer,Petitioner,Andrade,Respondent,1,5,4,majority opinion
+2002,02-215,55088,23647,"PacifiCare Health Systems, Inc.",Petitioner,Book,Respondent,1,8,0,majority opinion
+2002,02-311,55090,22427,Wiggins,Petitioner,Smith,Respondent,1,7,2,majority opinion
+2002,01-1375,55092,21503,United States,Petitioner,Navajo Nation,Respondent,1,6,3,majority opinion
+2002,01-1184,55093,21918,United States,Petitioner,Jimenez Recio,Respondent,1,8,1,majority opinion
+2002,02-469,55094,23175,Black & Decker Disability Plan,Petitioner,Nord,Respondent,1,9,0,majority opinion
+2002,01-1559,55095,23169,Massaro,Petitioner,United States,Respondent,1,9,0,majority opinion
+2002,01-706,55096,21825,Sprietsma,Petitioner,Mercury Marine,Respondent,1,9,0,majority opinion
+2002,01-1806,55097,23652,Illinois ex rel. Madigan,Petitioner,"Telemarketing Associates, Inc.",Respondent,1,9,0,majority opinion
+2002,Jan-74,55098,23048,Sattazahn,Petitioner,Pennsylvania,Respondent,0,5,4,majority opinion
+2002,01-963,55099,21865,Norfolk & Western Railway Company,Petitioner,Ayers,Respondent,0,5,4,majority opinion
+2002,02-182,55100,23508,Georgia,Appellant,"John Ashcroft, Attorney General",Appellee,1,5,4,majority opinion
+2002,01-1231,55102,23609,Connecticut Department of Public Safety,Petitioner,Doe,Respondent,1,9,0,majority opinion
+2002,01-1862,55103,21441,Woodford,Petitioner,Garceau,Respondent,1,6,3,majority opinion
+2002,01-1368,55104,23621,Nevada Department of Human Resources,Petitioner,Hibbs,Respondent,0,6,3,majority opinion
+2002,02-679,55105,21647,"Desert Palace, Inc.",Petitioner,Costa,Respondent,0,9,0,majority opinion
+2002,01-1420,55106,22417,Washington State Department of Health and Human Services,Petitioner,Guardianship Estate of Keffeler,Respondent,1,9,0,majority opinion
+2002,01-188,55107,21551,Pharmaceutical Research & Manufacturers of America,Petitioner,Walsh,Respondent,0,6,3,majority opinion
+2002,02-281,55108,23577,"Inyo County, California",Petitioner,Paiute-Shoshone Indians,Respondent,1,9,0,majority opinion
+2002,02-634,55109,23600,Green Tree Financial Corp.,Petitioner,Lynn W. Bazzle et al.,Respondent,0,5,4,plurality opinion
+2002,02-102,55110,22909,John Geddes Lawrence and Tyron Garner,Petitioner,Texas,Respondent,1,6,3,majority opinion
+2002,01-593,55111,23604,Dole Food Company,Petitioner,Patrickson,Respondent,0,9,0,majority opinion
+2002,01-757,55113,22972,"Syngenta Crop Protection, Inc.",Petitioner,Henson,Respondent,0,9,0,majority opinion
+2002,01-800,55114,21418,Howsam,Petitioner,"Dean Witter Reynolds, Inc.",Respondent,0,8,0,majority opinion
+2002,01-896,55115,21873,Ford Motor Co.,Petitioner,McCauley,Respondent,0,9,0,per curiam
+2002,01-729,55116,23147,Smith,Petitioner,Doe,Respondent,1,6,3,majority opinion
+2002,Feb-94,55117,21560,Overton,Petitioner,Bazzetta,Respondent,1,9,0,majority opinion
+2002,01-1269,55118,21947,City of Cuyahoga Falls,Petitioner,Buckeye Community Hope,Respondent,1,9,0,majority opinion
+2003,Mar-54,55122,22790,Larry D. Hiibel,Petitioner,"Sixth Judicial District Court of Nevada, Humboldt County, et al.",Respondent,0,5,4,majority opinion
+2003,02-1060,55123,22887,Illinois,Petitioner,Robert S. Lidster,Respondent,1,6,3,majority opinion
+2003,Feb-86,55124,22108,"Delma Banks, Jr.",Petitioner,"Doug Dretke, Director, Texas Department of Criminal Justice, Correctional Institutions Division",Respondent,1,7,2,majority opinion
+2003,03-107,55125,21520,United States,Petitioner,Billy Jo Lara,Respondent,1,7,2,majority opinion
+2003,13-Mar,55126,22031,"Republic of Austria, et al.",Petitioner,Maria V. Altmann,Respondent,0,6,3,majority opinion
+2003,02-763,55127,21935,"Jo Anne B. Barnhart, Commissioner of Social Security",Petitioner,Pauline Thomas,Respondent,1,9,0,majority opinion
+2003,03-358,55128,23069,"Department of Transportation, et al.",Petitioner,"Public Citizen, et al.",Respondent,1,9,0,majority opinion
+2003,03-475,55129,23505,"Richard B. Cheney, Vice President of the United States, et al.",Petitioner,"United States District Court for the District of Columbia, et al.",Respondent,1,7,2,majority opinion
+2003,02-572,55131,22490,Intel Corporation,Petitioner,"Advanced Micro Devices, Inc.",Respondent,0,8,1,majority opinion
+2003,02-10038,55132,23635,Robert James Tennard,Petitioner,"Doug Dretke, Director, Texas Department of Criminal Justice, Correctional Institutions Division",Respondent,1,6,3,majority opinion
+2003,02-1624,55133,22355,"Elk Grove Unified School District and David W. Gordon, Superintendent",Petitioner,"Michael A. Newdow, et al.",Respondent,1,8,0,majority opinion
+2003,02-628,55134,23103,"Linda Frew, on Behalf of Her Daughter, Carla Frew, et al.",Petitioner,"Albert Hawkins, Commissioner, Texas Health and Human Services Commission, et al.",Respondent,1,9,0,majority opinion
+2003,02-891,55135,23144,Central Laborers' Pension Fund,Petitioner,"Thomas E. Heinz, et al.",Respondent,0,9,0,majority opinion
+2003,02-693,55136,22206,John M. Lamie,Petitioner,United States Trustee,Respondent,0,9,0,majority opinion
+2003,02-1609,55137,22016,"City of Littleton, Colorado",Petitioner,"Z.J. Gifts D-4, L.L.C., a Limited Liability Company, dba Christal's",Respondent,1,9,0,majority opinion
+2003,02-1183,55138,23011,United States,Petitioner,Samuel Francis Patane,Respondent,1,5,4,plurality opinion
+2003,02-1315,55139,23511,"Gary Locke, Governor of Washington, et al.",Petitioner,Joshua Davey,Respondent,1,7,2,majority opinion
+2003,Mar-95,55140,23553,Pennsylvania State Police,Petitioner,Nancy Drew Suders,Respondent,1,8,1,majority opinion
+2003,Mar-44,55141,22386,Basim Omar Sabri,Petitioner,United States,Respondent,0,9,0,majority opinion
+2003,02-1667,55143,23496,Tennessee,Petitioner,"George Lane, et al.",Respondent,0,5,4,majority opinion
+2003,03-221,55144,23020,"Cheryl K. Pliler, Warden",Petitioner,Richard Herman Ford,Respondent,1,7,2,majority opinion
+2003,02-811,55146,23543,Jeff Groh,Petitioner,"Joseph R. Ramirez, et al.",Respondent,0,5,4,majority opinion
+2003,02-749,55147,23047,Raytheon Company,Petitioner,Joel Hernandez,Respondent,1,7,0,majority opinion
+2003,02-1603,55148,22785,"Jeffrey A. Beard, Secretary, Pennsylvania Department of Corrections, et al.",Petitioner,George E. Banks,Respondent,1,5,4,majority opinion
+2003,02-1606,55149,21857,Tennessee Student Assistance Corporation,Petitioner,Pamela L. Hood,Respondent,0,7,2,majority opinion
+2003,02-1016,55151,23655,Till,Petitioner,SCS Credit Corp.,Respondent,1,5,4,plurality opinion
+2003,02-1205,55152,21631,"Edith Jones, et al., on Behalf of Herself and a Class of Others Similarly Situated",Petitioner,R. R. Donnelley & Sons Company,Respondent,1,9,0,majority opinion
+2003,02-682,55153,22708,Verizon Communications Inc.,Petitioner,"Law Offices of Curtis V. Trinko, LLP",Respondent,1,9,0,majority opinion
+2003,Mar-96,55155,22236,"Yaser Esam Hamdi and Esam Fouad Hamdi, as Next Friend of Yaser Esam Hamdi",Petitioner,"Donald H. Rumsfeld, Secretary of Defense, et al.",Respondent,1,6,3,plurality opinion
+2003,02-1196,55156,21377,Securities and Exchange Commission,Petitioner,Charles E. Edwards,Respondent,1,9,0,majority opinion
+2003,02-1845,55157,21546,"Aetna Health Inc., fka Aetna U.S. Healthcare Inc. and Aetna U.S. Healthcare of North Texas Inc.",Petitioner,"Ruby R. Calad, et al.",Respondent,1,9,0,majority opinion
+2003,02-964,55158,23004,George H. Baldwin,Petitioner,Michael Reese,Respondent,1,8,1,majority opinion
+2003,02-626,55160,23165,South Florida Water Management District,Petitioner,"Miccosukee Tribe of Indians, et al.",Respondent,1,9,0,majority opinion
+2003,03-724,55161,21697,"F. Hoffmann-La Roche Ltd, et al.",Petitioner,"Empagran S.A., et al.",Respondent,1,8,0,majority opinion
+2003,02-1348,55162,22296,Olympic Airways,Petitioner,"Rubina Husain, Individually, and as Personal Representative of the Estate of Abid M. Hanson, Deceased, et al.",Respondent,0,6,2,majority opinion
+2003,02-1684,55163,23549,"Michael Yarborough, Warden",Petitioner,Michael Alvarado,Respondent,1,5,4,majority opinion
+2003,03-1027,55165,21867,"Donald H. Rumsfeld, Secretary of Defense",Petitioner,"Jose Padilla and Donna R. Newman, as Next Friend of Jose Padilla",Respondent,1,5,4,majority opinion
+2003,02-1371,55166,21528,Missouri,Petitioner,Patrice Seibert,Respondent,0,5,4,plurality opinion
+2003,02-1657,55167,21350,Randall C. Scarborough,Petitioner,"Anthony J. Principi, Secretary of Veterans Affairs",Respondent,1,7,2,majority opinion
+2003,02-1689,55168,23634,Grupo Dataflux,Petitioner,"Atlas Global Group, L.P., et al.",Respondent,1,5,4,majority opinion
+2003,Feb-65,55169,21526,"Shakur Muhammad, aka John E. Mease",Petitioner,Mark Close,Respondent,0,9,0,per curiam
+2003,03-334,55170,22545,"Fawzi Khalid Abdullah Fahad Al Odah, et al.",Petitioner,"George W. Bush, President of the United States, et al.",Respondent,1,6,3,majority opinion
+2003,02-819,55171,22998,Andrew J. Kontrick,Petitioner,Robert A. Ryan,Respondent,0,9,0,majority opinion
+2003,02-809,55172,21874,Maryland,Petitioner,Joseph Jermaine Pringle,Respondent,1,9,0,majority opinion
+2003,Mar-39,55173,23471,Jay Shawn Johnson,Petitioner,California,Respondent,0,9,0,per curiam
+2003,02-658,55174,21872,Alaska Department of Environmental Conservation,Petitioner,"Environmental Protection Agency, et al.",Respondent,0,5,4,majority opinion
+2003,02-1343,55175,21739,Engine Manufacturers Association and Western States Petroleum Association,Petitioner,"South Coast Air Quality Management District, et al.",Respondent,1,8,1,majority opinion
+2003,02-1809,55176,21927,"J. Elliott Hibbs, Director, Arizona Department of Revenue",Petitioner,"Kathleen M. Winn, et al.",Respondent,0,5,4,majority opinion
+2003,02-857,55177,23072,"Household Credit Services, Inc. and MBNA America Bank, N.A.",Petitioner,Sharon R. Pfennig,Respondent,1,9,0,majority opinion
+2003,02-1389,55178,22456,United States,Petitioner,"Abel C. Galletti, et al.",Respondent,1,9,0,majority opinion
+2003,02-473,55179,21991,United States,Petitioner,Lashawn Lowell Banks,Respondent,1,9,0,majority opinion
+2003,02-954,55181,22148,National Archives and Records Administration,Petitioner,"Allan J. Favish, et al.",Respondent,1,9,0,majority opinion
+2003,Mar-65,55182,22181,Marcus Thornton,Petitioner,United States,Respondent,0,7,2,majority opinion
+2003,02-1580,55183,22176,"Robert C. Jubelirer, President of the Pennsylvania Senate, et al.",Appellant,"Richard Vieth, Norma Jean Vieth, and Susan Furey",Appellee,0,5,4,plurality opinion
+2003,02-1593,55184,22079,"BedRoc Limited, LLC, and Western Elite, Inc.",Petitioner,"United States, et al.",Respondent,1,6,3,plurality opinion
+2003,02-1632,55185,22119,"Ralph Howard Blakely, Jr.",Petitioner,Washington,Respondent,1,5,4,majority opinion
+2003,02-1238,55186,22784,"Southwestern Bell Telephone, L.P., fka Southwestern Bell Telephone Company",Petitioner,"Missouri Municipal League, et al.",Respondent,1,8,1,majority opinion
+2003,20-Feb,55187,22650,John J. Fellers,Petitioner,United States,Respondent,1,9,0,majority opinion
+2003,02-1541,55188,22483,Iowa,Petitioner,Felipe Edgardo Tovar,Respondent,1,9,0,majority opinion
+2003,03-218,55189,22093,"John D. Ashcroft, Attorney General",Petitioner,"American Civil Liberties Union, et al.",Respondent,0,5,4,majority opinion
+2003,02-1080,55190,21531,"General Dynamics Land Systems, Inc.",Petitioner,"Dennis Cline, et al.",Respondent,1,6,3,majority opinion
+2003,02-1824,55191,23512,"Doug Dretke, Director, Texas Department of Criminal Justice, Correctional Institutions Division",Petitioner,Michael Wayne Haley,Respondent,1,6,3,majority opinion
+2003,10-Feb,55192,21856,Michael D. Crawford,Petitioner,Washington,Respondent,1,9,0,majority opinion
+2003,03-167,55193,22514,United States,Petitioner,Carlos Dominguez Benitez,Respondent,1,9,0,majority opinion
+2003,21-Mar,55194,23572,David L. Nelson,Petitioner,"Donal Campbell, Commissioner, Alabama Department of Corrections, et al. ",Respondent,1,9,0,majority opinion
+2003,02-1290,55197,22209,United States Postal Service,Petitioner,"Flamingo Industries (USA) Ltd., et al.",Respondent,1,9,0,majority opinion
+2003,03-526,55198,21615,"Dora B. Schriro, Director, Arizona Department of Corrections",Petitioner,Warren Wesley Summerlin,Respondent,1,5,4,majority opinion
+2003,03-339,55199,21982,Jose Francisco Sosa,Petitioner,"Humberto Alvarez-Machain, et al.",Respondent,1,6,3,majority opinion
+2003,02-1377,55200,23161,Buck Doe,Petitioner,"Elaine L. Chao, Secretary of Labor",Respondent,0,6,3,majority opinion
+2003,02-458,55201,22741,"Raymond B. Yates, M.D., P.C. Profit Sharing Plan, and Raymond B. Yates, Trustee",Petitioner,"William T. Hendon, Trustee",Respondent,1,9,0,majority opinion
+2003,Feb-83,55202,21672,Hernan O'Ryan Castro,Petitioner,United States,Respondent,1,9,0,majority opinion
+2004,03-1164,55203,21471,"Mike Johanns, Secretary of Agriculture, et al.",Petitioner,"Livestock Marketing Association; Nebraska Cattlemen, Inc. v. Livestock Marketing Association",Respondent,1,6,3,majority opinion
+2004,03-1488,55204,21444,"Ulysses Tory, et al.",Petitioner,"Johnnie L. Cochran, Jr.",Respondent,1,7,2,majority opinion
+2004,03-1500,55205,21548,Thomas Van Orden,Petitioner,"Rick Perry, in his Official Capacity as Governor of Texas and Chairman, State Preservation Board, et al.",Respondent,0,5,4,plurality opinion
+2004,Mar-85,55206,22727,"Robert Johnson, Jr.",Petitioner,United States,Respondent,0,5,4,majority opinion
+2004,03-583,55207,23062,Josue Leocal,Petitioner,"John D. Ashcroft, Attorney General, et al.",Respondent,1,9,0,majority opinion
+2004,02-1192,55208,22168,"Cooper Industries, Inc.",Petitioner,"Aviall Services, Inc.",Respondent,1,7,2,majority opinion
+2004,03-814,55209,22024,Willard Stewart,Petitioner,Dutra Construction Company,Respondent,1,8,0,majority opinion
+2004,27-Mar,55210,21652,John A. Pace,Petitioner,"David DiGuglielmo, Superintendent, State Correctional Institution at Graterford, et al.",Respondent,0,5,4,majority opinion
+2004,Mar-61,55211,22367,Melvin T. Smith,Petitioner,Massachusetts,Respondent,1,5,4,majority opinion
+2004,03-1160,55212,22825,"Azel P. Smith, et al.",Petitioner,"City of Jackson, Mississippi, et al.",Respondent,0,5,3,majority opinion
+2004,04-563,55213,22316,"Deneice A. Mayle, Warden",Petitioner,Jacoby Lee Felix,Respondent,1,7,2,majority opinion
+2004,28-Apr,55214,22848,Jose Ernesto Medellin,Petitioner,"Doug Dretke, Director, Texas Department of Criminal Justice, Correctional Institutions Division",Respondent,0,5,4,per curiam
+2004,03-10198,55215,23105,Antonio Dwayne Halbert,Petitioner,Michigan,Respondent,1,7,2,majority opinion
+2004,03-1696,55216,21815,"Exxon Mobil Corporation, Exxon Chemical Arabia, Inc., and Mobil Yanbu Petrochemical Company, Inc.",Petitioner,Saudi Basic Industries Corporation,Respondent,1,9,0,majority opinion
+2004,03-636,55218,22500,Garrison S. Johnson,Petitioner,"California, et al.",Respondent,1,5,3,majority opinion
+2004,03-923,55219,22579,Illinois,Petitioner,Roy I. Caballes,Respondent,1,6,2,majority opinion
+2004,03-725,55220,22964,"David B. Pasquantino, Carl J. Pasquantino, and Arthur Hilts",Petitioner,United States,Respondent,0,5,4,majority opinion
+2004,04-340,55223,21681,"San Remo Hotel, L.P., et al.",Petitioner,"City and County of San Francisco, California, et al.",Respondent,0,9,0,majority opinion
+2004,03-409,55225,22633,"KP Permanent Make-Up, Inc.",Petitioner,"Lasting Impression I, Inc., et al.",Respondent,1,9,0,majority opinion
+2004,04-603,55227,22794,"Grable & Sons Metal Products, Inc.",Petitioner,Darue Engineering & Manufacturing,Respondent,0,9,0,majority opinion
+2004,03-377,55228,21688,"Koons Buick Pontiac GMC, Inc.",Petitioner,Nigh,Respondent,1,8,1,majority opinion
+2004,04-104,55229,21537,United States,Petitioner,Freddie J. Booker,Respondent,0,5,4,majority opinion
+2004,03-1566,55230,22539,"Francis A. Orff, et al.",Petitioner,"United States, et al.",Respondent,0,9,0,majority opinion
+2004,03-1395,55231,22559,"George J. Tenet, Individually, Porter J. Goss, Director of Central Intelligence and Director of the Central Intelligence Agency, and United States",Petitioner,"John Doe, et ux.",Respondent,1,9,0,majority opinion
+2004,03-1454,55232,23152,"Alberto R. Gonzales, Attorney General, et al.",Petitioner,"Angel McClary Raich, et al.",Respondent,1,6,3,majority opinion
+2004,04-495,55233,21307,"Reginald A. Wilkinson, Director, Ohio Department of Rehabilitation and Correction, et al.",Petitioner,"Charles E. Austin, et al.",Respondent,1,9,0,majority opinion
+2004,04-514,55234,21504,"Ricky Bell, Warden",Petitioner,Gregory Thompson,Respondent,1,5,4,majority opinion
+2004,03-1601,55235,22881,"City of Rancho Palos Verdes, California, et al.",Petitioner,Mark J. Abrams,Respondent,1,9,0,majority opinion
+2004,Apr-37,55237,21689,"Michael Clingman, Secretary, Oklahoma State Election Board, et al.",Petitioner,"Andrea L. Beaver, et al.",Respondent,1,6,3,majority opinion
+2004,Apr-93,55238,22062,Carman L. Deck,Petitioner,Missouri,Respondent,1,7,2,majority opinion
+2004,04-480,55239,22585,"Metro-Goldwyn-Mayer Studios Inc., et al.",Petitioner,"Grokster, Ltd., et al.",Respondent,1,9,0,majority opinion
+2004,04-163,55240,22103,"Linda Lingle, Governor of Hawaii, et al.",Petitioner,Chevron U.S.A. Inc.,Respondent,1,9,0,majority opinion
+2004,04-169,55241,22332,"Graham County Soil & Water Conservation District, et al.",Petitioner,"United States, ex rel. Karen T. Wilson",Respondent,1,7,2,majority opinion
+2004,Apr-32,55243,22290,Aurelio O. Gonzalez,Petitioner,"James V. Crosby, Jr., Secretary, Florida Department of Corrections",Respondent,0,7,2,majority opinion
+2004,03-388,55244,22803,"Dennis Bates, et al.",Petitioner,Dow Agrosciences LLC,Respondent,1,7,2,majority opinion
+2004,03-184,55245,21523,"Estate of Burton W. Kanter, Deceased, et al.",Petitioner,Commissioner of Internal Revenue,Respondent,1,7,2,majority opinion
+2004,Apr-86,55246,22511,Michael Donald Dodd,Petitioner,United States,Respondent,0,5,4,majority opinion
+2004,04-368,55247,21453,Arthur Andersen LLP,Petitioner,United States,Respondent,1,9,0,majority opinion
+2004,03-855,55248,21827,"City of Sherrill, New York",Petitioner,"Oneida Indian Nation of New York, et al.",Respondent,1,8,1,majority opinion
+2004,02-1672,55249,23079,Roderick Jackson,Petitioner,Birmingham Board of Education,Respondent,1,5,4,majority opinion
+2004,04-108,55250,21813,"Susette Kelo, et al.",Petitioner,"City of New London, Connecticut, et al.",Respondent,0,5,4,majority opinion
+2004,02-1028,55251,22508,Norfolk Southern Railway Company,Petitioner,"James N. Kirby, Pty Ltd., dba Kirby Engineering, and Allianz Australia Insurance Limited",Respondent,1,9,0,majority opinion
+2004,04-278,55252,22725,"Town of Castle Rock, Colorado",Petitioner,"Jessica Gonzales, Individually and as Next Best Friend of Her Deceased Minor Children, Rebecca Gonzales, Katheryn Gonzales, and Leslie Gonzales",Respondent,1,7,2,majority opinion
+2004,03-892,55253,21589,Commissioner of Internal Revenue,Petitioner,Sigitas J. Banaitis,Respondent,1,8,0,majority opinion
+2004,03-1116,55254,23691,"Jennifer M. Granholm, Governor of Michigan et al.",Petitioner,Eleanor Heald et al.,Respondent,0,5,4,majority opinion
+2004,Apr-64,55255,22591,Jay Shawn Johnson,Petitioner,California,Respondent,1,8,1,majority opinion
+2004,Mar-46,55256,22383,Charles Russell Rhines,Petitioner,"Douglas Weber, Warden",Respondent,1,9,0,majority opinion
+2004,03-1423,55257,22453,"Darin L. Muehler, et al.",Petitioner,Iris Mena,Respondent,1,9,0,majority opinion
+2004,03-1230,55258,22637,"American Trucking Associations, Inc. and USF Holland, Inc.",Petitioner,"Michigan Public Service Commission, et al.",Respondent,0,9,0,majority opinion
+2004,03-1407,55259,22799,"Richard Gerald Rousey, et ux.",Petitioner,Jill R. Jacoway,Respondent,1,9,0,majority opinion
+2004,03-1388,55260,21657,"Douglas Spector, et al.",Petitioner,Norwegian Cruise Line Ltd.,Respondent,1,6,3,majority opinion
+2004,03-932,55261,23679,"Dura Pharmaceuticals, Inc., et al.",Petitioner,"Michael Broudo, et al.",Respondent,1,9,0,majority opinion
+2004,Apr-70,55262,22523,Exxon Mobil Corporation,Petitioner,"Allapattah Services, Inc., et al.",Respondent,0,5,4,majority opinion
+2004,Mar-68,55263,23557,Reginald Shepard,Petitioner,United States,Respondent,1,5,3,majority opinion
+2004,04-637,55264,22645,"Margaret Bradshaw, Warden",Petitioner,John David Stumpf,Respondent,1,9,0,majority opinion
+2004,03-1293,55265,22658,David Whitfield,Petitioner,United States,Respondent,0,9,0,majority opinion
+2004,03-633,55266,22435,"Donald P. Roper, Superintendent, Potosi Correctional Center",Petitioner,Christopher Simmons,Respondent,0,5,4,majority opinion
+2004,03-750,55267,21977,Gary Sherwood Small,Petitioner,United States,Respondent,1,5,3,majority opinion
+2004,03-710,55268,22333,"Gerald Devenpeck, et al.",Petitioner,Jerome Anthony Alford,Respondent,1,8,0,majority opinion
+2004,03-931,55269,22899,Florida,Petitioner,Joe Elton Nixon,Respondent,1,8,0,majority opinion
+2004,03-1693,55270,23091,"McCreary County, Kentucky, et al.",Petitioner,"American Civil Liberties Union of Kentucky, et al.",Respondent,0,5,4,majority opinion
+2004,Mar-77,55271,22150,"Jon B. Cutter, et al.",Petitioner,"Reginald Wilkinson, Director, Ohio Department of Rehabilitation and Correction, et al.",Respondent,1,9,0,majority opinion
+2004,03-1039,55272,21668,"Jill L. Brown, Warden",Petitioner,William Charles Payton,Respondent,1,5,3,majority opinion
+2004,Apr-62,55273,21880,Ronald Rompilla,Petitioner,"Jeffrey A. Beard, Secretary, Pennsylvania Department of Corrections",Respondent,1,5,4,majority opinion
+2004,04-277,55274,23513,"National Cable & Telecommunications Association, et al.",Petitioner,"Brand X Internet Services, et al.",Respondent,1,6,3,majority opinion
+2004,02-1472,55275,21984,Cherokee Nation of Oklahoma and Shoshone-Paiute Tribes of the Duck Valley Reservation,Petitioner,"Michael O. Leavitt, Secretary of Health and Human Services, et al.",Respondent,1,8,0,majority opinion
+2004,03-674,55277,22622,Keyse G. Jama,Petitioner,Immigration and Customs Enforcement,Respondent,0,5,4,majority opinion
+2004,03-1237,55278,21343,Merck KGaA,Petitioner,"Integra Lifesciences I, Ltd., et al.",Respondent,1,9,0,majority opinion
+2004,03-407,55279,23002,"John F. Kowalski, Judge, 26th Judicial Circuit Court of Michigan, et al.",Petitioner,"John C. Tesmer, et al.",Respondent,1,6,3,majority opinion
+2004,Mar-60,55280,23548,"Marlon Howell, aka Marlon Cox",Petitioner,Mississippi,Respondent,0,9,0,per curiam
+2004,03-878,55281,22034,"A. Neil Clark, Field Office Director, Seattle, Washington, Immigration and Customs Enforcement, et al.",Petitioner,Sergio Martinez,Respondent,0,7,2,majority opinion
+2004,Mar-59,55283,21584,Thomas Joe Miller-El,Petitioner,"Doug Dretke, Director, Texas Department of Criminal Justice, Correctional Institutions Division",Respondent,1,6,3,majority opinion
+2004,03-287,55284,21470,"Reginald A. Wilkinson, Director, Ohio Department of Rehabilitation and Correction, et al.",Petitioner,"William Dwight Dotson, et al.",Respondent,0,8,1,majority opinion
+2005,05-259,55286,21597,Burlington Northern and Santa Fe Railway Company,Petitioner,Sheila White,Respondent,0,9,0,majority opinion
+2005,04-1527,55288,22904,S.D. Warren Company,Petitioner,Maine Board of Environmental Protection et al.,Respondent,0,9,0,majority opinion
+2005,04-1704,55289,22822,DaimlerChrysler Corp.,Petitioner,"Charlotte Cuno, et al.",Respondent,1,9,0,majority opinion
+2005,5-May,55291,22328,Hershel Hammon,Petitioner,Indiana,Respondent,1,,,
+2005,May-94,55292,22091,Clarence E. Hill,Petitioner,"James R. McDonough, Interim Secretary, Florida Department of Corrections, et al.",Respondent,1,9,0,majority opinion
+2005,03-1238,55293,21879,"IBP, Inc.",Petitioner,"Gabriel Alvarez, individually and on behalf of all others similarly situated, et al.",Respondent,0,9,0,majority opinion
+2005,04-1264,55294,21380,"Buckeye Check Cashing, Inc.",Petitioner,John Cardegna et al.,Respondent,1,7,1,majority opinion
+2005,04-805,55295,22340,Texaco Inc.,Petitioner,Fouad N. Dagher et al.,Respondent,1,8,0,majority opinion
+2005,04-1371,55296,22547,"Merrill Lynch, Pierce, Fenner & Smith, Inc.",Petitioner,Shadi Dabit,Respondent,1,8,0,majority opinion
+2005,04-1332,55297,23001,Richard Will et al.,Petitioner,Susan Hallock et al.,Respondent,0,9,0,majority opinion
+2005,04-1186,55298,22531,"Wachovia Bank, National Association",Petitioner,"Daniel G. Schmidt, III, et al.",Respondent,1,8,0,majority opinion
+2005,05-130,55299,23053,eBay Inc. et al.,Petitioner,"MercExchange, L.L.C.",Respondent,1,9,0,majority opinion
+2005,04-944,55300,22925,Jenifer Arbaugh,Petitioner,"Y & H Corporation, dba The Moonlight Cafe",Respondent,1,8,0,majority opinion
+2005,04-1244,55302,22815,Joseph Scheidler et al.,Petitioner,"National Organization for Women, Inc., et al.",Respondent,1,8,0,majority opinion
+2005,04-848,55303,21543,Barbara Dolan,Petitioner,United States Postal Service et al.,Respondent,1,7,1,majority opinion
+2005,04-885,55304,21746,Central Virginia Community College et al.,Petitioner,"Bernard Katz, Liquidating Supervisor for Wallace's Bookstores, Inc.",Respondent,0,5,4,majority opinion
+2005,05-352,55305,22629,United States,Petitioner,Cuauhtemoc Gonzalez-Lopez,Respondent,0,5,4,majority opinion
+2005,28-Apr,55306,22792,Donald Curtis Samson,Petitioner,California,Respondent,0,6,3,majority opinion
+2005,05-184,55307,22583,Salim Ahmed Hamdan,Petitioner,"Donald H. Rumsfeld, Secretary of Defense, et al.",Respondent,1,5,3,majority opinion
+2005,04-597,55308,22820,"Unitherm Food Systems, Inc.",Petitioner,"Swift-Eckrich, Inc., dba ConAgra Refrigerated Foods",Respondent,1,7,2,majority opinion
+2005,May-53,55310,21702,Keshia Cherie Ashford Dixon,Petitioner,United States,Respondent,0,7,2,majority opinion
+2005,04-928,55311,22601,Oregon,Petitioner,Randy Lee Guzek,Respondent,1,8,0,majority opinion
+2005,04-881,55312,21579,James Lockhart,Petitioner,United States et al.,Respondent,0,9,0,majority opinion
+2005,04-631,55313,21817,"Joan Wagnon, Secretary, Kansas Department of Revenue",Petitioner,Prairie Band Potawatomi Nation,Respondent,1,7,2,majority opinion
+2005,04-1131,55314,21574,Terry L. Whitman,Petitioner,Department of Transportation et al.,Respondent,1,8,0,per curiam
+2005,04-1528,55315,22300,Neil Randall et al.,Petitioner,William H. Sorrell et al.,Respondent,1,6,3,plurality opinion
+2005,05-128,55317,22094,"Howard Delivery Service, Inc., et al.",Petitioner,Zurich American Insurance Co.,Respondent,1,6,3,majority opinion
+2005,05-260,55318,21673,Joel Sereboff et ux.,Petitioner,"Mid Atlantic Medical Services, Inc.",Respondent,0,9,0,majority opinion
+2005,04-433,55319,22620,"Joseph Anza, et al.",Petitioner,Ideal Steel Supply Corp.,Respondent,1,9,0,majority opinion
+2005,04-1581,55320,22010,"Wisconsin Right to Life, Inc.",Appellant,Federal Election Commission,Appellee,1,9,0,per curiam
+2005,05-465,55321,22105,"Mohawk Industries, Inc.",Petitioner,Shirley Williams et al.,Respondent,1,9,0,per curiam
+2005,04-473,55322,21399,Gil Garcetti et al.,Petitioner,Richard Ceballos,Respondent,1,5,4,majority opinion
+2005,04-623,55324,23146,"Alberto R. Gonzales, Attorney General, et al.",Petitioner,Oregon et al.,Respondent,0,6,3,majority opinion
+2005,04-698,55325,21716,"Brian Schaffer, a minor, by his parents and next friends, Jocelyn and Martin Schaffer, et ux, et al.",Petitioner,"Jerry Weast, Superintendent, Montgomery County Public Schools, et al.",Respondent,0,6,2,majority opinion
+2005,04-1034,55326,21920,John A. Rapanos et ux. et al.,Petitioner,United States,Respondent,1,5,4,plurality opinion
+2005,04-373,55327,22204,Maryland,Petitioner,Leeander Jerome Blake,Respondent,0,9,0,per curiam
+2005,04-1140,55328,21289,Gerald T. Martin et ux.,Petitioner,"Franklin Capital Corporation, et al.",Respondent,0,9,0,majority opinion
+2005,Apr-90,55329,22326,Paul Gregory House,Petitioner,"Ricky Bell, Warden",Respondent,1,5,3,majority opinion
+2005,04-1324,55330,22931,Patrick Day,Petitioner,"James R. McDonough, Interim Secretary, Florida Department of Corrections",Respondent,0,6,3,majority opinion
+2005,04-721,55332,22635,"Mike Evans, Acting Warden",Petitioner,Reginald Chavis,Respondent,1,9,0,majority opinion
+2005,04-1477,55333,23100,Gary Kent Jones,Petitioner,Linda K. Flowers et al.,Respondent,1,5,3,majority opinion
+2005,04-607,55335,22653,"Laboratory Corporation of America Holdings, dba LabCorp",Petitioner,"Metabolite Laboratories, Inc., et al.",Respondent,0,5,3,per curiam
+2005,04-593,55336,21644,"Domino's Pizza, Inc., et al.",Petitioner,John McDonald,Respondent,1,8,0,majority opinion
+2005,04-1170,55337,21325,Kansas,Petitioner,"Michael Lee Marsh, II",Respondent,1,5,4,majority opinion
+2005,May-66,55338,22125,Eric Michael Clark,Petitioner,Arizona,Respondent,0,5,4,majority opinion
+2005,05-409,55339,22201,Carl Kircher et al.,Petitioner,Putnam Funds Trust et al.,Respondent,1,9,0,majority opinion
+2005,04-1618,55340,22994,Northern Insurance Company of New York,Petitioner,"Chatham County, Georgia",Respondent,1,9,0,majority opinion
+2005,04-1327,55341,21492,Bobby Lee Holmes,Petitioner,South Carolina,Respondent,1,9,0,majority opinion
+2005,04-1152,55342,21684,"Donald H. Rumsfeld, Secretary of Defense, et al.",Petitioner,"Forum for Academic and Institutional Rights, Inc., et al.",Respondent,1,8,0,majority opinion
+2005,04-1506,55343,21842,"Arkansas Department of Health and Human Services, et al.",Petitioner,Heidi Ahlborn,Respondent,0,9,0,majority opinion
+2005,04-1414,55344,22798,United States,Petitioner,Jeffrey Grubbs,Respondent,1,8,0,majority opinion
+2005,04-905,55345,23009,"Volvo Trucks North America, Inc.",Petitioner,"Reeder-Simco GMC, Inc.",Respondent,1,7,2,majority opinion
+2005,04-1067,55346,22464,Georgia,Petitioner,Scott Fitz Randolph,Respondent,0,5,3,majority opinion
+2005,05-204,55347,22724,League of United Latin American Citizens et al.,Appellant,"Rick Perry, Governor of Texas, et al.",Appellee,1,5,4,plurality opinion
+2005,18-May,55348,22732,Arlington Central School District Board of Education,Petitioner,"Pearl Murphy, et vir.",Respondent,1,6,3,majority opinion
+2005,04-1144,55349,22317,"Kelly A. Ayotte, Attorney General of New Hampshire",Petitioner,Planned Parenthood of Northern New England et al.,Respondent,1,9,0,majority opinion
+2005,May-83,55351,21826,Washington,Petitioner,Arturo R. Recuenco,Respondent,1,7,2,majority opinion
+2005,04-1544,55352,21970,Vickie Lynn Marshall,Petitioner,E. Pierce Marshall,Respondent,1,9,0,majority opinion
+2005,04-980,55353,21686,"Jill L. Brown, Warden",Petitioner,Ronald L. Sanders,Respondent,1,5,4,majority opinion
+2005,04-1329,55354,21719,Illinois Tool Works Inc. et al.,Petitioner,"Independent Ink, Inc.",Respondent,1,8,0,majority opinion
+2005,04-1739,55356,22898,"Jeffrey A. Beard, Secretary, Pennsylvania Department of Corrections",Petitioner,"Ronald Banks, Individually and On Behalf of All Others Similarly Situated",Respondent,1,6,2,plurality opinion
+2005,05-502,55357,22400,"Brigham City, Utah",Petitioner,"Charles W. Stuart, et al.",Respondent,1,8,0,majority opinion
+2005,04-1495,55360,21946,"Michael Hartman, Frank Kormann, Pierce McIntosh, Norman Robbins, and Robert Edwards",Petitioner,"William G. Moore, Jr.",Respondent,1,5,2,majority opinion
+2005,04-1084,55361,21569,"Alberto R. Gonzales, Attorney General, et al.",Petitioner,O Centro Espirita Beneficente Uniao do Vegetal et al.,Respondent,0,8,0,majority opinion
+2005,05-416,55362,22142,Jeanne S. Woodford et al.,Petitioner,Viet Mike Ngo,Respondent,1,6,3,majority opinion
+2005,04-712,55363,21337,Lincoln Property Company et al.,Petitioner,Christophe Roche et ux.,Respondent,1,9,0,majority opinion
+2005,04-10566,55364,21430,Moises Sanchez-Llamas,Petitioner,Oregon,Respondent,0,6,3,majority opinion
+2005,04-1360,55365,21573,"Booker T. Hudson, Jr.",Petitioner,Michigan,Respondent,0,5,4,majority opinion
+2005,04-1203,55366,21445,United States,Petitioner,Georgia et al.,Respondent,1,9,0,majority opinion
+2005,05-200,55367,22116,"Empire HealthChoice Assurance, Inc., dba Empire Blue Cross Blue Shield",Petitioner,"Denise F. McVeigh, as Administratrix of the Estate of Joseph E. McVeigh",Respondent,0,5,4,majority opinion
+2005,04-1376,55368,22184,Humberto Fernandez-Vargas,Petitioner,"Alberto R. Gonzales, Attorney General",Respondent,0,8,1,majority opinion
+2005,24-May,55370,21565,Adrian Martell Davis,Petitioner,Washington,Respondent,0,8,1,majority opinion
+2005,04-759,55373,22874,United States,Petitioner,Joseph Olson et al.,Respondent,1,9,0,majority opinion
+2005,May-92,55374,23010,Jacob Zedner,Petitioner,United States,Respondent,1,9,0,majority opinion
+2005,Apr-52,55375,23027,"Bertram Rice, Warden, et al.",Petitioner,Steven Martell Collins,Respondent,1,9,0,majority opinion
+2006,Jun-47,55380,22834,John Francis Fry,Petitioner,"Cheryl K. Pliler, Warden",Respondent,0,5,4,majority opinion
+2006,05-1575,55381,21595,"Dora B. Schriro, Director, Arizona Department of Corrections",Petitioner,"Jeffrey Timothy Landrigan, aka Billy Patrick Wayne Hill",Respondent,1,5,4,majority opinion
+2006,06-593,55382,22941,"Long Island Care at Home, Ltd., et al.",Petitioner,Evelyn Coke,Respondent,1,9,0,majority opinion
+2006,May-64,55383,21861,"Alphonso James, Jr.",Petitioner,United States,Respondent,0,5,4,majority opinion
+2006,06-102,55384,22839,Sinochem International Co. Ltd.,Petitioner,Malaysia International Shipping Corporation,Respondent,1,9,0,majority opinion
+2006,May-51,55386,22484,John Cunningham,Petitioner,California,Respondent,1,6,3,majority opinion
+2006,06-340,55387,22224,National Association of Home Builders et al.,Petitioner,Defenders of Wildlife et al.,Respondent,1,5,4,majority opinion
+2006,20-May,55388,22578,Gary Lawrence,Petitioner,Florida,Respondent,0,5,4,majority opinion
+2006,05-493,55389,22679,"Robert L. Ayers, Jr., Acting Warden",Petitioner,Fernando Belmontes,Respondent,1,5,4,majority opinion
+2006,05-1120,55390,21987,Massachusetts et al.,Petitioner,Environmental Protection Agency et al.,Respondent,1,5,4,majority opinion
+2006,05-1589,55391,22330,Gary Davenport et al.,Petitioner,Washington Education Association,Respondent,1,9,0,majority opinion
+2006,06-157,55393,21829,"Jay F. Hein, Director, White House Office of Faith-Based and Community Initiatives, et al.",Petitioner,"Freedom From Religion Foundation, Inc., et al.",Respondent,1,5,4,plurality opinion
+2006,06-313,55394,22011,"Don Roper, Superintendent, Potosi Correctional Center",Petitioner,William Weaver,Respondent,0,6,3,per curiam
+2006,05-915,55395,21416,"Crystal D. Meredith, custodial parent and next friend of Joshua Ryan McDonald",Petitioner,Jefferson County Board of Education et al.,Respondent,1,,,
+2006,May-85,55396,22818,Powerex Corp.,Petitioner,"Reliant Energy Services, Inc., et al.",Respondent,1,7,2,majority opinion
+2006,06-531,55397,21967,"Michael W. Sole, Secretary, Florida Department of Environmental Protection, et al.",Petitioner,T.A. Wyner et al.,Respondent,1,9,0,majority opinion
+2006,05-996,55399,22222,Robert Louis Marrama,Petitioner,Citizens Bank of Massachusetts et al.,Respondent,0,5,4,majority opinion
+2006,Jun-54,55400,21933,Victor A. Rita,Petitioner,United States,Respondent,0,8,1,majority opinion
+2006,06-427,55401,22470,Tennessee Secondary School Athletic Association,Petitioner,Brentwood Academy,Respondent,1,9,0,majority opinion
+2006,06-562,55402,21818,United States,Petitioner,Atlantic Research Corporation,Respondent,0,9,0,majority opinion
+2006,05-608,55404,22714,"MedImmune, Inc.",Petitioner,"Genentech, Inc., et al.",Respondent,1,8,1,majority opinion
+2006,05-1272,55405,22913,Rockwell International Corp. et al.,Petitioner,United States and United States ex rel James S. Stone,Respondent,1,6,2,majority opinion
+2006,06-480,55406,22475,"Leegin Creative Leather Products, Inc.",Petitioner,"PSKS, Inc., dba Kay's Kloset . . . Kay's Shoes",Respondent,1,5,4,majority opinion
+2006,05-1631,55407,22280,Timothy Scott,Petitioner,Victor Harris,Respondent,1,8,1,majority opinion
+2006,06-134,55408,22039,Permanent Mission of India to the United Nations et al.,Petitioner,"City of New York, New York",Respondent,0,7,2,majority opinion
+2006,05-1056,55409,21728,Microsoft Corporation,Petitioner,AT&T Corporation,Respondent,1,7,1,majority opinion
+2006,7-Jun,55410,22802,Scott Louis Panetti,Petitioner,"Nathaniel Quarterman, Director, Texas Department of Criminal Justice, Correctional Institutions Division",Respondent,1,5,4,majority opinion
+2006,05-381,55411,22446,Weyerhaeuser Company,Petitioner,"Ross-Simmons Hardwood Lumber Company, Inc.",Respondent,1,9,0,majority opinion
+2006,06-969,55412,22562,Federal Election Commission,Appellant,"Wisconsin Right to Life, Inc.",Appellee,0,5,4,majority opinion
+2006,05-595,55413,21527,"Glen Whorton, Director, Nevada Department of Corrections",Petitioner,Marvin Howard Bockting,Respondent,1,9,0,majority opinion
+2006,05-785,55414,22102,"Thomas L. Carey, Warden",Petitioner,Mathew Musladin,Respondent,1,9,0,majority opinion
+2006,22-May,55415,21620,Lonnie Lee Burton,Petitioner,"Belinda Stewart, Superintendent, Stafford Creek Corrections Center",Respondent,0,9,0,per curiam
+2006,18-Jun,55416,21338,Mario Claiborne,Petitioner,United States,Respondent,0,,,
+2006,05-669,55417,21695,"BP America Production Co., successor in interest to Amoco Production Co., et al.",Petitioner,"Rejane Burton, Act Assistant Secretary, Land and Minerals Management, Department of the Interior, et al.",Respondent,0,7,0,majority opinion
+2006,05-1629,55418,22850,"Alberto R. Gonzales, Attorney General",Petitioner,Luis Alexander Duenas-Alvarez,Respondent,1,9,0,majority opinion
+2006,05-593,55419,22257,Pat Osborn,Petitioner,Barry Haley et al.,Respondent,0,7,2,majority opinion
+2006,05-848,55421,22999,Environmental Defense et al.,Petitioner,Duke Energy Corporation,Respondent,1,9,0,majority opinion
+2006,06-219,55422,22797,Charles Wilkie et al.,Petitioner,Harvey Frank Robbins,Respondent,1,7,2,majority opinion
+2006,05-1429,55423,23063,Travelers Casualty & Surety Company of America,Petitioner,Pacific Gas & Electric Company,Respondent,1,9,0,majority opinion
+2006,06-116,55424,22395,"Alicia G. Limtiaco, Attorney General of Guam",Petitioner,"Felix P. Camacho, Governor of Guam",Respondent,1,5,4,majority opinion
+2006,05-380,55425,21902,"Alberto R. Gonzales, Attorney General",Petitioner,Leroy Carhart et al.,Respondent,1,5,4,majority opinion
+2006,Jun-84,55426,22361,Safeco Insurance Company of America et al.,Petitioner,Charles Burr et al.,Respondent,1,9,0,majority opinion
+2006,05-1508,55427,22309,Zuni Public School District No. 89 et al.,Petitioner,United States Department of Education et al.,Respondent,0,5,4,majority opinion
+2006,05-1541,55428,22268,EC Term of Years Trust,Petitioner,United States,Respondent,0,9,0,majority opinion
+2006,05-1074,55429,22566,Lilly M. Ledbetter,Petitioner,"The Goodyear Tire & Rubber Company, Inc.",Respondent,0,5,4,majority opinion
+2006,May-58,55430,21768,Lorenzo L. Jones,Petitioner,"Barbara Bock, Warden, et al.",Respondent,1,9,0,majority opinion
+2006,05-11304,55432,21945,LaRoyce Lathair Smith,Petitioner,Texas,Respondent,1,5,4,majority opinion
+2006,06-376,55433,22595,John F. Hinck et ux.,Petitioner,United States,Respondent,0,9,0,majority opinion
+2006,05-746,55434,21678,Norfolk Southern Railway Company,Petitioner,Timothy Sorrell,Respondent,1,9,0,majority opinion
+2006,06-484,55435,21323,"Tellabs, Inc., et al.",Petitioner,"Makor Issues & Rights, Ltd., et al.",Respondent,1,8,1,majority opinion
+2006,06-618,55436,22352,Office of Senator Mark Dayton,Appellant,Brad Hanson,Appellee,0,8,0,majority opinion
+2006,06-278,55437,21393,Deborah Morse et al.,Petitioner,Joseph Frederick,Respondent,1,5,4,majority opinion
+2006,05-1382,55438,22302,"Alberto R. Gonzales, Attorney General",Petitioner,"Planned Parenthood Federation of America, Inc., et al.",Respondent,1,5,4,majority opinion
+2006,05-705,55439,22299,"Global Crossing Telecommunications, Inc.",Petitioner,"Metrophones Telecommunications, Inc.",Respondent,0,7,2,majority opinion
+2006,05-1448,55440,22430,"Jeffrey H. Beck, liquidating trustee of the Estates of Crown Vantage, Inc. and Crown Paper Company",Petitioner,PACE International Union et al.,Respondent,1,9,0,majority opinion
+2006,06-413,55441,22211,"Jeffrey Uttecht, Superintendent, Washington State Penitentiary",Petitioner,Cal Coburn Brown,Respondent,1,5,4,majority opinion
+2006,05-1256,55443,22756,Philip Morris USA,Petitioner,"Mayola Williams, Personal Representative of the Estate of Jesse D. Williams, Deceased",Respondent,1,5,4,majority opinion
+2006,05-1157,55444,23181,"Credit Suisse Securities (USA) LLC, fka Credit Suisse First Boston LLC, et al.",Petitioner,Glen Billing et al.,Respondent,1,7,1,majority opinion
+2006,05-998,55445,22548,United States,Petitioner,Juan Resendiz-Ponce,Respondent,1,8,1,majority opinion
+2006,05-983,55446,22618,"Jacob Winkelman, a minor, by and through his parents and legal guardians, Jeff and Sandee Winkelman, et al.",Petitioner,Parma City School District,Respondent,1,7,2,majority opinion
+2006,05-1345,55447,22630,"United Haulers Association, Inc., et al.",Petitioner,Oneida-Herkimer Solid Waste Management Authority et al.,Respondent,0,6,3,majority opinion
+2006,6-Jun,55448,22821,Keith Bowles,Petitioner,"Harry Russell, Warden",Respondent,0,5,4,majority opinion
+2006,05-1126,55449,22748,Bell Atlantic Corp. et al.,Petitioner,William Twombly et al.,Respondent,1,7,2,majority opinion
+2006,04-1350,55450,21972,KSR International Co.,Petitioner,Teleflex Inc. et al.,Respondent,1,9,0,majority opinion
+2006,05-1240,55451,22463,Andre Wallace,Petitioner,Chicago Police Officers Kristen Kato and Eugene Roy,Respondent,0,7,2,majority opinion
+2006,05-1284,55452,21862,Lisa Watson et al.,Petitioner,"Philip Morris Companies, Inc., et al.",Respondent,1,9,0,majority opinion
+2006,05-547,55453,22481,Jose Antonio Lopez,Petitioner,"Alberto R. Gonzales, Attorney General",Respondent,1,8,1,majority opinion
+2006,05-1342,55454,21317,"Linda A. Watters, Commissioner, Michigan Office of Insurance and Financial Services",Petitioner,"Wachovia Bank, N.A., et al.",Respondent,0,5,3,majority opinion
+2006,05-11284,55455,22878,"Jalil Abdul-Kabir, fka Ted Calvin Cole",Petitioner,"Nathaniel Quarterman, Director, Texas Department of Criminal Justice, Correctional Institutions Division",Respondent,1,5,4,majority opinion
+2006,05-908,55456,21328,Parents Involved In Community Schools,Petitioner,Seattle School District No. 1 et al.,Respondent,1,5,4,majority opinion
+2006,20-Jun,55457,22255,Bruce Edward Brendlin,Petitioner,California,Respondent,1,9,0,majority opinion
+2007,Jun-73,55458,22130,Stephen Danforth,Petitioner,Minnesota,Respondent,1,7,2,majority opinion
+2007,06-1322,55459,21613,Federal Express Corporation,Petitioner,Paul Holowecki et al.,Respondent,0,7,2,majority opinion
+2007,Jul-39,55460,22020,Ralph Baze and Thomas C. Bowling,Petitioner,"John D. Rees, Commissioner, Kentucky Department of Corrections, et al.",Respondent,0,7,2,plurality opinion
+2007,07-214,55461,22282,"Allison Engine Co., Inc., et al.",Petitioner,United States ex rel. Roger L. Sanders and Roger L. Thacker,Respondent,1,9,0,majority opinion
+2007,06-856,55462,21655,James LaRue,Petitioner,"DeWolff, Boberg & Associates, Inc., et al.",Respondent,1,9,0,majority opinion
+2007,06-1509,55463,23120,Michael H. Boulware,Petitioner,United States,Respondent,1,9,0,majority opinion
+2007,30-Jun,55465,22202,Abdus-Shahid M.S. Ali,Petitioner,Federal Bureau of Prisons et al.,Respondent,0,5,4,majority opinion
+2007,07-455,55466,21849,United States,Petitioner,Ahmed Ressam,Respondent,1,8,1,majority opinion
+2007,06-1666,55467,22385,Mohammad Munaf et al.,Petitioner,"Pete Geren, Secretary of the Army, et al.",Respondent,0,9,0,majority opinion
+2007,06-457,55468,22533,"G. Steven Rowe, Attorney General of Maine",Petitioner,New Hampshire Motor Transport Association et al.,Respondent,0,9,0,majority opinion
+2007,07-320,55469,23186,Jack Davis,Appellant,Federal Election Commission,Appellee,1,5,4,majority opinion
+2007,07-440,55470,22283,Walter A. Rothgery,Petitioner,"Gillespie County, Texas",Respondent,1,8,1,majority opinion
+2007,06-1037,55471,21742,Kentucky Retirement Systems et al.,Petitioner,Equal Employment Opportunity Commission,Respondent,1,5,4,majority opinion
+2007,06-1505,55472,22433,Clifford B. Meacham et al.,Petitioner,"Knolls Atomic Power Laboratory, aka KAPL, Inc., et al.",Respondent,1,7,1,majority opinion
+2007,07-411,55473,21782,Plains Commerce Bank,Petitioner,"Long Family Land & Cattle Co., Inc.",Respondent,1,5,4,majority opinion
+2007,30-Jun,55474,23176,Derrick Kimbrough,Petitioner,United States,Respondent,1,7,2,majority opinion
+2007,06-179,55475,22782,"Donna S. Riegel, individually and as administrator of the Estate of Charles R. Riegel",Petitioner,"Medtronic, Inc.",Respondent,0,8,1,majority opinion
+2007,06-10119,55477,22147,Allen Snyder,Petitioner,State of Louisiana,Respondent,1,7,2,majority opinion
+2007,06-1321,55478,22612,Myrna Gomez-Perez,Petitioner,"John E. Potter, Postmaster General",Respondent,1,6,3,majority opinion
+2007,06-11543,55479,22939,Larry Begay,Petitioner,United States,Respondent,1,6,3,majority opinion
+2007,06-923,55480,22164,Metropolitan Life Insurance Company et al.,Petitioner,Wanda Glenn,Respondent,0,6,3,majority opinion
+2007,06-1413,55481,22950,"MeadWestvaco Corp., successor in interest to Mead Corp.",Petitioner,Illinois Department of Revenue et al.,Respondent,0,9,0,majority opinion
+2007,06-984,55482,22616,Jose Ernesto Medellin,Petitioner,State of Texas,Respondent,0,6,3,majority opinion
+2007,06-1498,55483,22627,"Warner-Lambert Co., LLC, et al.",Petitioner,Kimberly Kent et al.,Respondent,0,0,0,equally divided
+2007,06-1286,55485,22947,"Michael J. Knight, Trustee of William L. Rudkin Testamentary Trust",Petitioner,Commissioner of Internal Revenue,Respondent,0,9,0,majority opinion
+2007,06-1265,55486,22611,"Klein & Co. Futures, Inc.",Petitioner,Board of Trade of the City of New York et al.,Respondent,0,9,0,dismissal - rule 46
+2007,07-219,55487,21400,Exxon Shipping Company et al.,Petitioner,Grant Baker et al.,Respondent,1,5,3,majority opinion
+2007,21-Jul,55488,23085,William Crawford et al.,Petitioner,Marion County Election Board et al.,Respondent,0,6,3,majority opinion
+2007,07-312,55489,22362,Florida Department of Revenue,Petitioner,"Piccadilly Cafeterias, Inc.",Respondent,1,7,2,majority opinion
+2007,06-1181,55491,21389,Samson Taiwo Dada,Petitioner,"Michael B. Mukasey, Attorney General",Respondent,1,5,4,majority opinion
+2007,06-1221,55493,22681,Sprint/United Management Company,Petitioner,Ellen Mendelsohn,Respondent,1,9,0,majority opinion
+2007,06-713,55494,22301,Washington State Grange,Petitioner,Washington State Republican Party et al.,Respondent,1,7,2,majority opinion
+2007,07-308,55495,22439,United States,Petitioner,"Clintwood Elkhorn Mining Company, et al.",Respondent,1,9,0,majority opinion
+2007,06-11612,55496,22052,Homero Gonzalez,Petitioner,United States,Respondent,0,8,1,majority opinion
+2007,07-330,55497,21598,"Michael Greenlaw, aka Mikey",Petitioner,United States,Respondent,1,6,3,majority opinion
+2007,06-1195,55498,22135,Lakhdar Boumediene et al.,Petitioner,"George W. Bush, President of the United States, et al.",Respondent,1,5,4,majority opinion
+2007,07-474,55500,21302,Anup Engquist,Petitioner,Oregon Department of Agriculture et al.,Respondent,0,6,3,majority opinion
+2007,06-939,55501,21921,Chamber of Commerce of the United States of America et al.,Petitioner,"Edmund G. Brown, Jr., Attorney General of California, et al.",Respondent,1,7,2,majority opinion
+2007,07-343,55504,22193,Patrick Kennedy,Petitioner,State of Louisiana,Respondent,1,5,4,majority opinion
+2007,06-766,55505,21632,New York State Board of Elections et al.,Petitioner,Margarita Lopez Torres et al.,Respondent,1,9,0,majority opinion
+2007,11-Jun,55506,22644,James D. Logan,Petitioner,United States,Respondent,0,9,0,majority opinion
+2007,06-11429,55507,21651,Keith Lavon Burgess,Petitioner,United States,Respondent,0,9,0,majority opinion
+2007,06-1456,55508,22696,Humberto Fidel Regalado Cuellar,Petitioner,United States,Respondent,1,9,0,majority opinion
+2007,Jul-53,55509,23168,Dwayne Giles,Petitioner,California,Respondent,1,6,3,majority opinion
+2007,06-937,55510,21658,"Quanta Computer, Inc., et al.",Petitioner,"LG Electronics, Inc.",Respondent,1,9,0,majority opinion
+2007,06-1646,55511,21629,United States,Petitioner,Gino Gonzaga Rodriquez,Respondent,1,6,3,majority opinion
+2007,Jun-49,55512,22026,Brian Michael Gall,Petitioner,United States,Respondent,1,7,2,majority opinion
+2007,06-666,55513,21798,Department of Revenue of Kentucky et al.,Petitioner,George W. Davis et ux.,Respondent,1,7,2,majority opinion
+2007,06-1082,55515,22376,Commonwealth of Virginia,Petitioner,David Lee Moore,Respondent,1,9,0,majority opinion
+2007,06-1431,55516,21777,"CBOCS West, Inc.",Petitioner,Hedrick G. Humphries,Respondent,0,7,2,majority opinion
+2007,Jul-77,55517,21823,"Bob Riley, Governor of Alabama",Appellant,Yvonne Kennedy et al.,Appellee,1,7,2,majority opinion
+2007,07-371,55518,22806,Brent Taylor,Petitioner,"Robert A. Sturgell, Acting Administrator, Federal Aviation Administration, et al.",Respondent,1,9,0,majority opinion
+2007,Jun-43,55519,21295,"Stoneridge Investment Partners, LLC",Petitioner,"Scientific-Atlanta, Inc., et al.",Respondent,0,5,3,majority opinion
+2007,17-Jun,55520,22387,Richard Irizarry,Petitioner,United States,Respondent,0,5,4,majority opinion
+2007,06-989,55521,22183,"Hall Street Associates, L.L.C.",Petitioner,"Mattel, Inc.",Respondent,0,6,3,majority opinion
+2007,06-1005,55522,23131,United States,Petitioner,Efrain Santos and Benedicto Diaz,Respondent,0,5,4,plurality opinion
+2007,06-571,55523,22657,Michael A. Watson,Petitioner,United States,Respondent,1,9,0,majority opinion
+2007,07-210,55524,22743,John Bridge et al.,Petitioner,Phoenix Bond & Indemnity Company et al.,Respondent,0,9,0,majority opinion
+2007,06-637,55525,22138,Board of Education of the City School District of the City of New York,Petitioner,"Tom F., on behalf of Gilbert F., a minor child",Respondent,0,0,0,equally divided
+2007,06-1463,55526,22774,Arnold M. Preston,Petitioner,Alex E. Ferrer,Respondent,1,8,1,majority opinion
+2007,07-552,55527,21917,"Sprint Communications Co., L.P.",Petitioner,"APCC Services, Inc.",Respondent,0,5,4,majority opinion
+2007,07-208,55528,22004,Indiana,Petitioner,Ahmad Edwards,Respondent,1,7,2,majority opinion
+2007,06-694,55529,22055,United States,Petitioner,Michael Williams,Respondent,1,7,2,majority opinion
+2007,06-1164,55531,22929,John R. Sand & Gravel Company,Petitioner,United States,Respondent,0,7,2,majority opinion
+2007,06-1457,55532,21487,Morgan Stanley Capital Group Inc.,Petitioner,"Public Utility District No. 1 of Snohomish County, Washington, et al.",Respondent,1,5,2,majority opinion
+2007,06-1204,55533,22043,Republic of the Philippines et al.,Petitioner,"Jerry S. Pimentel, temporary administrator of the Estate of Mariano J. Pimentel, et al.",Respondent,1,7,2,majority opinion
+2007,06-1717,55534,21885,Richlin Security Service Company,Petitioner,"Michael Chertoff, Secretary of Homeland Security",Respondent,1,9,0,majority opinion
+2008,07-581,55535,22683,"14 Penn Plaza LLC, et al.",Petitioner,"Steven Pyett, et al.",Respondent,1,5,4,majority opinion
+2008,07-582,55536,21802,"No. 07-582	 Title: 	 Federal Communications Commission, et al.",Petitioner,"Fox Television Stations, Inc., et al.",Respondent,1,5,4,majority opinion
+2008,07-751,55537,23070,"Cordell Pearson, et al.",Petitioner,Afton Callahan,Respondent,1,9,0,majority opinion
+2008,07-1090,55538,21313,Republic of Iraq,Petitioner,Jordan Beaty et al.,Respondent,1,9,0,majority opinion
+2008,07-1239,55539,22928,"Donald C. Winter, Secretary of the Navy",Petitioner,"Natural Resources Defense Council, Inc.",Respondent,1,5,4,majority opinion
+2008,08-305,55540,22717,Forest Grove School District,Petitioner,T. A.,Respondent,0,6,3,majority opinion
+2008,08-310,55541,21812,"Polar Tankers, Inc.",Petitioner,"City of Valdez, Alaska",Respondent,1,7,2,majority opinion
+2008,22-Aug,55543,22264,Hugh Caperton,Petitioner,A. T. Massey Coal Co.,Respondent,1,5,4,majority opinion
+2008,07-1015,55545,22709,"John D. Ashcroft, Former Attorney General, et al.",Petitioner,Javaid Iqbal et al.,Respondent,1,5,4,majority opinion
+2008,08-495,55546,22991,Manoj Nijhawan,Petitioner,Eric Holder,Respondent,0,9,0,majority opinion
+2008,07-10441,55547,22557,Johnnie Corley,Petitioner,United States,Respondent,1,5,4,majority opinion
+2008,08-108,55548,22750,Ignacio Carlos Flores-Figueroa,Petitioner,United States,Respondent,1,9,0,majority opinion
+2008,07-1125,55549,21561,"Lisa Fitzgerald, et vir",Petitioner,"Barnstable School Committee, et al.",Respondent,1,9,0,majority opinion
+2008,07-984,55550,22397,"Coeur Alaska, Inc.",Petitioner,"Southeast Alaska Conservation Council, et al.",Respondent,1,6,3,majority opinion
+2008,07-543,55551,22880,AT&T Corporation,Petitioner,Noreen Hulteen et al.,Respondent,1,7,2,majority opinion
+2008,07-610,55552,22869,"Daniel B. Locke, et al.",Petitioner,"Edward A. Karass, State Controller, et al.",Respondent,0,9,0,majority opinion
+2008,07-526,55553,21937,"Donald L. Carcieri, Governor of Rhode Island",Petitioner,"Ken L. Salazar, Secretary of the Interior, et al.",Respondent,1,6,3,majority opinion
+2008,07-689,55554,22179,"Gary Bartlett, Executive Director of North Carolina State Board of Elections, et al.",Petitioner,Dwight Strickland et al.,Respondent,0,5,4,plurality opinion
+2008,08-289,55555,21375,"Thomas C. Horne, Superintendent, Arizona Public Instruction",Petitioner,Miriam Flores et al.,Respondent,1,5,4,majority opinion
+2008,07-1356,55556,21714,State of Kansas,Petitioner,Donnie Ventris,Respondent,1,7,2,majority opinion
+2008,06-11206,55558,22953,Deondery Chambers,Petitioner,United States,Respondent,1,9,0,majority opinion
+2008,08-214,55559,22773,"Atlantic Sounding Co., Inc., et al.",Petitioner,Edgar L. Townsend,Respondent,0,5,4,majority opinion
+2008,07-591,55560,23029,Luis E. Melendez-Diaz,Petitioner,Massachusetts,Respondent,1,5,4,majority opinion
+2008,07-1428,55561,21606,Frank Ricci et al.,Petitioner,John DiStefano et al.,Respondent,1,5,4,majority opinion
+2008,08-441,55562,22347,Jack Gross,Petitioner,"FBL Financial Services, Inc.",Respondent,1,5,4,majority opinion
+2008,12-Jul,55563,22795,James Benjamin Puckett,Petitioner,United States,Respondent,0,7,2,majority opinion
+2008,21-Jul,55564,22970,Edward Jerome Harbison,Petitioner,"Ricky Bell, Warden",Respondent,1,7,2,majority opinion
+2008,08-322,55566,21961,Northwest Austin Municipal Utility District Number One,Appellant,"Eric H. Holder, Jr., Attorney General, et al.",Appellee,1,8,1,majority opinion
+2008,08-295,55567,21318,"The Travelers Indemnity Company, et al.",Petitioner,"Pearlie Bailey, et al.",Respondent,1,7,2,majority opinion
+2008,07-1059,55569,22015,United States,Petitioner,Eurodif S. A.,Respondent,1,9,0,majority opinion
+2008,07-499,55570,22979,Daniel Girmai Negusie,Petitioner,"Eric H. Holder, Jr., Attorney General",Respondent,1,8,1,majority opinion
+2008,07-636,55571,22314,"Kari E. Kennedy, et al.",Petitioner,"Plan Administrator for DuPont Savings and Investment Plan, et al.",Respondent,0,9,0,majority opinion
+2008,08-660,55572,22934,"United States, ex rel. Irwin Eisenstein,",Petitioner,"City of New York, New York, et al.",Respondent,0,9,0,majority opinion
+2008,07-1122,55574,21397,Arizona,Petitioner,Lemon Montrea Johnson,Respondent,1,9,0,majority opinion
+2008,07-1372,55575,22423,State of Hawaii,Petitioner,Office of Hawaiian Affairs,Respondent,1,9,0,majority opinion
+2008,Jul-84,55576,21699,Carlos Jimenez,Petitioner,"Nathaniel Quarterman, Director, Texas Department of Criminal Justice, Correctional Institutions Division",Respondent,1,9,0,majority opinion
+2008,07-1216,55577,23132,Philip Morris USA Inc.,Petitioner,"Mayola Williams, Personal Representative of the Estate of Jesse D. Williams, Deceased",Respondent,0,9,0,per curiam
+2008,07-615,55578,22488,Ministry of Defense and Support for Armed Forces of Islamic Republic of Iran,Petitioner,Dariush Elahi,Respondent,1,6,3,majority opinion
+2008,07-772,55579,22154,"Doug Waddington, Superintendent, Washington Corrections Center",Petitioner,Cesar Sarausad,Respondent,1,6,3,majority opinion
+2008,07-608,55581,21710,United States,Petitioner,Randy Edward Hayes,Respondent,1,7,2,majority opinion
+2008,08-479,55582,21775,"Safford Unified School District #1, et al.",Petitioner,April Redding,Respondent,0,8,1,majority opinion
+2008,Aug-74,55583,22473,Christopher Michael Dean,Petitioner,United States,Respondent,0,7,2,majority opinion
+2008,07-665,55584,21703,"Pleasant Grove City, Utah et al.",Petitioner,Summum,Respondent,1,9,0,majority opinion
+2008,07-1209,55585,23187,"Eric Shinseki, Secretary of Veteran Affairs",Petitioner,Woodrow Sanders,Respondent,1,6,3,majority opinion
+2008,06-1249,55586,23099,"Wyeth, Inc.",Petitioner,Diana Levine,Respondent,0,6,3,majority opinion
+2008,06-1595,55588,22339,Vicky Crawford,Petitioner,"Metropolitan Government of Nashville and Davidson County, Tennessee",Respondent,1,9,0,majority opinion
+2008,07-1601,55590,21955,Burlington Northern and Santa Fe Railway Company,Petitioner,United States et al.,Respondent,1,8,1,majority opinion
+2008,08-146,55591,22605,Arthur Andersen LLP et al.,Petitioner,Wayne Carlisle et al.,Respondent,1,6,3,majority opinion
+2008,07-773,55592,21339,Betty Vaden,Petitioner,"Discover Bank, et al.",Respondent,1,5,4,majority opinion
+2008,07-463,55593,21635,"Priscilla Summers, et al.",Petitioner,"Earth Island Institute, et al.",Respondent,1,5,4,majority opinion
+2008,07-1309,55594,22482,Edmund Boyle,Petitioner,United States,Respondent,0,7,2,majority opinion
+2008,07-512,55595,22445,Pacific Bell Telephone Co.,Petitioner,LinkLine Communications,Respondent,1,9,0,majority opinion
+2008,08-598,55596,22745,"David Bobby, Warden",Petitioner,Michael Bies,Respondent,1,9,0,majority opinion
+2008,07-854,55597,22405,"John Van de Kamp, et al.",Petitioner,Thomas Lee Goldstein,Respondent,1,9,0,majority opinion
+2008,07-588,55598,22215,Entergy Corp.,Petitioner,"Riverkeeper, Inc., et al.",Respondent,1,5,4,majority opinion
+2008,07-1114,55599,21346,Gary Bradford Cone,Petitioner,"Ricky Bell, Warden",Respondent,1,7,2,majority opinion
+2008,07-1529,55600,21646,Jesse Jay Montejo,Petitioner,State of Louisiana,Respondent,1,5,4,majority opinion
+2008,07-513,55601,22606,Bennie Dean Herring,Petitioner,United States,Respondent,0,5,4,majority opinion
+2008,07-562,55602,22959,"Altria Group, Inc., et al.",Petitioner,Stephanie Good et al.,Respondent,0,5,4,majority opinion
+2008,08-192,55603,21359,Salman Khade Abuelhawa,Petitioner,United States,Respondent,1,9,0,majority opinion
+2008,Aug-88,55604,23044,Vermont,Petitioner,Michael Brillon,Respondent,1,7,2,majority opinion
+2008,07-869,55605,22035,"Ben Ysursa, Idaho Secretary of State, et al.",Petitioner,"Pocatello Education Association, et al.",Respondent,1,6,3,majority opinion
+2008,07-1223,55606,21932,Edward Nathaniel Bell,Petitioner,"Loretta K. Kelly, Warden",Respondent,0,9,0,per curiam
+2008,07-1437,55607,23098,"Carlsbad Technology, Inc.",Petitioner,"HIF Bio, Inc.",Respondent,1,9,0,majority opinion
+2008,08-453,55608,22415,"Andrew M. Cuomo, Attorney General of New York",Petitioner,"The Clearing House Association, L.L.C., et al.",Respondent,1,9,0,majority opinion
+2008,07-1410,55609,23173,United States,Petitioner,Navajo Nation,Respondent,1,9,0,majority opinion
+2008,Aug-67,55610,22479,F. Scott Yeager,Petitioner,United States,Respondent,1,6,3,majority opinion
+2008,07-1315,55611,21314,"Michael A. Knowles, Warden",Petitioner,Alexandre Mirzayance,Respondent,1,9,0,majority opinion
+2008,07-10374,55612,22551,Keith Haywood,Petitioner,"Curtis Drown, et al.",Respondent,1,5,4,majority opinion
+2008,Jul-95,55613,21656,Michael Rivera,Petitioner,Illinois,Respondent,0,9,0,majority opinion
+2008,08-681,55614,22907,Jean Marc Nken,Petitioner,"Eric Holder, Attorney General",Respondent,1,7,2,majority opinion
+2008,07-901,55615,21436,Oregon,Petitioner,Thomas Eugene Ice,Respondent,1,5,4,majority opinion
+2008,08-267,55616,21653,United States,Petitioner,Jacob Denedo,Respondent,0,5,4,majority opinion
+2008,07-544,55618,22262,"Anthony Hedgpeth, Warden",Petitioner,Michael Robert Pulido,Respondent,1,6,3,per curiam
+2008,6-Aug,55619,21491,"District Attorney's Office for the Third Judicial District, et al.",Petitioner,William G. Osborne,Respondent,1,5,4,majority opinion
+2009,08-1151,55621,22440,"Stop the Beach Renourishment, Inc.",Petitioner,"Florida Department of Environmental Protection, et al.",Respondent,0,8,0,majority opinion
+2009,27-Sep,55622,21952,Albert Holland,Petitioner,Florida,Respondent,1,7,2,majority opinion
+2009,08-1322,55623,22847,"Michael J. Astrue, Commissioner of Social Security",Petitioner,Catherine G. Ratliff,Respondent,1,9,0,majority opinion
+2009,08-1224,55624,22660,United States,Petitioner,"Graydon Earl Comstock, Jr., et al.",Respondent,1,7,2,majority opinion
+2009,Sep-38,55625,23075,Percy Dillon,Petitioner,United States,Respondent,0,7,1,majority opinion
+2009,08-728,55626,22291,Taylor James Bloate,Petitioner,United States,Respondent,1,7,2,majority opinion
+2009,08-1498,55627,22256,"Eric H. Holder, Jr., Attorney General, et al.",Petitioner,"Humanitarian Law Project, et al.",Respondent,1,6,3,majority opinion
+2009,08-964,55628,21926,Bernard L. Bilski and Rand A. Warsaw,Petitioner,"David J. Kappos, Under Secretary of Commerce for Intellectual Property and Director, Patent and Trademark Office",Respondent,0,9,0,majority opinion
+2009,08-1555,55629,22111,Mohamed Ali Samantar,Petitioner,"Bashe Abdi Yousuf, et al.",Respondent,0,9,0,majority opinion
+2009,08-604,55630,21522,Union Pacific Railroad Company,Petitioner,"Brotherhood of Locomotive Engineers and Trainmen General Committee of Adjustment, Central Region",Respondent,0,9,0,majority opinion
+2009,08-1065,55631,21700,"Pottawattamie County, Iowa, et al.",Petitioner,"Curtis W. McGhee, Jr., et al.",Respondent,0,9,0,per curiam
+2009,09-475,55634,21790,"Monsanto Co., et al.",Petitioner,"Geerston Seed Farms, et al.",Respondent,1,7,1,majority opinion
+2009,08-103,55635,22285,"Reed Elsevier, Inc., et al.",Petitioner,"Irvin Muchnick, et al.",Respondent,1,8,0,majority opinion
+2009,12-Aug,55636,22655,Terrance Jamar Graham,Petitioner,Florida,Respondent,1,6,3,majority opinion
+2009,08-1119,55637,23086,"Milavetz, Gallop & Milavetz, P.A., et al.",Petitioner,United States,Respondent,1,9,0,majority opinion
+2009,09-497,55639,22995,"Rent-A-Center West, Inc.",Petitioner,Antonio Jackson,Respondent,1,5,4,majority opinion
+2009,08-1457,55640,22946,New Process Steel,Petitioner,National Labor Relations Board,Respondent,1,5,4,majority opinion
+2009,08-674,55641,21767,NRG Power Marketing LLC et al.,Petitioner,Maine Public Utilities Commission et al.,Respondent,1,8,1,majority opinion
+2009,09-223,55643,22468,"Richard A. Levin, Tax Commissioner of Ohio",Petitioner,"Commerce Energy, Inc., et al.",Respondent,1,9,0,majority opinion
+2009,07-11191,55644,22191,Mark A. Briscoe and Sheldon A. Cypress,Petitioner,Virginia,Respondent,1,9,0,per curiam
+2009,08-1175,55645,22447,Florida,Petitioner,Kevin Dewayne Powell,Respondent,1,7,2,majority opinion
+2009,08-1134,55646,22348,United Student Aid Funds Inc.,Petitioner,Francisco J. Espinosa,Respondent,0,9,0,majority opinion
+2009,08-970,55648,22170,"Sonny Perdue, Governor of Georgia, et al.",Petitioner,"Kenny A., By His Next Friend Linda Winn, et al.",Respondent,1,5,4,majority opinion
+2009,08-1191,55649,22624,"Robert Morrison, et al.",Petitioner,"National Australia Bank Ltd., et al.",Respondent,0,8,0,majority opinion
+2009,08-240,55650,22594,Mac's Shell Service et al.,Petitioner,Shell Oil Products Co. et al.,Respondent,0,9,0,majority opinion
+2009,08-1198,55654,22974,"Stolt-Nielsen S.A., et al.",Petitioner,AnimalFeeds International Corp.,Respondent,1,5,3,majority opinion
+2009,08-472,55655,21515,"Ken L. Salazar, Secretary of the Interior, et al.",Petitioner,Frank Buono,Respondent,1,5,4,majority opinion
+2009,08-724,55656,21881,"Kevin Smith, Warden",Petitioner,"Frank G. Spisak, Jr.",Respondent,1,9,0,majority opinion
+2009,08-998,55657,21844,"Jan Hamilton, Chapter 13 Trustee",Petitioner,Stephanie Kay Lanning,Respondent,0,8,1,majority opinion
+2009,08-651,55658,22932,Jose Padilla,Petitioner,Kentucky,Respondent,1,7,2,majority opinion
+2009,08-586,55659,21592,"Jerry N. Jones, et al.",Petitioner,Harris Associates L.P.,Respondent,1,9,0,majority opinion
+2009,Sep-60,55661,21816,Jose Angel Carachuri-Rosendo,Petitioner,"Eric Holder, Attorney General",Respondent,1,9,0,majority opinion
+2009,08-992,55662,21431,"Jeffrey A. Beard, Secretary, Pennsylvania Department of Corrections, et al.",Petitioner,Joseph Kindler,Respondent,1,8,0,majority opinion
+2009,08-1341,55663,21299,United States,Petitioner,Glenn Marcus,Respondent,1,7,1,majority opinion
+2009,08-876,55664,21645,"Conrad M. Black, John A. Boultbee, and Mark S. Kipnis",Petitioner,United States,Respondent,1,9,0,majority opinion
+2009,09-158,55665,21605,Billy Joe Magwood,Petitioner,"Tony Patterson, Warden, et al.",Respondent,1,5,4,majority opinion
+2009,08-769,55666,22541,United States,Petitioner,Robert J. Stevens,Respondent,0,8,1,majority opinion
+2009,08-1569,55668,21989,United States,Petitioner,Martin O'Brien and Arthur Burgess,Respondent,0,9,0,majority opinion
+2009,09-448,55671,21898,Bridget Hardt,Petitioner,Reliance Standard Life Insurance Co.,Respondent,1,9,0,majority opinion
+2009,08-678,55672,22963,"Mohawk Industries, Inc.",Petitioner,Norman Carpenter,Respondent,0,9,0,plurality opinion
+2009,Aug-56,55673,23145,Holly Wood,Petitioner,"Richard F. Allen, Commissioner, Alabama Department of Corrections, et al.",Respondent,0,7,2,majority opinion
+2009,1-Sep,55674,23045,"Michael Gary Barber, et al.",Petitioner,"J. E. Thomas, Warden",Respondent,0,6,3,majority opinion
+2009,09-337,55675,21449,Wanda Krupski,Petitioner,"Costa Crociere, S.p.A.",Respondent,1,9,0,majority opinion
+2009,21-Aug,55676,22656,Joe Harris Sullivan,Petitioner,Florida,Respondent,0,9,0,per curiam
+2009,08-1553,55677,22221,"Kawasaki Kisen Kaisha Ltd., et al.",Petitioner,"Regal-Beloit Corporation, et al.",Respondent,1,6,3,majority opinion
+2009,08-969,55681,22132,"Hemi Group, LLC and Kai Gachupin",Petitioner,City of New York,Respondent,1,5,3,majority opinion
+2009,08-1529,55682,21525,"Esther Hui, et al.",Petitioner,"Yanira Castaneda, as Personal Representative of the Estate of Francisco Castaneda, et al.",Respondent,1,9,0,majority opinion
+2009,08-1008,55683,21941,"Shady Grove Orthopedic Associates, P.A.",Petitioner,Allstate Insurance Co.,Respondent,1,5,4,majority opinion
+2009,09-367,55684,22555,Brian Russell Dolan,Petitioner,United States,Respondent,0,5,4,majority opinion
+2009,08-810,55685,23092,"Sally L. Conkright, et al.",Petitioner,"Paul J. Frommert, et al.",Respondent,1,5,3,plurality opinion
+2009,08-304,55686,22269,"Graham County Soil and Water Conservation District, et al.",Petitioner,"United States, ex rel. Karen T. Wilson",Respondent,1,7,2,majority opinion
+2009,Aug-61,55690,22754,John Robertson,Petitioner,"United States, ex rel. Wykenna Watson",Respondent,0,5,4,per curiam
+2009,08-538,55691,22819,William G. Schwab,Petitioner,Nadejda Reilly,Respondent,1,6,3,majority opinion
+2009,08-905,55693,22900,"Merck & Co., Inc., et al.",Petitioner,"Richard Reynolds, et al.",Respondent,0,9,0,majority opinion
+2009,08-351,55694,22693,"Anita Alvarez, Cook County State's Attorney",Petitioner,"Chermane Smith, et al.",Respondent,1,9,0,dismissal - moot
+2009,08-1521,55697,22885,"Otis McDonald, et al.",Petitioner,City of Chicago,Respondent,1,5,4,majority opinion
+2009,08-680,55698,22242,Maryland,Petitioner,"Michael Blaine Shatzer, Sr.",Respondent,1,9,0,majority opinion
+2009,08-1214,55699,22695,Granite Rock Co.,Petitioner,International Brotherhood of Teamsters et al.,Respondent,1,7,2,majority opinion
+2009,08-1470,55700,22742,"Mary Berghuis, Warden",Petitioner,Van Chester Thompkins,Respondent,1,5,4,majority opinion
+2009,08-645,55701,22654,Timothy Mark Cameron Abbott,Petitioner,Jacquelyn Vaye Abbott,Respondent,1,6,3,majority opinion
+2009,08-911,55702,21329,Agron Kucana,Petitioner,"Eric H. Holder, Jr., Attorney General",Respondent,1,9,0,majority opinion
+2009,08-861,55703,22421,"Free Enterprise Fund and Beckstead and Watts, LLP",Petitioner,"Public Company Accounting Oversight Board, et al.",Respondent,1,5,4,plurality opinion
+2009,08-1402,55704,22670,"Mary Berghuis, Warden",Petitioner,Diapolis Smith,Respondent,1,9,0,majority opinion
+2009,08-1196,55705,23061,Bruce Weyhrauch,Petitioner,United States,Respondent,1,0,0,per curiam
+2009,08-974,55706,22747,"Arthur L. Lewis, Jr., et al.",Petitioner,City of Chicago,Respondent,1,9,0,majority opinion
+2009,08-1301,55707,22809,Thomas Carr,Petitioner,United States,Respondent,1,6,3,majority opinion
+2009,08-1332,55708,23093,"City of Ontario, California et al.",Petitioner,"Jeff Quon, et al.",Respondent,1,9,0,majority opinion
+2009,09-338,55709,22431,"Paul Renico, Warden",Petitioner,Reginald Lett,Respondent,1,6,3,majority opinion
+2009,08-1394,55710,21549,Jeffrey Skilling,Petitioner,United States,Respondent,1,9,0,majority opinion
+2009,25-Aug,55711,22875,Curtis Darnell Johnson,Petitioner,United States,Respondent,1,7,2,majority opinion
+2009,09-559,55712,22674,"John Doe #1, et al.",Petitioner,"Sam Reed, Washington Secretary of State, et al.",Respondent,0,8,1,majority opinion
+2009,08-661,55713,23031,"American Needle, Inc.",Petitioner,"National Football League, et al.",Respondent,1,9,0,majority opinion
+2009,08-1200,55714,22540,Karen L. Jerman,Petitioner,"Carlisle, McNellie, Rini, Kramer, & Ulrich LPA et al.",Respondent,1,7,2,majority opinion
+2009,08-1107,55716,22109,The Hertz Corporation,Petitioner,"Melinda Friend, et al.",Respondent,1,9,0,majority opinion
+2009,08-1371,55718,21726,"Christian Legal Society Chapter of the University of California, Hastings College of the Law, aka Hastings Christian Fellowship",Petitioner,"Leo P. Martinez, et al.",Respondent,0,5,4,majority opinion
+2010,10-235,55719,22573,"CSX Transportation, Inc.",Petitioner,Robert McBride,Respondent,0,5,4,majority opinion
+2010,09-152,55721,23110,"Russell Bruesewitz, et al.",Petitioner,"Wyeth, Inc., fka Wyeth Laboratories, et al.",Respondent,0,6,2,majority opinion
+2010,09-1227,55722,22422,Carol Anne Bond,Petitioner,United States,Respondent,1,9,0,majority opinion
+2010,09-571,55723,22070,"Harry F. Connick, District Attorney, et al.",Petitioner,John Thompson,Respondent,1,5,4,majority opinion
+2010,22-Sep,55724,23108,Jason Pepper,Petitioner,United States,Respondent,1,6,2,majority opinion
+2010,Oct-00,55725,21795,Alejandra Tapia,Petitioner,United States,Respondent,1,9,0,majority opinion
+2010,10-188,55726,22538,Schindler Elevator Corporation,Petitioner,United States ex re. Daniel Kirk,Respondent,1,5,3,majority opinion
+2010,09-658,55727,22379,"Jeff Premo, Superintendent, Oregon State Penitentiary",Petitioner,Randy Joseph Moore,Respondent,1,8,0,majority opinion
+2010,09-993,55728,22229,"PLIVA, Inc., et al.",Petitioner,Gladys Mensing,Respondent,1,5,4,majority opinion
+2010,09-987,55729,22462,Arizona Christian School Tuition Organization,Petitioner,"Kathleen M. Winn, et al.",Respondent,1,5,4,majority opinion
+2010,09-996,55731,21513,"James Walker, Warden, et al.",Petitioner,Charles W. Martin,Respondent,1,9,0,majority opinion
+2010,Oct-76,55732,21738,"Goodyear Dunlop Tires Operations, S.A., et al.",Petitioner,"Edgar D. Brown et ux., co-administrators of the Estate of Julian David Brown, et al.",Respondent,1,9,0,majority opinion
+2010,09-350,55734,21626,"Los Angeles County, CA",Petitioner,Craig Arthur Humphries et al.,Respondent,1,8,0,majority opinion
+2010,Oct-98,55735,23016,John Ashcroft,Petitioner,Abdullah al-Kidd,Respondent,1,8,0,majority opinion
+2010,08-1314,55736,22763,"Delbert Williamson, et al.",Petitioner,"Mazda Motor of America, Inc., et al.",Respondent,1,8,0,majority opinion
+2010,09-479,55738,22372,Kevin Abbott,Petitioner,United States,Respondent,0,8,0,majority opinion
+2010,09-115,55739,21875,"Chamber of Commerce of the United States, et al.",Petitioner,"Michael B. Whiting, et al.",Respondent,0,5,3,majority opinion
+2010,09-1279,55740,22344,Federal Communications Commission,Petitioner,AT&T Inc.,Respondent,1,8,0,majority opinion
+2010,09-520,55741,21395,"CSX Transportation, Inc.",Petitioner,Alabama Department of Revenue,Respondent,1,7,2,majority opinion
+2010,09-1498,55745,22139,United States,Petitioner,Jason Louis Tinklenberg,Respondent,0,8,0,majority opinion
+2010,09-868,55746,21748,"Ashbel T. Wall, II, Director of Rhode Island Department of Corrections",Petitioner,Khalil Kholi,Respondent,0,9,0,majority opinion
+2010,09-1403,55747,22214,"Erica P. John Fund, Inc., fka Archdiocese of Milwaukee Supporting Fund, Inc.",Petitioner,"Halliburton Co., et al.",Respondent,1,9,0,majority opinion
+2010,09-529,55748,22672,Virginia Office for Protection and Advocacy,Petitioner,"James W. Stewart III, Commissioner, Virginia Department of Behavioral Health and Developmental Services, et al.",Respondent,1,6,2,majority opinion
+2010,10-779,55749,22776,"William H. Sorrell, Attorney General of Vermont, et al.",Petitioner,"IMS Health Inc., et al.",Respondent,0,6,3,majority opinion
+2010,09-10245,55750,22978,William Freeman,Petitioner,United States,Respondent,1,5,4,plurality opinion
+2010,09-1298,55751,22133,General Dynamics Corporation,Petitioner,United States,Respondent,1,9,0,majority opinion
+2010,09-587,55752,22706,"Kelly Harrington, Warden",Petitioner,Joshua Richter,Respondent,1,8,0,majority opinion
+2010,09-804,55753,21708,CIGNA Corp. and CIGNA Pension Plan,Petitioner,"Janice C. Amara, et al.",Respondent,1,8,0,majority opinion
+2010,09-11121,55755,21859,J.D.B.,Petitioner,North Carolina,Respondent,1,5,4,majority opinion
+2010,09-737,55756,22518,Michelle Ortiz,Petitioner,Paula Jordan and Rebecca Bright,Respondent,1,9,0,majority opinion
+2010,09-1273,55757,22916,Astra USA,Petitioner,"Santa Clara County, Calif.",Respondent,1,8,0,majority opinion
+2010,09-1036,55758,21383,"Doretha H. Henderson, Authorized Representative of David L. Henderson, Deceased",Petitioner,"Eric K. Shinseki, Secretary of Veterans Affairs",Respondent,1,8,0,majority opinion
+2010,09-1205,55759,22838,"Keith Smith, et al.",Petitioner,Bayer Corp.,Respondent,1,9,0,majority opinion
+2010,09-329,55760,22513,"Chase Bank USA, N.A.",Petitioner,"James A. McCoy, Individually and on Behalf of All Others Similarly Situated",Respondent,1,9,0,majority opinion
+2010,09-907,55761,21417,Jason M. Ransom,Petitioner,"FIA Card Services, N.A., fka MBNA America Bank, N.A.",Respondent,0,8,1,majority opinion
+2010,10-290,55762,22610,Microsoft Corporation,Petitioner,"i4i Limited Partnership, et al.",Respondent,0,8,0,majority opinion
+2010,09-11311,55764,21901,Marcus Sykes,Petitioner,United States,Respondent,0,6,3,majority opinion
+2010,09-1159,55765,22892,Board of Trustees of the Leland Stanford Junior University,Petitioner,"Roche Molecular Systems, Inc., Roche Diagnostics Corp., and Roche Diagnostics Operation Inc.",Respondent,0,7,2,majority opinion
+2010,1-Sep,55766,21805,Ruben Flores-Villar,Petitioner,United States,Respondent,0,0,0,equally divided
+2010,10-382,55767,21905,United States,Petitioner,Jicarilla Apache Nation,Respondent,1,7,1,majority opinion
+2010,09-11556,55768,21963,Jose Tolentino,Petitioner,New York,Respondent,0,9,0,per curiam
+2010,6-Oct,55770,23128,"Global-Tech Appliances, Inc.",Petitioner,SEB S.A.,Respondent,0,8,1,majority opinion
+2010,09-530,55771,21463,National Aeronautics and Space Administration,Petitioner,"Robert M. Nelson, et al.",Respondent,1,8,0,majority opinion
+2010,09-1163,55772,22760,Glen Scott Milner,Petitioner,Department of the Navy,Respondent,1,8,1,majority opinion
+2010,08-1423,55773,22331,Costco Wholesale Corporation,Petitioner,"Omega, S.A.",Respondent,0,0,0,equally divided
+2010,09-10876,55774,23106,Donald Bullcoming,Petitioner,New Mexico,Respondent,1,5,4,majority opinion
+2010,09-1454,55775,22151,Bob Camreta,Petitioner,"Sarah Greene, et al.",Respondent,1,7,2,majority opinion
+2010,09-1533,55776,21562,Frantz DePierre,Petitioner,United States,Respondent,0,9,0,majority opinion
+2010,09-1272,55777,22726,Kentucky,Petitioner,Hollis Deshaun King,Respondent,1,8,1,majority opinion
+2010,09-1343,55778,22607,"J. McIntyre Machinery, Ltd.",Petitioner,"Robert Nicastro, et al.",Respondent,1,6,3,plurality opinion
+2010,Oct-58,55779,22530,Clifton Terelle McNeill,Petitioner,United States,Respondent,0,9,0,majority opinion
+2010,09-1156,55780,22412,"Matrixx Initiatives, Inc.",Petitioner,"James Siracusano, et al.",Respondent,0,9,0,majority opinion
+2010,10-114,55782,22984,Ricky D. Fox,Petitioner,"Judy Ann Vice, as executrix of the Estate of Billy Ray Vice, et al.",Respondent,1,9,0,majority opinion
+2010,09-291,55783,22673,Eric L. Thompson,Petitioner,"North American Stainless, LP",Respondent,1,8,0,majority opinion
+2010,09-834,55784,23190,Kevin Kasten,Petitioner,Saint-Gobain Performance Plastics Corporation,Respondent,1,6,2,majority opinion
+2010,09-846,55785,22729,United States,Petitioner,Tohono O'odham Nation,Respondent,1,7,1,majority opinion
+2010,10-174,55787,21694,"American Electric Power Company Inc., et al.",Petitioner,"Connecticut, et al.",Respondent,1,8,0,majority opinion
+2010,10-277,55788,21886,"Wal-Mart Stores, Inc.",Petitioner,"Betty Dukes, et al.",Respondent,1,5,4,majority opinion
+2010,10-Oct,55789,23023,Michael D. Turner,Petitioner,"Rebecca L. Rogers, et al.",Respondent,1,5,4,majority opinion
+2010,09-400,55790,21423,Vincent E. Staub,Petitioner,Proctor Hospital,Respondent,1,8,0,majority opinion
+2010,10-313,55792,23038,"Talk America, Inc.",Petitioner,"Michigan Bell Telephone Company, dba AT&T Michigan, et al.",Respondent,1,8,0,majority opinion
+2010,10-179,55793,21696,"Howard K. Stern, Executor of the Estate of Vickie Lynn Marshall",Petitioner,"Elaine T. Marshall, Executrix of the Estate of E. Pierce Marshall",Respondent,0,9,0,majority opinion
+2010,10-238,55795,21834,"Arizona Free Enterprise Club's Freedom Club PAC, et al.",Petitioner,"Ken Bennett, in His Official Capacity as Arizona Secretary of State, et al.",Respondent,1,5,4,majority opinion
+2010,09-1476,55796,22294,"Borough of Duryea, Pennsylvania, et al.",Petitioner,harles J. Guarnieri,Respondent,1,9,0,majority opinion
+2010,08-1448,55797,21675,"Edmund Gerald Brown, Governor, et al.",Petitioner,"Entertainment Merchants Association, et al.",Respondent,0,7,2,majority opinion
+2010,09-1233,55798,21480,"Edmund G. Brown, Jr., Governor of California, et al.",Appellant,"Marciano Plata, et al.",Appellee,0,5,4,majority opinion
+2010,09-11328,55800,23195,Willie Gene Davis,Petitioner,United States,Respondent,0,7,2,majority opinion
+2010,Sep-00,55802,21948,Henry W. Skinner,Petitioner,"Lynn Switzer, District Attorney for the 31st Judicial District of Texas",Respondent,1,6,3,majority opinion
+2010,10-568,55804,22349,Nevada Commission on Ethics,Petitioner,Michael A. Carrigan,Respondent,1,9,0,majority opinion
+2010,Oct-43,55805,21909,"Charles Andrew Fowler, aka Man",Petitioner,United States,Respondent,1,7,2,majority opinion
+2010,08-1438,55806,21421,"Harvey Leroy Sossamon, III",Petitioner,"Texas, et al.",Respondent,0,6,2,majority opinion
+2010,09-837,55807,22841,"Mayo Foundation for Medical Education and Research, et al.",Petitioner,United States,Respondent,0,8,0,majority opinion
+2010,09-1088,55808,23143,"Vincent Cullen, Acting Warden",Petitioner,Scott Lynn Pinholster,Respondent,1,5,4,majority opinion
+2010,09-751,55809,21293,Albert Snyder,Petitioner,"Fred W. Phelps, Sr., et al.",Respondent,0,8,1,majority opinion
+2010,09-525,55810,22392,"Janus Capital Group, Inc., et al.",Petitioner,First Derivative Traders,Respondent,1,5,4,majority opinion
+2010,09-893,55811,21761,AT&T Mobility LLC,Petitioner,"Vincent Concepcion, et ux.",Respondent,1,5,4,majority opinion
+2010,09-150,55812,22609,Michigan,Petitioner,Richard Perry Bryant,Respondent,1,6,2,majority opinion
+2011,10-1024,55813,22565,Federal Aviation Administration,Petitioner,Stanmore Cooper,Respondent,1,5,3,majority opinion
+2011,10-209,55814,22075,"Blaine Lafler, Warden",Petitioner,Anthony Cooper,Respondent,1,5,4,majority opinion
+2011,10-1293,55815,22604,"Federal Communications Commission, et al.",Petitioner,"Fox Television Stations, Inc., et al.",Respondent,0,8,0,majority opinion
+2011,11-551,55816,22982,"Kenneth L. Salazar, et al.",Petitioner,"Ramah Navajo Chapter, et al.",Respondent,0,5,4,majority opinion
+2011,11-199,55817,22550,Alexander Vasquez,Petitioner,United States,Respondent,0,9,0,per curiam
+2011,10-553,55818,21637,Hosanna-Tabor Evangelical Lutheran Church and School,Petitioner,"Equal Employment Opportunity Commission, et al.",Respondent,1,9,0,majority opinion
+2011,10-1211,55819,22661,Panagis Vartelas,Petitioner,"Eric H. Holder Jr., Attorney General",Respondent,1,6,3,majority opinion
+2011,11-204,55820,22648,"Michael Shane Christopher, Frank Buchanan",Petitioner,SmithKline Beecham Corporation d/b/a GlaxoSmithKline,Respondent,0,5,4,majority opinion
+2011,11-139,55822,22626,United States,Petitioner,"Home Concrete & Supply, LLC, et al.",Respondent,0,5,4,majority opinion
+2011,10-699,55824,21836,"M. B. Z., By His Parents and Guardians Ari Z. Zivotofsky, et ux.",Petitioner,"Hillary Rodham Clinton, Secretary of State",Respondent,1,8,1,majority opinion
+2011,10-1062,55825,21412,"Chantell Sackett, et vir",Petitioner,"Environmental Protection Agency, et al.",Respondent,1,9,0,majority opinion
+2011,10-507,55826,22233,"Pacific Operators of Offshore, LLP, et al.",Petitioner,Luisa L. Valladolid,Respondent,0,9,0,majority opinion
+2011,11-166,55827,21858,"RadLAX Gateway Hotel, LLC., et al.",Petitioner,Amalgamated Bank,Respondent,0,8,0,majority opinion
+2011,11-713,55828,21808,"Rick Perry, Governor of Texas et al.",Appellant,"Shannon Perez, et al.",Appellee,1,9,0,per curiam
+2011,11-210,55829,22000,United States,Petitioner,Xavier Alvarez,Respondent,0,6,3,plurality opinion
+2011,10-1042,55830,22232,"Tammy Foret Freeman, et al.,",Petitioner,"Quicken Loans, Inc.",Respondent,0,9,0,majority opinion
+2011,Oct-45,55832,22466,Juan Smith,Petitioner,"Burl Cain, Warden",Respondent,1,8,1,majority opinion
+2011,11-161,55833,22022,Christine Armour,Petitioner,City of Indianapolis,Respondent,0,6,3,majority opinion
+2011,11-159,55834,23188,"Michael J. Astrue, Commissioner of Social Security",Petitioner,Karen K. Capato,Respondent,1,9,0,majority opinion
+2011,10-680,55835,21305,"Carol Howes, Warden",Petitioner,Randall Lee Fields,Respondent,1,6,3,majority opinion
+2011,11-393,55837,23636,"National Federation of Independent Business, et al.",Petitioner,"Kathleen Sebelius, Secretary of Health and Human Services, et al.",Respondent,0,9,0,majority opinion
+2011,10-218,55838,21627,"PPL Montana, LLC",Petitioner,Montana,Respondent,1,9,0,majority opinion
+2011,10-577,55839,23033,"Akio Kawashima, et ux.",Petitioner,"Eric H. Holder, Jr., Attorney General",Respondent,0,6,3,majority opinion
+2011,10-1104,55841,22598,"Margaret Minneci, et al.",Petitioner,"Richard Lee Pollard, et al.",Respondent,1,8,1,majority opinion
+2011,11-246,55843,21765,Match-E-Be-Nash-She-Wish Band of Pottawatomi Indians,Petitioner,David Patchak,Respondent,0,8,1,majority opinion
+2011,5-Oct,55844,22225,Sandy Williams,Petitioner,Illinois,Respondent,0,5,4,plurality opinion
+2011,09-958,55845,22761,"Toby Douglas, Director, California Department of Health Care Services",Petitioner,"Independent Living Center of Southern California, Inc., et al.",Respondent,1,5,4,majority opinion
+2011,Oct-74,55846,21370,Barion Perry,Petitioner,New Hampshire,Respondent,0,8,1,majority opinion
+2011,Nov-88,55847,23115,"Asid Mohamad, et al.",Petitioner,"Jibril Rajoub, et al.",Respondent,0,9,0,majority opinion
+2011,10-1195,55848,21609,Marcus D. Mims,Petitioner,"Arrow Financial Services, LLC",Respondent,1,9,0,majority opinion
+2011,11-262,55850,21577,"Virgil D. ""Gus"" Reichle, Jr., et al.",Petitioner,Steven Howards,Respondent,1,8,0,majority opinion
+2011,10-945,55852,23162,Albert W. Florence,Petitioner,"Board of Chosen Freeholders of the County of Burlington, et al.",Respondent,0,5,4,majority opinion
+2011,Oct-95,55854,21953,Patrick Wood,Petitioner,"Kevin Milyard, Warden, Sterling Correctional Facility, et al.",Respondent,1,9,0,majority opinion
+2011,10-1265,55855,22535,"Michael Martel, Warden",Petitioner,Kenneth Clair,Respondent,1,9,0,majority opinion
+2011,10-1399,55857,22337,Dana Roberts,Petitioner,"Sea-Land Services, Inc., et al.",Respondent,0,8,1,majority opinion
+2011,Nov-94,55858,22506,Southern Union Company,Petitioner,United States,Respondent,1,6,3,majority opinion
+2011,11-182,55859,22060,Arizona et al.,Petitioner,United States,Respondent,0,5,3,majority opinion
+2011,10-879,55860,22688,"Gloria Gail Kurns, Executrix of the Estate of George M. Corson, Deceased, et al.",Petitioner,"Railroad Friction Products Corporation, et al.",Respondent,0,6,3,majority opinion
+2011,10-1542,55861,22663,"Eric H. Holder, Jr., Attorney General",Petitioner,Carlos M. Gutierrez,Respondent,1,9,0,majority opinion
+2011,Oct-46,55863,21929,Evan Miller,Petitioner,Alabama,Respondent,1,5,4,majority opinion
+2011,10-1219,55864,21559,"David J. Kappos, Under Secretary of Commerce for Intellectual Property and Director, Patent and Trademark Office",Petitioner,Gilbert P. Hyatt,Respondent,0,9,0,majority opinion
+2011,10-1121,55865,22137,"Dianne Knox, et al.",Petitioner,"Service Employees International Union, Local 1000",Respondent,1,7,2,majority opinion
+2011,10-545,55866,21878,"Lawrence Golan, et al.",Petitioner,"Eric H. Holder, Jr., Attorney General, et al.",Respondent,0,6,2,majority opinion
+2011,10-1018,55867,22426,Steve A. Filarsky,Petitioner,Nicholas B. Delia,Respondent,1,9,0,majority opinion
+2011,10-1491,55869,23472,"Esther Kiobel, et al.",Petitioner,"Royal Dutch Petroleum, et al.",Respondent,0,9,0,majority opinion
+2011,10-694,55870,21535,Joel Judulang,Petitioner,"Eric H. Holder, Jr.",Respondent,1,9,0,majority opinion
+2011,Oct-87,55871,22114,Monroe Ace Setser,Petitioner,United States,Respondent,0,6,3,majority opinion
+2011,Oct-49,55872,22365,Billy Joe Reynolds,Petitioner,United States,Respondent,1,7,2,majority opinion
+2011,10-1016,55875,21922,Daniel Coleman,Petitioner,Court of Appeals of Maryland,Respondent,0,5,4,plurality opinion
+2011,10-708,55877,23090,"First American Financial Corporation, Successor in Interest to The First American Corporation, et al.",Petitioner,Denise P. Edwards,Respondent,0,9,0,majority opinion
+2011,10-1261,55878,22073,Credit Suisse Securities LLC et. al.,Petitioner,Vanessa Simmonds,Respondent,1,8,0,majority opinion
+2011,10-637,55879,23158,"Eric Greene, aka Jarmaine Q. Trice",Petitioner,"Jon Fisher, Superintendent, State Correctional Institution at Smithfield, et al.",Respondent,0,9,0,majority opinion
+2011,Nov-83,55880,21538,"Edward Dorsey, Sr.",Petitioner,United States,Respondent,1,5,4,majority opinion
+2011,10-1150,55881,21510,"Mayo Collaborative Services, dba Mayo Medical Laboratories, et al.",Petitioner,"Prometheus Laboratories, Inc.",Respondent,1,9,0,majority opinion
+2011,10-1259,55882,22032,United States,Petitioner,Antoine Jones,Respondent,0,9,0,majority opinion
+2011,10-844,55883,22258,"Caraco Pharmaceutical Laboratories, Ltd., et al.",Petitioner,"Novo Nordisk A/S, et al.",Respondent,1,9,0,majority opinion
+2011,10-1472,55884,22955,Kouichi Taniguchi,Petitioner,"Kan Pacific Saipan, Ltd.",Respondent,1,6,3,majority opinion
+2011,10-948,55885,22659,"CompuCredit Corporation, et al.",Petitioner,"Wanda Greenwood, et al.",Respondent,1,8,1,majority opinion
+2011,Nov-45,55886,22069,"Michael B. Elgin, et al.",Petitioner,"Department of the Treasury, et al.",Respondent,0,6,3,majority opinion
+2011,10-788,55887,22667,Charles A. Rehberg,Petitioner,"James P. Paulk, et al.",Respondent,0,9,0,majority opinion
+2011,10-895,55888,22248,Rafael Arriaza Gonzalez,Petitioner,"Rick Thaler, Director, Texas Department of Criminal Justice, Correctional Institutions Division",Respondent,0,8,1,majority opinion
+2011,10-704,55889,23109,"Curt Messerschmidt, et al.",Petitioner,"Augusta Millender, et al.",Respondent,1,6,3,majority opinion
+2011,Oct-63,55890,21671,Cory R. Maples,Petitioner,"Kim T. Thomas, Interim Commissioner, Alabama Department of Corrections",Respondent,1,7,2,majority opinion
+2011,10-1001,55891,23155,Luis Mariano Martinez,Petitioner,"Charles L. Ryan, Director, Arizona Department of Corrections",Respondent,1,7,2,majority opinion
+2011,10-224,55892,22414,National Meat Association,Petitioner,"Kamala D. Harris, Attorney General of California, et al.",Respondent,1,9,0,majority opinion
+2011,10-1320,55893,22543,Alex Blueford,Petitioner,Arkansas,Respondent,0,6,3,majority opinion
+2011,10-875,55894,22336,"Lynwood D. Hall, et ux.",Petitioner,United States,Respondent,0,5,4,majority opinion
+2012,11-1347,55895,23096,Jeffrey L. Chafin,Petitioner,Lynne H. Chafin,Respondent,1,9,0,majority opinion
+2012,11-1160,55896,21459,Federal Trade Commission,Petitioner,Phoebe Putney Memorial Hospital,Respondent,1,9,0,majority opinion
+2012,12-418,55898,22077,United States,Petitioner,Anthony James Kebodeaux,Respondent,1,7,2,majority opinion
+2012,12-126,55899,22894,"Greg McQuiggin, Warden",Petitioner,Floyd Perkins,Respondent,1,5,4,majority opinion
+2012,12-547,55900,22364,"Linda Metrish, Warden",Petitioner,Burt Landcaster,Respondent,1,9,0,majority opinion
+2012,Dec-52,55901,21542,Dan's City Used Cars d/b/a Dan's Auto Body,Petitioner,Robert Pelkey,Respondent,0,9,0,majority opinion
+2012,11-697,55902,22368,Supap Kirtsaeng,Petitioner,"John Wiley & Sons, Inc.",Respondent,1,6,3,majority opinion
+2012,12-123,55903,22172,"Marvin D. Horne, et al.",Petitioner,Department of Agriculture,Respondent,1,9,0,majority opinion
+2012,11-1175,55904,21890,Olivea Marx,Petitioner,General Revenue Corporation,Respondent,0,7,2,majority opinion
+2012,11-192,55905,22649,United States,Petitioner,James X. Bormes,Respondent,1,9,0,majority opinion
+2012,11-564,55906,22527,State of Florida,Petitioner,Joelis Jardines,Respondent,0,5,4,majority opinion
+2012,11-1085,55907,22954,"Amgen Inc, Kevin W. Sharer, Richard D. Nanula, Roger M. Perlmutter, George J. Morrow",Petitioner,Connecticut Retirement Plans and Trust Funds,Respondent,0,6,3,majority opinion
+2012,11-1327,55908,21594,Lamar Evans,Petitioner,Michigan,Respondent,1,8,1,majority opinion
+2012,12-246,55909,21648,Genovevo Salinas,Petitioner,Texas,Respondent,0,5,4,majority opinion
+2012,Dec-71,55910,21476,"Arizona, et al.",Petitioner,"Inter Tribal Council of Arizona, et al.",Respondent,0,7,2,majority opinion
+2012,11-770,55911,22106,Chunon L. Bailey aka Polo,Petitioner,United States,Respondent,1,6,3,majority opinion
+2012,11-345,55912,21587,Abigail N. Fisher,Petitioner,"University of Texas at Austin, et al.",Respondent,1,7,1,majority opinion
+2012,12-236,55913,21864,"Kathleen Sebelius, Secretary of Health and Human Services",Petitioner,"Melissa Cloer, M.D.",Respondent,0,9,0,majority opinion
+2012,11-1231,55914,22918,"Kathleen Sebelius, Secretary of Health and Human Services",Petitioner,Auburn Regional Medical Center et al.,Respondent,1,9,0,majority opinion
+2012,11-817,55915,22037,Florida,Petitioner,Clayton Harris,Respondent,1,9,0,majority opinion
+2012,12-307,55916,21460,United States,Petitioner,"Edith Windsor, in her capacity as the executor of the estate of Thea Clara Spyer, et al.",Respondent,0,5,4,majority opinion
+2012,11-556,55917,22509,Maetta Vance,Petitioner,Ball State University,Respondent,0,5,4,majority opinion
+2012,10-930,55918,21718,"Charles L. Ryan, Director Arizona Department of Corrections",Petitioner,Ernest Valencia Gonzales,Respondent,1,9,0,majority opinion
+2012,11-798,55919,22289,"American Trucking Associations, Inc.",Petitioner,"The City of Los Angeles, the Harbor Department of the City of Los Angeles, and the Board of Harbor Commissioners of the City of Los Angeles",Respondent,1,9,0,majority opinion
+2012,Dec-62,55920,22156,Marvin Peugh,Petitioner,United States,Respondent,1,5,4,majority opinion
+2012,11-1450,55921,22486,The Standard Life Insurance Co.,Petitioner,Greg Knowles,Respondent,1,9,0,majority opinion
+2012,11-184,55922,21619,Carolyn M. Kloeckner,Petitioner,"Hilda L. Solis, Secretary of Labor",Respondent,1,9,0,majority opinion
+2012,11-10189,55923,22829,Carlos Trevino,Petitioner,"Rick Thaler, Director, Texas Department of Criminal Justice, Correctional Institutions Division",Respondent,1,5,4,majority opinion
+2012,11-1545,55924,21539,"City of Arlington, TX; City of San Antonio, TX",Petitioner,Federal Communications Commission,Respondent,0,6,3,majority opinion
+2012,10-Dec,55926,21999,"United States Agency for International Development, et al.",Petitioner,"Alliance for Open Society International, et al.",Respondent,0,6,2,majority opinion
+2012,11-982,55927,21792,"Already, LLC",Petitioner,"Nike, Inc.",Respondent,0,9,0,majority opinion
+2012,12-207,55928,22033,Maryland,Petitioner,"Alonzo Jay King, Jr.",Respondent,1,5,4,majority opinion
+2012,11-1351,55929,22781,Steven A. Levin,Petitioner,"United States, et al.",Respondent,1,9,0,majority opinion
+2012,12-167,55930,22778,United States,Petitioner,Anthony Davila,Respondent,1,9,0,majority opinion
+2012,Dec-98,55931,21508,"Aldona Wos, Secretary, North Carolina Department of Health and Human Services",Petitioner,"E. M. A., a Minor, By and Through Her Guardian ad Litem, Daniel H. Johnson, et al.",Respondent,0,6,3,majority opinion
+2012,Dec-96,55932,22844,"Shelby County, Alabama",Petitioner,"Eric Holder, Jr. Attorney General",Respondent,1,5,4,majority opinion
+2012,11-338,55933,21962,"Doug Decker, in his official capacity as Oregon State Forester, et al.",Petitioner,"Northwest Environmental Defense Center, et al.",Respondent,1,8,0,majority opinion
+2012,11-820,55934,22846,Roselva Chaidez,Petitioner,United States,Respondent,0,7,2,majority opinion
+2012,11-1274,55935,22019,"Marc J. Gabelli, et al.",Petitioner,Securities Exchange Commission,Respondent,1,9,0,majority opinion
+2012,12-484,55936,21847,University of Texas Southwestern Medical Center,Petitioner,Naiel Nassar,Respondent,1,5,4,majority opinion
+2012,11-1447,55937,21956,Coy Koontz,Petitioner,St. John's River Water Management,Respondent,1,5,4,majority opinion
+2012,7-Nov,55938,22835,Armarcion D. Henderson,Petitioner,United States,Respondent,1,6,3,majority opinion
+2012,11-1425,55940,23104,Missouri,Petitioner,Tyler G. McNeely,Respondent,0,5,4,plurality opinion
+2012,11-10362,55941,22793,Kim Millbrook,Petitioner,United States,Respondent,1,9,0,majority opinion
+2012,Nov-35,55942,21944,Allen Ryan Alleyne,Petitioner,United States,Respondent,1,5,4,majority opinion
+2012,11-626,55943,21661,Fane Lozman,Petitioner,"City of Riviera Beach, Florida",Respondent,1,7,2,majority opinion
+2012,11-796,55944,21396,Vernon Hugh Bowman,Petitioner,"Monsanto Company, et al.",Respondent,0,9,0,majority opinion
+2012,11-1118,55945,22823,"Jerry Gunn, et al.",Petitioner,Vernon Minton,Respondent,1,9,0,majority opinion
+2012,Nov-40,55946,21497,Matthew R. Descamps,Petitioner,United States,Respondent,1,8,1,majority opinion
+2012,11-1221,55947,22084,Jacqueline Hillman,Petitioner,Judy A. Maretta,Respondent,0,9,0,majority opinion
+2012,12-416,55948,21407,Federal Trade Commission,Petitioner,Actavis Inc. et al.,Respondent,1,5,3,majority opinion
+2012,11-597,55949,22303,Arkansas Game & Fish Commission,Petitioner,United States,Respondent,1,8,0,majority opinion
+2012,11-1059,55950,21315,"Genesis Healthcare Corp., et al.",Petitioner,Laura Symczyk,Respondent,1,5,4,majority opinion
+2012,12-357,55952,21390,Giridhar C. Sekhar,Petitioner,United States,Respondent,1,9,0,majority opinion
+2012,11-1285,55953,22071,"US Airways, Inc. in its capacity as Fiduciary and Plan Administrator of the US Airways Employee Benefit Plan",Petitioner,James E. McCutchen,Respondent,0,9,0,majority opinion
+2012,11-460,55954,21429,Los Angeles County Flood Control Distric,Petitioner,"Natural Resources Defense Council, Inc., et al.",Respondent,1,9,0,majority opinion
+2012,Nov-53,55955,21362,Jonathan Edward Boyer,Petitioner,Louisiana,Respondent,0,5,4,per curiam
+2012,11-1518,55956,23046,Randy Curtis Bullock,Petitioner,"BankChampaign, N.A.",Respondent,1,9,0,majority opinion
+2012,12-133,55957,22406,"American Express, et al.",Petitioner,Italian Colors Restaurant,Respondent,1,5,3,majority opinion
+2012,Dec-43,55958,22703,PPL Corporation,Petitioner,Commissioner of Internal Revenue,Respondent,1,9,0,majority opinion
+2012,11-864,55959,22341,"Comcast Corp., et al.",Petitioner,"Caroline Behrend, et al.",Respondent,1,5,4,majority opinion
+2012,Nov-76,55960,21757,"Calvin Smith, et al.",Petitioner,United States,Respondent,0,9,0,majority opinion
+2012,11-702,55961,21990,Adrian Moncrieffe,Petitioner,"Eric H. Holder, Jr., Attorney General",Respondent,1,7,2,majority opinion
+2012,12-142,55962,22465,Mutual Pharmaceutical Co.,Petitioner,Karen L. Bartlett,Respondent,1,5,4,majority opinion
+2012,12-135,55963,21974,Oxford Health Plans,Petitioner,John Ivan Sutter,Respondent,0,9,0,majority opinion
+2012,11-1025,55964,22056,"James R. Clapper, et al.",Petitioner,"Amnesty International USA, et al.",Respondent,1,5,4,majority opinion
+2012,11-465,55965,22112,"Deborah K. Johnson, Acting Warden of the Central California Women's Facility at Chowchilla",Petitioner,Tara Sheneva Williams,Respondent,1,9,0,majority opinion
+2012,12-399,55966,21959,Adoptive Couple,Petitioner,"Baby Girl, a minor child under the age of fourteen years, Birth Father, and the Cherokee Nation",Respondent,1,5,4,majority opinion
+2012,12-398,55967,22121,Association for Molecular Pathology  et al.,Petitioner,Myriad Genetics,Respondent,1,9,0,majority opinion
+2012,11-889,55968,22558,Tarrant Regional Water District,Petitioner,"Rudolf John Herrmann, et al.",Respondent,0,9,0,majority opinion
+2012,25-Dec,55969,23117,"Edward F. Maracich, Martha L. Weeks, and John C. Tanner, individually and on behalf of all other similarly situated individuals",Petitioner,"Michael Eugene Spears; Michael Spears, PA; Gedney Main Howe III; Gedney Main Howe III, PA; Richard A. Harpootlian; Richard A. Harpootlian, PA; A. Camden Lewis; Lewis & Babock, LLP",Respondent,1,5,4,majority opinion
+2012,17-Dec,55971,21398,Mark J. McBurney et al.,Petitioner,"Nathaniel L. Young, Deputy Commissioner and Director, Virginia Division of Child Support Enforcement, et al.",Respondent,0,9,0,majority opinion
+2013,12-1038,55973,22425,United States,Petitioner,John D. Apel,Respondent,1,9,0,majority opinion
+2013,12-682,55974,22178,Schuette,Petitioner,"Coalition to Defend Affirmative Action, et al.",Respondent,1,6,2,plurality opinion
+2013,12-515,55975,21683,Michigan,Petitioner,Bay Mills Indian Community,Respondent,0,5,4,majority opinion
+2013,12-1036,55976,21916,"Mississippi, ex rel. James Hood, Attorney General",Petitioner,"AU Optronics Corporation, et al.",Respondent,1,9,0,majority opinion
+2013,12-138,55977,22866,BG Group PLC,Petitioner,Republic of Argentina,Respondent,1,7,2,majority opinion
+2013,13-354,55978,23268,"Sylvia Burwell, Secretary of Health and Human Services, et al.",Petitioner,"Hobby Lobby Stores, Inc.",Respondent,0,5,4,majority opinion
+2013,11-965,55980,21578,Daimler AG,Petitioner,Barbara Bauman et al.,Respondent,1,9,0,majority opinion
+2013,Dec-90,55983,22239,Lorenzo Prado Navarette and Jose Prado Navarette,Petitioner,California,Respondent,0,5,4,majority opinion
+2013,22-Dec,55984,23013,Walter Fernandez,Petitioner,California,Respondent,0,6,3,majority opinion
+2013,12-574,55985,22586,Anthony Walden,Petitioner,"Gina Fiore, Keith Gipson",Respondent,1,9,0,majority opinion
+2013,12-1408,55986,22777,United States,Petitioner,Quality Stores Inc. et al.,Respondent,1,8,0,majority opinion
+2013,12-1493,55987,21732,Bruce J. Abramski,Petitioner,United States,Respondent,0,5,4,majority opinion
+2013,12-751,55988,23235,"Fifth Third Bancorp, et al.",Petitioner,"John Dudenhoeffer, et al.",Respondent,1,9,0,majority opinion
+2013,12-609,55989,22684,State of Kansas,Petitioner,Scott D. Cheever,Respondent,1,9,0,majority opinion
+2013,13-316,55990,23204,Kevin Loughrin,Petitioner,United States,Respondent,0,9,0,majority opinion
+2013,12-1168,55991,23140,"Eleanor McCullen, Jean Zarrella, Gregory A. Smith, Eric Cadin, Cyril Shea, Mark Bashour, and Nancy Clark",Petitioner,"Martha Coakley, Attorney General for the state of Massachusetts",Respondent,1,9,0,majority opinion
+2013,12-815,55992,22497,Sprint Communications Company,Petitioner,"Elizabeth S. Jacobs, et al.",Respondent,1,9,0,majority opinion
+2013,12-1184,55993,23603,"Octane Fitness, LLC",Petitioner,"ICON Health & Fitness, Inc.",Respondent,1,9,0,majority opinion
+2013,12-873,55994,22965,"Lexmark International, Inc.",Petitioner,"Static Control Components, Inc.",Respondent,0,9,0,majority opinion
+2013,11-681,55995,23097,"Pamela Harris, Ellen Bronfeld, Carole Gulo, Michelle Harris, Wendy Partridge, Theresa Riffey, Stephanie Yencer-Price, Susan Watts, and Patricia Withers",Petitioner,"Pat Quinn, in his official capacity as governor of the State of Illinois, SEIU Healthcare Illinois & Indiana, SEIU Local 73, and AFSCME Council 31",Respondent,1,5,4,majority opinion
+2013,12-1315,55996,21614,Paula Petrella,Petitioner,"Metro-Goldwyn-Mayer, Inc., et al.",Respondent,1,6,3,majority opinion
+2013,12-315,55997,23037,Air Wisconsin Airlines Corporation,Petitioner,William L. Hoeper,Respondent,1,9,0,majority opinion
+2013,13-115,55998,23205,Tim Wood et al.,Petitioner,Michael Moss et al.,Respondent,1,9,0,majority opinion
+2013,12-414,55999,22118,"Sherry L. Burt, Warden",Petitioner,Vonlee Nicole Titlow,Respondent,1,9,0,majority opinion
+2013,12-1128,56000,21552,Medtronic Inc,Petitioner,Boston Scientific Corp. et al.,Respondent,1,8,0,majority opinion
+2013,12-929,56001,23137,Atlantic Marine Construction Company,Petitioner,U.S. District Court for the Western District of Texas,Respondent,1,9,0,majority opinion
+2013,12-872,56002,21758,Lisa Madigan et al.,Petitioner,Harvey N. Levin,Respondent,0,0,0,dismissal - other
+2013,12-794,56003,23066,"Randy White, Warden",Petitioner,Robert Keith Woodall,Respondent,1,6,3,majority opinion
+2013,Dec-79,56004,21723,Chadbourne and Parke LLP,Petitioner,Samuel Troice et al.,Respondent,0,7,2,majority opinion
+2013,12-1281,56005,22173,National Labor Relations Board,Petitioner,Noel Canning,Respondent,0,9,0,majority opinion
+2013,12-1200,56006,22292,Executive Benefits Insurance Agency,Petitioner,Peter H. Arkison,Respondent,0,9,0,majority opinion
+2013,12-1117,56007,23632,Vance Plumhoff,Petitioner,Whitne Rickard,Respondent,1,9,0,majority opinion
+2013,12-562,56009,22936,United States,Petitioner,Gary Woods et al.,Respondent,1,9,0,majority opinion
+2013,Dec-99,56010,22305,Unite Here Local 355,Petitioner,"Martin Mulhall, et al.",Respondent,0,0,3,dismissal - improvidently granted
+2013,12-464,56011,22575,Kerri L. Kaley and Brian P. Kaley,Petitioner,United States,Respondent,0,6,3,majority opinion
+2013,12-696,56012,22615,"Town of Greece, NY",Petitioner,Susan Galloway et al.,Respondent,1,5,4,majority opinion
+2013,12-536,56014,21353,"Shaun McCutcheon, et al.",Petitioner,Federal Election Commission,Respondent,1,5,4,plurality opinion
+2013,12-1163,56017,23478,"Highmark, Inc.",Petitioner,"Allcare Management Systems, Inc.",Respondent,1,9,0,majority opinion
+2013,12-1371,56019,23170,United States,Petitioner,James Alvin Castleman,Respondent,1,9,0,majority opinion
+2013,12-1173,56020,21642,"Brandt Revocable Trust, et al",Petitioner,United States,Respondent,1,8,1,majority opinion
+2013,12-895,56022,21610,Justus C. Rosemond,Petitioner,United States,Respondent,1,7,2,majority opinion
+2013,13-317,56025,23248,"Halliburton Co., et al",Petitioner,"Erica P. John Fund, Inc.",Respondent,1,9,0,majority opinion
+2013,12-1146,56026,23660,Utility Air Regulatory Group,Petitioner,Environmental Protection Agency,Respondent,0,,,
+2013,3-Dec,56027,21544,Jackie Hosang Lawson and Jonathan M. Zang,Petitioner,"FMR LLC, et al.",Respondent,1,6,3,majority opinion
+2013,12-1182,56028,21550,"Environmental Protection Agency, et al.",Petitioner,"EME Homer City Generation, L.P., et al.",Respondent,1,6,2,majority opinion
+2013,12-820,56029,21772,Manuel Jose Lozano,Petitioner,Diana Lucia Montoya Alvarez,Respondent,0,9,0,majority opinion
+2013,Dec-61,56030,22814,Doyle Randall Paroline,Petitioner,United States and Amy Unknown,Respondent,1,5,4,majority opinion
+2013,15-Dec,56031,23076,Marcus Burrage,Petitioner,United States,Respondent,1,9,0,majority opinion
+2013,13-483,56032,23475,Edward Lane,Petitioner,Steven Franks,Respondent,0,9,0,majority opinion
+2013,12-10882,56033,23222,Freddie Lee Hall,Petitioner,Florida,Respondent,1,5,4,majority opinion
+2013,12-462,56034,22940,"Northwest, Inc., et al.",Petitioner,S. Binyomin Ginsberg,Respondent,1,9,0,majority opinion
+2013,12-417,56035,23129,"Clifton Sandifer, et al.",Petitioner,United States Steel Corporation,Respondent,0,9,0,majority opinion
+2013,12-729,56036,21363,Julie Heimeshoff,Petitioner,Hartford Life & Accident Insurance Co. and Walmart Stores,Respondent,0,9,0,majority opinion
+2013,12-930,56037,21871,"Lori Scialabba, Acting Director, United States Citizenship and Immigration Services, et al.",Petitioner,"Rosalina Cuellar de Osorio, et al.",Respondent,1,5,4,plurality opinion
+2013,12-158,56038,22890,Carol Anne Bond,Petitioner,United States,Respondent,1,9,0,majority opinion
+2014,12-1226,56041,23307,Peggy Young,Petitioner,"United Parcel Service, Inc.",Respondent,1,6,3,majority opinion
+2014,12-1497,56043,23264,"Kellogg Brown & Root Services, Inc.",Petitioner,"United States, ex rel. Benjamin Carter",Respondent,1,9,0,majority opinion
+2014,13-1010,56045,23281,"M&G Polymers USA, et al.",Petitioner,"Hobert Freel Tackett, et al.",Respondent,1,8,0,majority opinion
+2014,13-1019,56046,23234,"Mach Mining, LLC",Petitioner,Equal Employment Opportunity Commission,Respondent,1,9,0,majority opinion
+2014,13-1032,56048,23229,Direct Marketing Association,Petitioner,"Barbara Brohl, Executive Director, Colorado Department of Revenue",Respondent,1,9,0,majority opinion
+2014,13-1034,56049,23218,Moones Mellouli,Petitioner,"Loretta Lynch, Attorney General",Respondent,1,7,2,majority opinion
+2014,13-1041,56051,23306,"Thomas E. Perez, Secretary of Labor, et al.",Petitioner,"Mortgage Bankers Association, et al.",Respondent,1,9,0,majority opinion
+2014,13-1074,56053,23288,United States,Petitioner,Kwai Fun Wong,Respondent,0,5,4,majority opinion
+2014,13-1080,56056,23263,"U.S. Department of Transportation, et al.",Petitioner,Association of American Railroads,Respondent,1,9,0,majority opinion
+2014,13-1174,56057,23246,Ellen Gelboim,Petitioner,"Bank of America Corp., et al.",Respondent,1,9,0,majority opinion
+2014,13-1175,56058,23314,City of Los Angeles,Petitioner,"Naranjibhai Patel, et al.",Respondent,0,5,4,majority opinion
+2014,13-1211,56061,23257,"Hana Financial, Inc.",Petitioner,"Hana Bank, et al.",Respondent,0,9,0,majority opinion
+2014,13-1314,56062,23270,Arizona State Legislature,Appellant,"Arizona Independent Redistricting Commission, et al.",Appellee,0,5,4,majority opinion
+2014,13-1333,56066,23313,Andre Lee Coleman,Petitioner,"Todd Tollefson, et al.",Respondent,0,9,0,majority opinion
+2014,13-1352,56069,23279,State of Ohio,Petitioner,Darius Clark,Respondent,1,9,0,majority opinion
+2014,13-1371,56072,23285,"Texas Dept. of Housing and Community Affairs, et al.",Petitioner,"The Inclusive Communities Project, Inc.",Respondent,0,5,4,majority opinion
+2014,13-1402,56074,23215,"John Kerry, Secretary of State",Petitioner,Fauzia Din,Respondent,1,5,4,plurality opinion
+2014,13-1428,56078,23203,"Ron Davis, Acting Warden",Petitioner,Hector Ayala,Respondent,1,5,4,majority opinion
+2014,13-1487,56080,23206,Tony Henderson,Petitioner,United States,Respondent,1,9,0,majority opinion
+2014,13-1499,56081,23249,Lanell Williams-Yulee,Petitioner,The Florida Bar,Respondent,0,5,4,majority opinion
+2014,13-271,56082,23304,"Oneok, Inc. et al.",Petitioner,"Learjet, Inc. et al.",Respondent,0,7,2,majority opinion
+2014,13-352,56083,23293,B&B Hardware Inc.,Petitioner,Hargis Industries Inc.,Respondent,1,7,2,majority opinion
+2014,13-433,56085,23301,"Integrity Staffing Solutions, Inc.",Petitioner,"Jesse Busk, et al.",Respondent,1,9,0,majority opinion
+2014,13-435,56086,23237,"Omnicare, Inc. et al.",Petitioner,"Indiana State District Council of Laborers and Hod Carriers Pension and Welfare Fund, et al.",Respondent,1,9,0,majority opinion
+2014,13-485,56089,23236,Maryland State Comptroller of Treasury,Petitioner,Brian Wynne et ux.,Respondent,0,5,4,majority opinion
+2014,13-502,56091,23303,"Clyde Reed, et al.",Petitioner,"Town of Gilbert, Arizona, et al.",Respondent,1,9,0,majority opinion
+2014,13-517,56092,23217,Gregory P. Warger,Petitioner,Randy D. Shauers,Respondent,0,9,0,majority opinion
+2014,13-550,56096,23269,"Glenn Tibble, et al.",Petitioner,"Edison International, et al.",Respondent,1,9,0,majority opinion
+2014,13-553,56098,23291,"Alabama Department of Revenue, et al.",Petitioner,"CSX Transportation, Inc.",Respondent,1,7,2,majority opinion
+2014,13-604,56100,23272,Nicholas B. Heien,Petitioner,State of North Carolina,Respondent,0,8,1,majority opinion
+2014,13-628,56102,23292,"M. B. Z., By His Parents and Guardians, Ari Z. Zivotofsky, et ux.",Petitioner,"John Kerry, Secretary of State",Respondent,0,6,3,majority opinion
+2014,13-6827,56105,23221,Gregory Houston Holt,Petitioner,"Ray Hobbs, Director, Arkansas Department of Corrections, et al.",Respondent,1,9,0,majority opinion
+2014,13-684,56106,23305,"Larry D. Jesinoski, et ux.",Petitioner,"Countrywide Home Loans, Inc., et al.",Respondent,1,9,0,majority opinion
+2014,13-7120,56108,23311,Samuel Johnson,Petitioner,United States,Respondent,1,8,1,majority opinion
+2014,13-719,56111,23265,"Dart Cherokee Operating Company, LLC, et al.",Petitioner,Brandon W. Owens,Respondent,1,5,4,majority opinion
+2014,13-7451,56116,23280,John L. Yates,Petitioner,United States,Respondent,1,5,4,majority opinion
+2014,13-854,56117,23300,"Teva Pharmaceuticals USA, Inc.",Petitioner,"Sandoz, Inc., et al.",Respondent,1,7,2,majority opinion
+2014,13-894,56118,23230,Department of Homeland Security,Petitioner,Robert J. MacLean,Respondent,0,7,2,majority opinion
+2014,13-895,56120,23252,"Alabama Democratic Conference, et al.",Appellant,"Alabama, et al.",Appellee,1,5,4,majority opinion
+2014,13-9026,56124,23216,Larry Whitfield,Petitioner,United States,Respondent,0,8,0,majority opinion
+2014,13-935,56126,23228,"Wellness International Network, Ltd., et al.",Petitioner,Richard Sharif,Respondent,1,6,3,majority opinion
+2014,13-975,56129,23202,"T-Mobile South, LLC",Petitioner,"City of Roswell, Georgia",Respondent,1,6,3,majority opinion
+2014,13-983,56130,23259,Anthony Elonis,Petitioner,United States,Respondent,1,8,1,majority opinion
+2014,13-9972,56132,23226,Dennys Rodriguez,Petitioner,United States,Respondent,1,6,3,majority opinion
+2014,14-103,56135,23310,"Baker Botts, LLP",Petitioner,"ASARCO, LLC",Respondent,0,6,3,majority opinion
+2014,14-114,56136,23286,"David King, et al.",Petitioner,"Sylvia Mathews Burwell, Secretary of Health and Human Services, et al.",Respondent,0,6,3,majority opinion
+2014,14-144,56138,23734,"John Walker, III, et al.",Petitioner,"Texas Division, Sons of Confederate Veterans, Inc., et al.",Respondent,1,5,4,majority opinion
+2014,14-15,56141,23278,"Richard Armstrong, et al.",Petitioner,"Exceptional Child Center, Inc., et al.",Respondent,1,5,4,majority opinion
+2014,14-185,56143,23749,Noel Reyes Mata,Petitioner,"Loretta Lynch, Attorney General of the United States",Respondent,1,8,1,majority opinion
+2014,14-6368,56150,23750,Michael B. Kingsley,Petitioner,Stan Hendrickson,Respondent,1,5,4,majority opinion
+2014,14-7955,56153,23752,"Richard E. Glossip, et al.",Petitioner,"Kevin J. Gross, et al.",Respondent,0,5,4,majority opinion
+2014,14-86,56154,23256,Equal Employment Opportunity Commission,Petitioner,"Abercrombie & Fitch Stores, Inc.",Respondent,1,8,1,majority opinion
+2003,02-1674,56172,21704,"Mitch McConnell, U.S. Senator",Appellant,Federal Election Commission,Appellee,1,5,4,majority opinion
+2015,14-7505,56176,24004,Timothy Lee Hurst,Petitioner,Florida,Respondent,1,8,1,majority opinion
+2015,14-280,56177,24003,Henry Montgomery,Petitioner,Louisiana,Respondent,1,6,3,majority opinion
+2015,14-462,56178,23999,"DIRECTV, Inc.",Petitioner,"Amy Imburgia, et al.",Respondent,1,6,3,majority opinion
+2015,14-723,56180,24014,Robert Montanile,Petitioner,Board of Trustees of the National Elevator Industrial Health Benefit Plan,Respondent,1,8,1,majority opinion
+2015,13-1339,62164,24009,"Spokeo, Inc.",Petitioner,Thomas Robins,Respondent,1,6,2,majority opinion
+2015,14-857,62167,24005,Campbell-Ewald Company,Petitioner,Jose Gomez,Respondent,0,6,3,majority opinion
+2013,Dec-96,62252,23696,Stephen Law,Petitioner,Alfred Siegel,Respondent,1,9,0,majority opinion
+2013,12-761,62254,23517,"Pom Wonderful, LLC",Petitioner,The Coca-Cola Company,Respondent,1,8,0,majority opinion
+2013,12-786,62255,23538,Limelight Networks,Petitioner,Akamai Technologies,Respondent,1,9,0,majority opinion
+2013,12-842,62256,23520,Republic of Argentina,Petitioner,"NML Capital, Ltd.",Respondent,0,7,1,majority opinion
+2013,12-Dec,62257,23628,Benjamin Robers,Petitioner,United States,Respondent,0,9,0,majority opinion
+2013,13-132,62258,23523,David Leon Riley,Petitioner,State of California,Respondent,1,9,0,majority opinion
+2013,13-193,62259,23536,Susan B. Anthony List,Petitioner,Steven Driehaus,Respondent,1,9,0,majority opinion
+2013,13-298,62260,23529,Alice Corporation Pty. Ltd.,Petitioner,"CLS Bank International, et al.",Respondent,0,9,0,majority opinion
+2013,13-339,62263,23519,CTS Corp.,Petitioner,"Peter Waldberger, et al.",Respondent,1,7,2,majority opinion
+2013,13-369,62264,23518,"Nautilus, Inc.",Petitioner,"Biosig Instruments, Inc.",Respondent,1,9,0,majority opinion
+2013,13-461,62265,23527,"American Broadcasting Corporation, Inc., et al.",Petitioner,"Aereo, Inc.",Respondent,1,6,3,majority opinion
+2001,01-521,62270,23551,Republican Party of Minnesota,Petitioner,White,Respondent,1,5,4,majority opinion
+2002,01-1437,62273,23555,Smith,Appellant,Branch,Appellee,0,9,0,majority opinion
+2001,01-455,62275,23605,Franconia Associates,Petitioner,United States,Respondent,1,9,0,majority opinion
+2001,01-309,62276,23617,Hope,Petitioner,Pelzer,Respondent,1,,,
+2015,14-419,62301,24016,Sila Luis,Petitioner,United States,Respondent,1,5,3,plurality opinion
+2015,14-990,62302,24010,"Stephen M. Shapiro, et al.",Petitioner,"David J. McManus, Jr., et al.",Respondent,1,9,0,majority opinion
+2015,14-844,62307,24011,Antoine Bruce,Petitioner,"Charles E. Samuels, Jr., et al.",Respondent,0,9,0,majority opinion
+2015,14-840,62308,24002,Federal Energy Regulatory Commission,Petitioner,"Electric Power Supply Association, et al.",Respondent,1,6,2,majority opinion
+2015,14-8349,62310,24008,Timothy Tyrone Foster,Petitioner,"Bruce Chatman, Warden",Respondent,1,7,1,majority opinion
+2015,14-8358,62317,24012,Avondale Lockhart,Petitioner,United States,Respondent,0,6,2,majority opinion
+2015,14-1096,62321,24007,Jorge Luna Torres,Petitioner,"Loretta E. Lynch, Attorney General",Respondent,0,5,3,majority opinion
+2015,14-1146,62322,24015,"Tyson Foods, Inc.",Petitioner,"Peg Bouaphakeo, individually and on behalf of all others similarly situated, et al.",Respondent,0,6,2,majority opinion
+2015,13-1067,62323,23997,OBB Personenverkehr AG,Petitioner,Carol P. Sachs,Respondent,1,9,0,majority opinion
+2015,14-361,62325,24001,Samuel Ocasio,Petitioner,United States,Respondent,0,5,3,majority opinion
