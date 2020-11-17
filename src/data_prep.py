@@ -34,13 +34,16 @@ def process_text_file(f, glove):
     rows = []
     with open(f) as csv_file:
         reader = csv.reader(csv_file)
-        i = 0
+        i = -1
         row = 0
         while row is not None:
             try:
                 i += 1
                 row = next(reader, None)
-                if i == 1 or row == None: continue
+                if i == 0: continue
+                if row == None:
+                    #print(f"Stopped reading {f} at sentence: {i}")
+                    continue
                 try:
                     sentence = row[-1]
                     tokens = nltk.tokenize.word_tokenize(sentence)
@@ -52,16 +55,16 @@ def process_text_file(f, glove):
                             new_embeddings = glove[t].cpu().numpy().reshape(1, -1)
                             embeddings = np.concatenate((embeddings, new_embeddings), axis=0)
                     row.append(embeddings.mean(0).tolist())
-                except:
-                    print(f"Error. Can't tokenize {i}: {sentence}")
-                    row.append(None)
+                except Exception as e:
+                    print(f"Sentence: {i}, Error: {e}")
+                    row = [None]
                 finally:
-                    if i != 1:
+                    if i != 0:
                         row.insert(0, i)
                         rows.append(row)
-            except:
-                print(f"Can't read row {i} from {f}")
-                if i != 1:
+            except Exception as e:
+                print(f"Sentence: {i}, Error: {e}")
+                if i != 0:
                     rows.append([i, None])
 
     return rows
@@ -96,7 +99,7 @@ def extract_audio_features(audio_data_dir, output_data_dir):
                 audio_map[year] = {}
             if case not in audio_map[year]:
                 audio_map[year][case] = []
-            audio_map[year][case].append([int(sentence), os.path.join(root, f)])
+            audio_map[year][case].append([int(sentence)+1, os.path.join(root, f)])
 
     cases = []
     broken_trans_files = []
@@ -119,10 +122,12 @@ def extract_audio_features(audio_data_dir, output_data_dir):
                     else:
                         print(f'Unable to process {path}!')
                         undefined_audio_files.append(path)
+                        sentence_features.append([sen[0], None])
                         continue
                 except:
                     print(f'{path} is missing!')
                     missing_files.append(path)
+                    sentence_features.append([sen[0], None])
                     continue
 
                 pitch = sound.to_pitch()
@@ -243,12 +248,12 @@ def combine_features(output_data_dir):
             while not sen_done:
                 if sen_i >= len(case_text_features) and sen_j < len(case_audio_features):
                     sen_features.append(None)
-                    sen_meta.append({"sentence_num" : case_audio_features[sen_j][0]+1, "valid" : False})
+                    sen_meta.append({"sentence_num" : case_audio_features[sen_j][0], "valid" : False})
                     sen_j += 1
                     continue
                 elif sen_i < len(case_text_features) and sen_j >= len(case_audio_features):
                     sen_features.append(None)
-                    sen_meta.append({"sentence_num" : case_text_features[sen_i][0]-1, "valid" : False})
+                    sen_meta.append({"sentence_num" : case_text_features[sen_i][0], "valid" : False})
                     sen_i += 1
                     continue
                 elif sen_i >= len(case_text_features) and sen_j >= len(case_audio_features):
@@ -259,11 +264,11 @@ def combine_features(output_data_dir):
                 audio_sen = case_audio_features[sen_j]
                 if text_sen[0]-1 != audio_sen[0]+1:
                     sen_features.append(None)
-                    if text_sen[0]-1 < audio_sen[0]+1:
-                        sen_meta.append({ "sentence_num" : text_sen[0]-1, "valid" : False })
+                    if text_sen[0] < audio_sen[0]:
+                        sen_meta.append({ "sentence_num" : text_sen[0], "valid" : False })
                         sen_i += 1
                     else:
-                        sen_meta.append({ "sentence_num" : audio_sen[0]+1, "valid" : False })
+                        sen_meta.append({ "sentence_num" : audio_sen[0], "valid" : False })
                         sen_j += 1
                 else:
                     if text_sen[-1] is not None:
@@ -272,18 +277,24 @@ def combine_features(output_data_dir):
                         sen_features.append(combined)
                         sen_meta.append({
                             "valid" : True,
-                            "sentence_num" : audio_sen[0]+1,
+                            "sentence_num" : text_sen[0],
                             "speaker_id" : text_sen[1],
                             "speaker_role" : text_sen[2],
                             "sentence" : text_sen[-2]
                         })
+                        if text_sen[0] - audio_sen[0] != 0:
+                            print("ERROR")
                     else:
-                        sen_meta.append({ "sentence_num" : audio_sen, "valid" : False })
+                        sen_meta.append({ "sentence_num" : text_sen[0], "valid" : False })
                         sen_features.append(None)
+
+                    if text_sen[0] != len(sen_meta):
+                        print("Error")
 
 
                     sen_i += 1
                     sen_j += 1
+
 
             metadata.append({"case": text_case, "valid" : True, "sentences" : sen_meta})
             all_features.append(sen_features)
