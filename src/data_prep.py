@@ -137,36 +137,68 @@ def extract_audio_features(audio_data_dir, output_data_dir):
                 VPRsplit = voice_report_str.split()
                 feature_list = []
 
+                ### Pitch Features ###
+                # Median pitch
                 feature_list.append(str_to_float(VPRsplit[11], path))
+                # Mean pitch
                 feature_list.append(str_to_float(VPRsplit[15], path))
+                # Pitch standard deviation
                 feature_list.append(str_to_float(VPRsplit[19], path))
+                # Minimum pitch
                 feature_list.append(str_to_float(VPRsplit[23], path))
+                # Maximum pitch
                 feature_list.append(str_to_float(VPRsplit[27], path))
 
+                ### Pulse Features ###
+                # Number of pulses
                 feature_list.append(str_to_float(VPRsplit[33], path))
+                # Number of periods
                 feature_list.append(str_to_float(VPRsplit[37], path))
+                # mean period length
                 feature_list.append(str_to_float(VPRsplit[40], path))
+                # Period stdev
                 feature_list.append(str_to_float(VPRsplit[46], path))
 
+                ### Voicing Features ###
+                # Fraction of locally unvoiced frames
                 feature_list.append(str_to_float(VPRsplit[54].strip('%'), path) / 100.0)
+                # Number of voice breaks
                 feature_list.append(str_to_float(VPRsplit[62], path))
+                # Degree of voice breaks
                 feature_list.append(str_to_float(VPRsplit[67].strip('%'), path) / 100.0)
 
+                ### Jitter Features ###
+                # Jitter (local)
                 feature_list.append(str_to_float(VPRsplit[76].strip('%'), path) / 100.0)
+                # Jitter (local, absolute)
                 feature_list.append(str_to_float(VPRsplit[80], path))
+                # Jitter (rap)
                 feature_list.append(str_to_float(VPRsplit[84].strip('%'), path) / 100.0)
+                # Jitter (ppq5)
                 feature_list.append(str_to_float(VPRsplit[87].strip('%'), path) / 100.0)
+                # Jitter (ddp)
                 feature_list.append(str_to_float(VPRsplit[90].strip('%'), path) / 100.0)
 
+                ### Shimmer Features ###
+                # Shimmer (local)
                 feature_list.append(str_to_float(VPRsplit[94].strip('%'), path) / 100.0)
+                # Shimmer (local, dB)
                 feature_list.append(str_to_float(VPRsplit[98], path))
+                # Shimmer (apq3)
                 feature_list.append(str_to_float(VPRsplit[102].strip('%'), path) / 100.0)
+                # Shimmer (apq5)
                 feature_list.append(str_to_float(VPRsplit[105].strip('%'), path) / 100.0)
+                # Shimmer (apq11)
                 feature_list.append(str_to_float(VPRsplit[108].strip('%'), path) / 100.0)
+                # Shimmer (dda)
                 feature_list.append(str_to_float(VPRsplit[111].strip('%'), path) / 100.0)
 
+                ### Harmonicity Features (of voiced only) ###
+                # mean aurocorrelation
                 feature_list.append(str_to_float(VPRsplit[120], path))
+                # Mean noise-to-harmonics ratio
                 feature_list.append(str_to_float(VPRsplit[124], path))
+                # Mean harmonics-to-noise ratio
                 feature_list.append(str_to_float(VPRsplit[128], path))
 
                 sentence_features.append([int(sen[0]), feature_list])
