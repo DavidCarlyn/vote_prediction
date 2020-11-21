@@ -135,17 +135,17 @@ def model(datas):
     test_label = datas['test_label']
     train_label = datas['train_label'] 
     train_data = np.concatenate((train_audio_data,train_text_data), axis=2)
-	test_data = np.concatenate((test_audio_data,test_text_data), axis=2)
+    test_data = np.concatenate((test_audio_data,test_text_data), axis=2)
     
     ################################################ (written by Seo Eun)
     #stage 1: extract unimodal features (contextual bi-LSTM) 
     input_data = Input(shape=(train_data.shape[1],train_data.shape[2]))
-	masked = Masking(mask_value =0)(input_data)
-	lstm = Bidirectional(LSTM(300, activation='tanh', return_sequences = True, dropout=0.4))(masked)
-	inter = Dropout(0.9)(lstm)
-	inter1 = TimeDistributed(Dense(500,activation='relu'))(inter)
-	inter = Dropout(0.9)(inter1)
-	merged = TimeDistributed(Dense(2,activation='linear'))(inter)
+    masked = Masking(mask_value =0)(input_data)
+    lstm = Bidirectional(LSTM(300, activation='tanh', return_sequences = True, dropout=0.4))(masked)
+    inter = Dropout(0.9)(lstm)
+    inter1 = TimeDistributed(Dense(500,activation='relu'))(inter)
+    inter = Dropout(0.9)(inter1)
+    merged = TimeDistributed(Dense(2,activation='linear'))(inter)
     
     ################################################ (written by Dan)
     #stage 2: BiLSTM with a two-layer neural network
@@ -154,10 +154,10 @@ def model(datas):
     ################################################
     # compile
     # below is example. Need to be revised
-	model = Model(input_data, output)  
-	model.compile(optimizer='adadelta', loss='categorical_crossentropy', sample_weight_mode='temporal')
-	early_stopping = EarlyStopping(monitor='val_loss', patience=10)
-	model.fit(train_data, train_label,
+    model = Model(input_data, output)  
+    model.compile(optimizer='adadelta', loss='categorical_crossentropy', sample_weight_mode='temporal')
+    early_stopping = EarlyStopping(monitor='val_loss', patience=10)
+    model.fit(train_data, train_label,
 	                epochs=200,
 	                batch_size=10,
 	                sample_weight=train_mask,
@@ -165,13 +165,13 @@ def model(datas):
 	                callbacks=[early_stopping],
 	                validation_split=0.2)
 	                
-	model.save('./models/'+mode+'.h5') 
+    model.save('./models/'+mode+'.h5') 
 
-	train_activations = aux.predict(train_data)
-	test_activations = aux.predict(test_data)
+    train_activations = model.predict(train_data)
+    test_activations = model.predict(test_data)
 	 
     result = model.predict(test_data)
-	calc_test_result(result, test_label, test_mask)
+    calc_test_result(result, test_label, test_mask)
  
     
     
