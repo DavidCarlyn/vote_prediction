@@ -157,7 +157,8 @@ def model(datas):
     model = Sequential()
     # I'm not sure what arguments/parameters we may need here, or how many units we want.
     model.add(Bidirectional(LSTM(20)))
-    # Two layers?  Do I need a second Dense layer?
+    # Two layers?  Do I need a second Dense layer?  Add one anyway!
+    model.add(Dense(3, activation='sigmoid'))
     model.add(Dense(1, activation='sigmoid'))
 
 
