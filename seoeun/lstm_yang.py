@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 from keras.layers import Input, LSTM, Dense, TimeDistributed, Masking, Dropout, Bidirectional, Concatenate
-from keras.models import Model
+from keras.models import Model, Sequential
 from keras import backend as K
 import theano.tensor as T
 import theano
@@ -149,15 +149,29 @@ def model(datas):
     
     ################################################ (written by Dan)
     #stage 2: BiLSTM with a two-layer neural network
+	
+    # I had this call to split up my data into various parts.  Dunno if I still need it.  It's a sklearn call.
+    # x_train, x_test, y_train,y_test = train_test_split(x, y, test_size=0.2, random_state=4)
+	
+    # Am I making a separate model from the one below, with separate compile and fit calls?
+    model = Sequential()
+    # I'm not sure what arguments/parameters we may need here, or how many units we want.
+    model.add(Bidirectional(LSTM(20)))
+    # Two layers?  Do I need a second Dense layer?
+    model.add(Dense(1, activation='sigmoid'))
 
 
     ################################################
     # compile
-    # below is example. Need to be revised
-    model = Model(input_data, output)  
-    model.compile(optimizer='adadelta', loss='categorical_crossentropy', sample_weight_mode='temporal')
+    # below is example. Need to be revised.  I made the model above, not sure if it's separate from this one.
+    # model = Model(input_data, output)  
+    # I was going to use binary_crossentropy and adam, what's the difference?  Try both?  What's the sample weight mode mean?
+    model.compile(optimizer='adadelta', loss='categorical_crossentropy', sample_weight_mode='temporal', metrics='accuracy')
     early_stopping = EarlyStopping(monitor='val_loss', patience=10)
-    model.fit(train_data, train_label,
+
+    # I can use this history object to make some plots.  My fit call had validation_data=(x_test, y_test).  Not sure if you have those variables
+    # I assume your data matrices here have timesteps with 2 features, one for audio and one for text?
+    history = model.fit(train_data, train_label,
 	                epochs=200,
 	                batch_size=10,
 	                sample_weight=train_mask,
