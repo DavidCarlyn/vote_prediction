@@ -13,6 +13,7 @@ from sklearn.metrics import precision_recall_fscore_support
 from sklearn.metrics import accuracy_score 
 from keras.callbacks import EarlyStopping
 
+#load dataset
 pkl_file = open('datas_new_nor.pkl', 'rb')  
 datas_nor = pickle.load(pkl_file)
 pkl_file.close()
@@ -34,7 +35,87 @@ def calc_test_result(result, true_label):
 	print("Accuracy ", accuracy_score(tr_label, predicted_label))
 
 
-def model(datas,mode,nepoch):  
+def unimodel(datas,mode,norm,nepoch):
+
+    ################################################ (written by Seo Eun)
+    # load data
+    train_audio_data=datas['train_audio_data'] 
+    train_text_data=datas['train_text_data']
+    test_audio_data=datas['test_audio_data'] 
+    test_text_data=datas['test_text_data'] 
+    test_mask = datas['test_mask']
+    train_mask = datas['train_mask']
+    test_label = datas['test_label']
+    train_label = datas['train_label'] 
+    train_data = np.concatenate((train_audio_data,train_text_data), axis=2)
+    test_data = np.concatenate((test_audio_data,test_text_data), axis=2)
+    
+    ################################################ (written by Seo Eun)
+    if mode == 'audio':
+        #audio
+        in_audio = Input(shape=(train_audio_data.shape[1],train_audio_data.shape[2]),name='audio_input')
+        Audio_model = Sequential()
+        Audio_model.add(Masking(mask_value =0,name='mask_audio'))
+        Audio_model.add(Bidirectional(LSTM(300, activation='tanh', return_sequences = True, dropout=0.5, name='Bi-LSTM_audio')))
+        Audio_model.add(Dropout(0.5,name='Dropout1_audio'))
+        Audio_model.add(TimeDistributed(Dense(500,activation='relu',name='TimeDistributed1_audio')))
+        Audio_model.add(Dropout(0.5,name='Dropout2_audio'))
+        Audio_model.add(TimeDistributed(Dense(1,activation='relu',name='TimeDistributed2_audio')))
+        Audio_model.add(Dropout(0.5,name='Dropout3_audio'))
+        Audio_model.add(Dense(2, activation='sigmoid', name='output')) 
+        Audio_output = Audio_model(in_audio)
+    
+        model = Model(in_audio, Audio_output)
+        model.compile(optimizer='adam', loss='binary_crossentropy', sample_weight_mode='temporal',metrics=['accuracy'])
+        history = model.fit(train_audio_data, train_label,
+        	                epochs=nepoch,
+        	                batch_size=35,
+        	                sample_weight = train_mask,
+        	                shuffle=True, 
+        	                callbacks=[EarlyStopping(monitor='val_loss', patience=10)],
+        	                validation_split=0.2)
+        model.save(mode+'_'+norm+'.h5') 
+        predicted_train = model.predict(train_audio_data) #709*275*2
+        predicted_test = model.predict(test_audio_data) #177*275*26
+        
+    if mode == 'text':
+        #text
+        in_text = Input(shape=(train_text_data.shape[1],train_text_data.shape[2]),name='text_input')
+        Text_model = Sequential()
+        Text_model.add(Masking(mask_value =0,name='mask_text'))
+        Text_model.add(Bidirectional(LSTM(300, activation='tanh', return_sequences = True, dropout=0.5, name='Bi-LSTM_text')))
+        Text_model.add(Dropout(0.5,name='Dropout1_text'))
+        Text_model.add(TimeDistributed(Dense(500,activation='relu',name='TimeDistributed1_text')))
+        Text_model.add(Dropout(0.5,name='Dropout2_text'))
+        Text_model.add(TimeDistributed(Dense(1,activation='relu',name='TimeDistributed2_text')))
+        Text_model.add(Dropout(0.5,name='Dropout3_text'))   
+        Text_model.add(Dense(2, activation='sigmoid', name='output')) 
+        Text_output = Text_model(in_text)
+  
+        model = Model(in_text, Text_output)
+        model.compile(optimizer='adam', loss='binary_crossentropy', sample_weight_mode='temporal',metrics=['accuracy'])
+        history = model.fit(train_text_data, train_label,
+        	                epochs=nepoch,
+        	                batch_size=35,
+        	                sample_weight = train_mask,
+        	                shuffle=True, 
+        	                callbacks=[EarlyStopping(monitor='val_loss', patience=10)],
+        	                validation_split=0.2)
+        model.save(mode+'.h5') 
+        predicted_train = model.predict(train_text_data) #709*275*2
+        predicted_test = model.predict(test_text_data)
+    
+    #predict
+    print('-----train result-----')
+    calc_test_result(np.mean(predicted_train,axis=1), np.mean(train_label,axis=1,dtype='int'))
+    print('-----test result-----')
+    calc_test_result(np.mean(predicted_test,axis=1), np.mean(test_label,axis=1,dtype='int'))
+    #
+    output = open('result_'+mode+'.pkl', 'wb')  
+    pickle.dump({'pre_train':predicted_train,'pre_test':predicted_test}, output)
+    output.close()     
+
+def multimodel(datas,mode,nepoch):  
     
     ################################################ (written by Seo Eun)
     # load data
@@ -100,9 +181,9 @@ def model(datas,mode,nepoch):
     predicted_train = model.predict([train_audio_data,train_text_data]) #709*275*2
     predicted_test = model.predict([test_audio_data,test_text_data])
     #
-    print('train result')
+    print('-----train result-----')
     calc_test_result(np.mean(predicted_train,axis=1), np.mean(train_label,axis=1,dtype='int'))
-    print('test result')
+    print('-----test result-----')
     calc_test_result(np.mean(predicted_test,axis=1), np.mean(test_label,axis=1,dtype='int'))
     #
     output = open('result_'+mode+'.pkl', 'wb')  
@@ -111,5 +192,12 @@ def model(datas,mode,nepoch):
     
 if __name__=="__main__":
 	
-    model(datas,'No_normalized',50)
-    model(datas_nor,'normalized',50)
+    print('----- multimodal -----')
+	multimodel(datas,'multimodal_no_normalized',50)
+    multimodel(datas_nor,'multimodal_normalized',50)
+    print('----- text -----')
+    unimodel(datas,'text','no_normalized',50)
+    unimodel(datas_nor,'text','normalized',50)
+    print('----- audio -----')
+    unimodel(datas,'audio','no_normalized',50)
+    unimodel(datas_nor,'audio','normalized',50)
