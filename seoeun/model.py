@@ -193,7 +193,7 @@ def multimodel(datas,mode,nepoch):
 if __name__=="__main__":
 	
     print('----- multimodal -----')
-	multimodel(datas,'multimodal_no_normalized',50)
+    multimodel(datas,'multimodal_no_normalized',50)
     multimodel(datas_nor,'multimodal_normalized',50)
     print('----- text -----')
     unimodel(datas,'text','no_normalized',50)
