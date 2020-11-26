@@ -111,5 +111,5 @@ def model(datas,mode,nepoch):
     
 if __name__=="__main__":
 	
-	model(datas,'No_normalized',50)
+    model(datas,'No_normalized',50)
     model(datas_nor,'normalized',50)
