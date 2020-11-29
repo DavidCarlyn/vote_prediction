@@ -14,11 +14,11 @@ from sklearn.metrics import accuracy_score
 from keras.callbacks import EarlyStopping
 
 #load dataset
-pkl_file = open('datas_new_nor.pkl', 'rb')  
+pkl_file = open('datas_nor.pkl', 'rb')  
 datas_nor = pickle.load(pkl_file)
 pkl_file.close()
 
-pkl_file = open('datas_new.pkl', 'rb')  
+pkl_file = open('datas.pkl', 'rb')  
 datas = pickle.load(pkl_file)
 pkl_file.close()
 
@@ -58,19 +58,18 @@ def unimodel(datas,mode,norm,nepoch):
         Audio_model.add(Masking(mask_value =0,name='mask_audio'))
         Audio_model.add(Bidirectional(LSTM(300, activation='tanh', return_sequences = True, dropout=0.5, name='Bi-LSTM_audio')))
         Audio_model.add(Dropout(0.5,name='Dropout1_audio'))
-        Audio_model.add(TimeDistributed(Dense(500,activation='relu',name='TimeDistributed1_audio')))
+        Audio_model.add(Dense(500,activation='relu',name='TimeDistributed1_audio'))
         Audio_model.add(Dropout(0.5,name='Dropout2_audio'))
-        Audio_model.add(TimeDistributed(Dense(1,activation='relu',name='TimeDistributed2_audio')))
+        Audio_model.add(Dense(1,activation='relu',name='TimeDistributed2_audio'))
         Audio_model.add(Dropout(0.5,name='Dropout3_audio'))
         Audio_model.add(Dense(2, activation='sigmoid', name='output')) 
         Audio_output = Audio_model(in_audio)
     
         model = Model(in_audio, Audio_output)
-        model.compile(optimizer='adam', loss='binary_crossentropy', sample_weight_mode='temporal',metrics=['accuracy'])
+        model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
         history = model.fit(train_audio_data, train_label,
         	                epochs=nepoch,
-        	                batch_size=35,
-        	                sample_weight = train_mask,
+        	                batch_size=35, 
         	                shuffle=True, 
         	                callbacks=[EarlyStopping(monitor='val_loss', patience=10)],
         	                validation_split=0.2)
@@ -85,19 +84,18 @@ def unimodel(datas,mode,norm,nepoch):
         Text_model.add(Masking(mask_value =0,name='mask_text'))
         Text_model.add(Bidirectional(LSTM(300, activation='tanh', return_sequences = True, dropout=0.5, name='Bi-LSTM_text')))
         Text_model.add(Dropout(0.5,name='Dropout1_text'))
-        Text_model.add(TimeDistributed(Dense(500,activation='relu',name='TimeDistributed1_text')))
+        Text_model.add(Dense(500,activation='relu',name='TimeDistributed1_text'))
         Text_model.add(Dropout(0.5,name='Dropout2_text'))
-        Text_model.add(TimeDistributed(Dense(1,activation='relu',name='TimeDistributed2_text')))
+        Text_model.add(Dense(1,activation='relu',name='TimeDistributed2_text'))
         Text_model.add(Dropout(0.5,name='Dropout3_text'))   
         Text_model.add(Dense(2, activation='sigmoid', name='output')) 
         Text_output = Text_model(in_text)
   
         model = Model(in_text, Text_output)
-        model.compile(optimizer='adam', loss='binary_crossentropy', sample_weight_mode='temporal',metrics=['accuracy'])
+        model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
         history = model.fit(train_text_data, train_label,
         	                epochs=nepoch,
-        	                batch_size=35,
-        	                sample_weight = train_mask,
+        	                batch_size=35, 
         	                shuffle=True, 
         	                callbacks=[EarlyStopping(monitor='val_loss', patience=10)],
         	                validation_split=0.2)
@@ -160,7 +158,7 @@ def multimodel(datas,mode,nepoch):
     ################################################ (written by Dan and Seo Eun)
     #stage 2: BiLSTM with a two-layer neural network 
     Combined_model = Sequential() 
-    Combined_model.add(Bidirectional(LSTM(100, activation='tanh', return_sequences = True, dropout=0.5, name='Bi-LSTM_merged')))
+    Combined_model.add(Bidirectional(LSTM(100, activation='tanh', dropout=0.5, name='Bi-LSTM_merged')))
     Combined_model.add(Dropout(0.5, name='Dropout_com1'))
     Combined_model.add(Dense(30, activation='relu', name='fc_merged'))
     Combined_model.add(Dropout(0.5, name='Dropout_com2'))
@@ -169,11 +167,10 @@ def multimodel(datas,mode,nepoch):
     #
     ################################################ (written by Seo Eun)
     model = Model([in_audio,in_text], output)
-    model.compile(optimizer='adam', loss='binary_crossentropy', sample_weight_mode='temporal',metrics=['accuracy'])
+    model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
     history = model.fit([train_audio_data,train_text_data], train_label,
     	                epochs=nepoch,
-    	                batch_size=35,
-    	                sample_weight = train_mask,
+    	                batch_size=35, 
     	                shuffle=True, 
     	                callbacks=[EarlyStopping(monitor='val_loss', patience=10)],
     	                validation_split=0.2)
