@@ -15,11 +15,11 @@ from keras.callbacks import EarlyStopping
 
 #load dataset
 pkl_file = open('datas_nor.pkl', 'rb')  
-datas_nor = pickle.load(pkl_file)
+datas_nor = pickle.load(pkl_file) #normalized version
 pkl_file.close()
 
 pkl_file = open('datas.pkl', 'rb')  
-datas = pickle.load(pkl_file)
+datas = pickle.load(pkl_file) #without normalization
 pkl_file.close()
 
 def calc_test_result(result, true_label):
