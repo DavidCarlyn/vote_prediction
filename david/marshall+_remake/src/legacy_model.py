@@ -23,6 +23,8 @@ import sklearn.preprocessing
 # Project imports
 from legacy_model_data import party_map_data, court_circuit_map
 
+# Progress module
+from progress.bar import Bar
 
 # Path constants
 DATA_PATH="../data/"
@@ -224,7 +226,7 @@ def preprocess_raw_data(raw_data, include_direction=False):
     cumulative_court_agreement_cache = {}
 
     # Iterate over justices
-    for justice in sorted(raw_data["justice"].unique()):
+    for justice in Bar("Preprocessing Justices").iter(sorted(raw_data["justice"].unique())):
         # Justice mask
         justice_mask = raw_data.loc[:, "justice"].isin([justice])
         

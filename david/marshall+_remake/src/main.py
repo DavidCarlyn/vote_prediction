@@ -14,9 +14,11 @@ seaborn.set_style("darkgrid")
 from legacy_model import *
 
 # Get raw data
+print("Obtaining Raw Data")
 raw_data = get_raw_scdb_data("../data/input/SCDB_Legacy_01_justiceCentered_Citation.csv")
 
 # Get feature data
+print("Obtaining Features")
 if os.path.exists("../data/output/feature_data.hdf.gz"):
     print("Loading from HDF5 cache")
     feature_df = pandas.read_hdf("../data/output/feature_data.hdf.gz", "root")
@@ -39,6 +41,8 @@ gc.collect()
 # Output some diagnostics on features
 print(raw_data.shape)
 print(feature_df.shape)
+print(raw_data.loc[249760:, "docket"])
+print(raw_data[(raw_data["docket"].isin(['14-939'])) & (raw_data["term"] > 1980)]) # replace with dockets used to train and test our model
 assert(raw_data.shape[0] == feature_df.shape[0])
 
 # Reset output file timestamp per run
@@ -50,6 +54,8 @@ numpy.random.seed(0)
 # Setup training time period
 dummy_window = 10
 min_training_years = 25
+print(f"Begin Year:{raw_data['term'].min()}")
+print(f"End Year:{raw_data['term'].max()}")
 term_range = range(raw_data["term"].min() + min_training_years,
                    raw_data["term"].max() + 1)
 
