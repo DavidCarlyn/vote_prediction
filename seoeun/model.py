@@ -36,10 +36,10 @@ def calc_test_result(result, true_label):
     print(f"AUC: {auc(fpr, tpr)}")
 
 
-def build_audio_model(output_dim, use_time_distribution=True, last_activation="relu"):
+def build_audio_model(output_dim, use_time_distribution=True, last_activation="relu", return_sequences=True):
     Audio_model = Sequential()
     Audio_model.add(Masking(mask_value =0,name='mask_audio'))
-    Audio_model.add(Bidirectional(LSTM(20, activation='tanh', return_sequences = True, name='Bi-LSTM_audio')))
+    Audio_model.add(Bidirectional(LSTM(20, activation='tanh', return_sequences = return_sequences, name='Bi-LSTM_audio')))
     Audio_model.add(Dropout(0.5,name='Dropout1_audio'))
     out_layer = Dense(output_dim,activation=last_activation,name='layer_2_audio')
     if use_time_distribution:
@@ -48,10 +48,10 @@ def build_audio_model(output_dim, use_time_distribution=True, last_activation="r
 
     return Audio_model
 
-def build_text_model(output_dim, use_time_distribution=True, last_activation="relu"):
+def build_text_model(output_dim, use_time_distribution=True, last_activation="relu", return_sequences=True):
     Text_model = Sequential()
     Text_model.add(Masking(mask_value =0,name='mask_text'))
-    Text_model.add(Bidirectional(LSTM(125, activation='tanh', return_sequences = True, name='Bi-LSTM_text')))
+    Text_model.add(Bidirectional(LSTM(125, activation='tanh', return_sequences = return_sequences, name='Bi-LSTM_text')))
     Text_model.add(Dropout(0.5,name='Dropout1_text'))
     out_layer = Dense(output_dim,activation=last_activation,name='layer_2_text')
     if use_time_distribution:
@@ -83,7 +83,7 @@ def unimodel(datas, mode, norm,nepoch, batch_size=5):
     if mode == 'audio':
         #audio
         in_audio = Input(shape=(train_audio_data.shape[1],train_audio_data.shape[2]),name='audio_input')
-        Audio_model = build_audio_model(2, False, 'sigmoid')
+        Audio_model = build_audio_model(2, False, 'sigmoid',False)
         Audio_output = Audio_model(in_audio)
     
         model = Model(in_audio, Audio_output)
@@ -103,7 +103,7 @@ def unimodel(datas, mode, norm,nepoch, batch_size=5):
     if mode == 'text':
         #text
         in_text = Input(shape=(train_text_data.shape[1],train_text_data.shape[2]),name='text_input')
-        Text_model = build_text_model(2, False, 'sigmoid')
+        Text_model = build_text_model(2, False, 'sigmoid',False)
         Text_output = Text_model(in_text)
         model = Model(in_text, Text_output)
         scheduler = ExponentialDecay(initial_learning_rate=0.0003, decay_steps=(nepoch // 10) * (train_text_data.shape[0] // batch_size), decay_rate=0.9)
