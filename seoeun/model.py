@@ -16,7 +16,7 @@ from sklearn.metrics import roc_curve, auc
 from keras.callbacks import EarlyStopping
 
 #load dataset
-pkl_file = open('../data/datas_new_nor.pkl', 'rb')  
+pkl_file = open('../data/datas_nor.pkl', 'rb')  
 datas_nor = pickle.load(pkl_file) #normalized version
 pkl_file.close()
 
