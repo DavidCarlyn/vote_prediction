@@ -174,14 +174,14 @@ def multimodel(datas, mode, nepoch, batch_size=5):
     #
     ################################################ (written by Seo Eun)
     model = Model([in_audio,in_text], output)
-    scheduler = ExponentialDecay(initial_learning_rate=0.0003, decay_steps=(nepoch // 10) * (train_audio_data.shape[0] // batch_size), decay_rate=0.9)
-    opt = Adam(learning_rate=scheduler)
+    #scheduler = ExponentialDecay(initial_learning_rate=0.0003, decay_steps=(nepoch // 10) * (train_audio_data.shape[0] // batch_size), decay_rate=0.9)
+    opt = Adam(learning_rate=0.0003)
     model.compile(optimizer=opt, loss='binary_crossentropy', metrics=['accuracy'])
     history = model.fit([train_audio_data, train_text_data], train_label,
     	                epochs=nepoch,
     	                batch_size=batch_size, 
     	                shuffle=True,
-                        class_weight={ 0: class_0_weight, 1: class_1_weight },
+                        #class_weight={ 0: class_0_weight, 1: class_1_weight },
     	                validation_split=0.2)
     model.save(mode+'.h5') 
     predicted_train = model.predict([train_audio_data,train_text_data]) #709*275*2
