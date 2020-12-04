@@ -14,6 +14,7 @@ from sklearn.metrics import precision_recall_fscore_support
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import roc_curve, auc
 from keras.callbacks import EarlyStopping
+import matplotlib.pyplot as plt
 
 #load dataset
 pkl_file = open('../data/datas_nor.pkl', 'rb')  
@@ -191,6 +192,23 @@ def multimodel(datas, mode, nepoch, batch_size=5):
     calc_test_result(predicted_train, train_label)
     print('-----test result-----')
     calc_test_result(predicted_test, test_label)
+
+    # scatter plot of results (written by Dan Weber)
+    plt.scatter(range(180), predicted_test, c='r')
+    plt.scatter(range(180), test_label, c='g')
+    plt.title('Prediction Accuracy')
+    plt.ylabel('test case label')
+    plt.xlabel('test case data')
+    plt.show()
+
+    # Training and validation loss plot (Written by Dan Weber)
+    plt.plot(history.history['loss'])
+    plt.plot(history.history['val_loss'])
+    plt.title('model loss')
+    plt.ylabel('loss')
+    plt.xlabel('epoch')
+    plt.legend(['train', 'validation'], loc='upper left')
+    plt.show()    
     
     output = open('result_'+mode+'.pkl', 'wb')  
     pickle.dump({'pre_train':predicted_train,'pre_test':predicted_test}, output)
