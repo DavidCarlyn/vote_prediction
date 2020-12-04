@@ -102,42 +102,40 @@ def create_dataloader(data, batch_size=1, random=False):
 def get_args():
     parser = ArgumentParser()
     parser.add_argument('--data_path', type=str, default='../data/datas_new_nor.pkl')
-    parser.add_argument('--layer_sizes', nargs='*', default=[200, 300, 500, 300, 200])
-    parser.add_argument('--layer_activations', nargs='*', default=['relu', 'relu', 'relu', 'relu', 'relu'])
+    parser.add_argument('--layer_sizes', nargs='*', default=[300, 300, 300])
+    parser.add_argument('--layer_activations', nargs='*', default=['relu', 'relu', 'relu'])
     parser.add_argument('--output_activation', type=str, default='sigmoid')
-    parser.add_argument('--epochs', type=int, default=300)
-    parser.add_argument('--stop_thresh', type=float, default=0.05)
+    parser.add_argument('--epochs', type=int, default=50)
+    parser.add_argument('--stop_thresh', type=float, default=0.00)
     parser.add_argument('--loss', type=str, default='bce')
-    parser.add_argument('--optim', type=str, default="SGD")
-    parser.add_argument('--lr', type=float, default=0.0003)
+    parser.add_argument('--optim', type=str, default="adam")
+    parser.add_argument('--lr', type=float, default=0.003)
     parser.add_argument('--momentum', type=float, default=0.9)
     parser.add_argument('--batch_size', type=int, default=5)
     parser.add_argument('--shuffle', action='store_true', default=False)
     parser.add_argument('--bias', action='store_true', default=False)
+    parser.add_argument('--exp', type=str, default="both", choices=["both", "text", "audio"])
     
     return parser.parse_args()
 
 if __name__ == "__main__":
-    # Prep Data
-    data = prep_data("../data/datas_new_nor.pkl")
-    
     # Get user args
     args = get_args()
 
-    # Random Data Test
-    #data = np.random.rand(100, 5).astype(np.float32)
-    #r_labels = np.random.rand(100).astype(np.float32)
-    #r_labels[r_labels >= 0.5] = 1
-    #r_labels[r_labels < 0.5] = 0
-
-    #TEST SVM
-    #clf = svm.SVC()
-    #clf.fit(data["train"][0], data["train"][1].reshape(-1))
-    #preds = clf.predict(data["train"][0])
-    #print((preds ==data["train"][1]).sum() / preds.shape[0])
+    # Prep Data
+    data = prep_data("../data/datas_new_nor.pkl")
+    in_size = 226
+    if args.exp == "text":
+        in_size = 200
+        data["train"][0] = data["train"][0][:, :200]
+        data["test"][0] = data["test"][0][:, :200]
+    elif args.exp == "audio":
+        in_size = 26
+        data["train"][0] = data["train"][0][:, 200:]
+        data["test"][0] = data["test"][0][:, 200:]
 
     # Prep Model
-    model = create_model(input_size=226, output_size=1, layer_sizes=args.layer_sizes, activations=args.layer_activations, output_activation=args.output_activation, bias=args.bias)
+    model = create_model(input_size=in_size, output_size=1, layer_sizes=args.layer_sizes, activations=args.layer_activations, output_activation=args.output_activation, bias=args.bias)
     model.cuda()
     model.train()
     optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum)
@@ -154,6 +152,8 @@ if __name__ == "__main__":
     best_auc = 0
     best_fpr, best_tpr = 0, 0
     best_epoch = 0
+    best_acc = 0
+    best_matrix = []
 
     # Train Loop
     for epoch in range(args.epochs):
@@ -203,6 +203,7 @@ if __name__ == "__main__":
 
         raw_output = []
         all_labels = []
+        predictions = []
 
         # Per Batch
         for features, labels in test_dataloader:
@@ -217,10 +218,18 @@ if __name__ == "__main__":
             # Capture Predicitons
             pred = np.ones_like(out.cpu().detach().numpy()).astype(np.float32)
             pred[out.cpu().detach().numpy() < 0.5] = 0
+            predictions.extend(pred.reshape(-1).tolist())
 
             # Record Stats
             total += pred.shape[0]
             correct += (pred.reshape(-1) == labels.cpu().detach().numpy()).sum()
+
+        # Confusion Matrix
+        print("Confusion Matrix :")
+        confusion_matrix = metrics.confusion_matrix(all_labels, predictions)
+        print(confusion_matrix)
+        print("Classification Report :")
+        print(metrics.classification_report(all_labels, predictions))
 
         # Plotting AUC curve
         raw_output = np.array(raw_output).reshape(-1)
@@ -236,10 +245,12 @@ if __name__ == "__main__":
         plot_points.append([point_loss, acc, correct / total, auc_score])
 
         # Keep best AUC points
-        if auc_score > best_auc:
+        if auc_score > best_auc and epoch > 9:
             best_auc = auc_score
             best_tpr, best_fpr = tpr, fpr
             best_epoch = epoch
+            best_acc = correct / total
+            best_matrix = confusion_matrix
         
         # Stop early if loss is less than threshold
         if point_loss < args.stop_thresh:
@@ -277,3 +288,10 @@ if __name__ == "__main__":
     plt.ylabel('TPR')
     plt.title(f'ROC curve: {best_auc} at epoch {best_epoch}')
     plt.show()
+
+    # Print Best Results
+    print(f"Best Epoch: {best_epoch}")
+    print(f"Best Accuracy: {best_acc}")
+    print(f"Best AUC: {best_auc}")
+    print("Best matrix")
+    print(best_matrix)

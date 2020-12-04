@@ -1,7 +1,0 @@
-Can't read row 1 from D:\Datasets\VotePrediction\SC_Text\1983_17985.csv
-Can't read row 66 from D:\Datasets\VotePrediction\SC_Text\1983_17985.csv
-Can't read row 1 from D:\Datasets\VotePrediction\SC_Text\1987_23356.csv
-Can't read row 48 from D:\Datasets\VotePrediction\SC_Text\1987_23356.csv
-Can't read row 117 from D:\Datasets\VotePrediction\SC_Text\1987_23371.csv
-Can't read row 176 from D:\Datasets\VotePrediction\SC_Text\1987_23371.csv
-Can't read row 177 from D:\Datasets\VotePrediction\SC_Text\1987_23371.csv
