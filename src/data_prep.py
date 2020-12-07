@@ -1,3 +1,9 @@
+#####################################################
+# Written by: David Carlyn & Dan Weber
+# David Carlyn - Textual data and combination
+# Dan Weber - Audio data
+#####################################################
+
 import os
 import sys
 import csv
@@ -30,23 +36,43 @@ def str_to_float(str_val, path):
     else:
         return float(str_val)
 
+#################################
+# Written By: David Carlyn
+#################################
+# Extract textual features from a file
+#####################################################
+# Input: 
+#     f: file to extract textual features
+#     glove: GloVe model to create features
+# Output:
+#     list of sentence features
+#####################################################
 def process_text_file(f, glove):
     rows = []
+    # Open the CSV file
     with open(f) as csv_file:
         reader = csv.reader(csv_file)
         i = -1
         row = 0
+        # Iterative every row
         while row is not None:
             try:
                 i += 1
+                # Reading row
                 row = next(reader, None)
+
+                # Determine if row is useful
                 if i == 0: continue
                 if row == None:
                     #print(f"Stopped reading {f} at sentence: {i}")
                     continue
                 try:
+                    # Extract words
                     sentence = row[-1]
+                    # Tokenize words
                     tokens = nltk.tokenize.word_tokenize(sentence)
+
+                    # Pass words into GLOVE
                     embeddings = None
                     for k, t in enumerate(tokens):
                         if k == 0:
@@ -55,6 +81,8 @@ def process_text_file(f, glove):
                             new_embeddings = glove[t].cpu().numpy().reshape(1, -1)
                             embeddings = np.concatenate((embeddings, new_embeddings), axis=0)
                     row.append(embeddings.mean(0).tolist())
+
+                # Handle exceptions
                 except Exception as e:
                     print(f"Sentence: {i}, Error: {e}")
                     row = [None]
@@ -69,6 +97,9 @@ def process_text_file(f, glove):
 
     return rows
 
+#################################
+# Written By: David Carlyn
+#################################
 # Extract text features given directory for textual data
 # Header rows are skipped (so starting rows will have # = 2)
 # If a row can't be read, only the row # and a None value will be in place there [row_idx, None]
@@ -77,18 +108,27 @@ def process_text_file(f, glove):
 # [row_idx, speaker_ID, speaker_role, start, stop, byte_start, byte_stop, [[word_embeddings], [word_embeddings], ...words..., [word_embeddings]]]
 def extract_text_features(text_data_dir, output_data_dir):
     num_files = 0
+    # Download GLOVE features
     glove = GloVe(name='twitter.27B', dim=TEXT_FEATURES)
+    # Iterate through files
     for root, dirs, files in os.walk(text_data_dir):
         for f in Bar(f"Reading files from {root}").iter(files):
             num_files += 1
+            # Get Case number
             case = f.split('_')[1]
             case = case.split('.')[0]
 
+            # Process file
             rows = process_text_file(os.path.join(root, f), glove)
+
+            # Save file
             with open(os.path.join(output_data_dir, f"text_{case}.pkl"), 'wb') as outfile:
                 pickle.dump(rows, outfile)
 
-# Extract audio features given directory for audio data.  Written by Dan Weber.
+#################################
+# Written By: Dan Weber
+#################################
+# Extract audio features given directory for audio data.
 def extract_audio_features(audio_data_dir, output_data_dir):
     audio_map = {}
     for root, dirs, files in os.walk(audio_data_dir):
@@ -222,34 +262,49 @@ def extract_audio_features(audio_data_dir, output_data_dir):
         with open(os.path.join(output_data_dir, f"audio_{case[0]}.pkl"), 'wb') as outfile:
             pickle.dump(case[1], outfile)
 
+# Read Pickle file
 def read_pkl(path):
     with open(path, 'rb') as f:
         return pickle.load(f)
 
+#################################
+# Written By: David Carlyn
+#################################
+# combines features based on files saved in output_data_dir
 def combine_features(output_data_dir):
     text_paths = []
     audio_paths = []
+    # Iterate through files
     for root, dirs, files in os.walk(os.path.join(output_data_dir, 'tmp')):
         for f in files:
+            # Get valid files only
             if os.path.getsize(os.path.join(root, f)) <= 0: 
                 print(f)
                 continue
+            # Obtain case and data type
             f_type, case = f.split('_')
             case, ext = case.split('.')
+
+            # Save paths
             if f_type == "text":
                 text_paths.append([case, os.path.join(root, f)])
             elif f_type == "audio":
                 audio_paths.append([case, os.path.join(root, f)])
             else:
                 print(f"Error: {f} will not be computed.")
+
+    # Sort by case
     text_paths.sort(key=lambda x: x[0])
     audio_paths.sort(key=lambda x: x[0])
+
     metadata = []
     all_features = []
     done = False
     text_i = 0
     audio_i = 0
+    # Iterate through cases
     while not done:
+        # Make sure not overflowing
         if text_i >= len(text_paths) and audio_i < len(audio_paths):
             metadata.append({ "case" : audio_paths[audio_i][0], "valid" : False })
             all_features.append(None)
@@ -264,15 +319,23 @@ def combine_features(output_data_dir):
             done = True
             continue
 
+        # Reading in features
         case_audio_features =  read_pkl(audio_paths[audio_i][1])
         case_text_features = read_pkl(text_paths[text_i][1])
+        
+        # Recording case number
         text_case = text_paths[text_i][0]
         audio_case = audio_paths[audio_i][0]
+
+        # Only save data if we have both the text and audio data matching (case == case)
+        # Only record if they match
         if text_case != audio_case:
+            # Audio Case > Text Case
             if text_case < audio_case:
                 metadata.append({ "case" : text_case, "valid" : False })
                 all_features.append(None)
                 text_i += 1
+            # Audio Case < Text Case
             else:
                 metadata.append({ "case" : audio_case, "valid" : False })
                 all_features.append(None)
@@ -283,7 +346,9 @@ def combine_features(output_data_dir):
             sen_done = False
             sen_meta = []
             sen_features = []
+            # Iterate through sentences
             while not sen_done:
+                # Ensure we are not overflowing on our sentence iteration
                 if sen_i >= len(case_text_features) and sen_j < len(case_audio_features):
                     sen_features.append(None)
                     sen_meta.append({"sentence_num" : case_audio_features[sen_j][0], "valid" : False})
@@ -298,21 +363,30 @@ def combine_features(output_data_dir):
                     sen_done = True
                     continue
 
+                # Extracting text and sentence features
                 text_sen = case_text_features[sen_i]
                 audio_sen = case_audio_features[sen_j]
+
+                # Only record if the text sentence and audio sentence match
                 if text_sen[0]-1 != audio_sen[0]+1:
                     sen_features.append(None)
+                    # Text sentence is less than audio sentence
                     if text_sen[0] < audio_sen[0]:
                         sen_meta.append({ "sentence_num" : text_sen[0], "valid" : False })
                         sen_i += 1
+                    # Text sentence is greater than audio sentence
                     else:
                         sen_meta.append({ "sentence_num" : audio_sen[0], "valid" : False })
                         sen_j += 1
                 else:
+                    # Ensure there is data there
                     if text_sen[-1] is not None:
+                        # Extract raw data per sentence
                         combined = audio_sen[-1]
                         combined.extend(text_sen[-1])
                         sen_features.append(combined)
+
+                        # Record metadata
                         sen_meta.append({
                             "valid" : True,
                             "sentence_num" : text_sen[0],
@@ -320,26 +394,27 @@ def combine_features(output_data_dir):
                             "speaker_role" : text_sen[2],
                             "sentence" : text_sen[-2]
                         })
-                        if text_sen[0] - audio_sen[0] != 0:
-                            print("ERROR")
+
+                    # Record as Invalid data if None
                     else:
                         sen_meta.append({ "sentence_num" : text_sen[0], "valid" : False })
                         sen_features.append(None)
 
-                    if text_sen[0] != len(sen_meta):
-                        print("Error")
 
-
+                    # Increment sentence idx
                     sen_i += 1
                     sen_j += 1
 
 
+            # Append and save data
             metadata.append({"case": text_case, "valid" : True, "sentences" : sen_meta})
             all_features.append(sen_features)
 
+            # Increment case idx
             text_i += 1
             audio_i += 1
 
+    # Save Data
     with open(os.path.join(output_data_dir, 'metadata.pkl'), 'wb') as outfile:
         pickle.dump(metadata, outfile)
 
@@ -347,7 +422,9 @@ def combine_features(output_data_dir):
         pickle.dump(all_features, outfile)
 
 
-
+######################################
+# Written By: David Carlyn & Dan Weber
+######################################
 if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument('--audio_data_dir', type=str, default=os.path.join('..', 'data', 'audio'))
