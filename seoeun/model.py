@@ -18,7 +18,7 @@ from keras.callbacks import EarlyStopping
 import matplotlib.pyplot as plt
 
 #load dataset #(written by Seo Eun)
-pkl_file = open('../datas_nor.pkl', 'rb')  
+pkl_file = open('datas_nor.pkl', 'rb')  
 datas_nor = pickle.load(pkl_file) #normalized version
 pkl_file.close()
 
