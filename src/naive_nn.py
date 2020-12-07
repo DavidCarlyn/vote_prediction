@@ -320,11 +320,7 @@ if __name__ == "__main__":
             correct += (pred.reshape(-1) == labels.cpu().detach().numpy()).sum()
 
         # Confusion Matrix
-        print("Confusion Matrix :")
         confusion_matrix = metrics.confusion_matrix(all_labels, predictions)
-        print(confusion_matrix)
-        print("Classification Report :")
-        print(metrics.classification_report(all_labels, predictions))
 
         # Plotting AUC curve
         raw_output = np.array(raw_output).reshape(-1)
