@@ -1,3 +1,5 @@
+No special action is required to run this code, it will run as part of the feature extraction process.
+This file contains a brief description of the code.  Comments in the code itself provide more detail.
 
 Audio feature processing was done with the Praat software through a Python library called Parselmouth.  
 Basic psuedocode is as follows:
