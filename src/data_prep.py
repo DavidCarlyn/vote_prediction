@@ -115,6 +115,10 @@ def extract_audio_features(audio_data_dir, output_data_dir):
             sentences.sort(key=lambda x: x[0])
             for sen in Bar(f"Processing Year: {year} Case: {case}").iter(sentences):
                 path = sen[1]
+                
+                # sound, pitch, and pulses are the 3 objects needed for Praat software.
+                # The try block is because some of the files are missing.
+                # The size check is to dodge corrupt files that were breaking even the try block.
                 try:
                     fileSize = Path(path).stat().st_size
                     if fileSize > 2000:
@@ -133,6 +137,8 @@ def extract_audio_features(audio_data_dir, output_data_dir):
                 pitch = sound.to_pitch()
                 pulses = parselmouth.praat.call([sound, pitch], "To PointProcess (cc)")
 
+                # main call to Praat through Parselmouth.  Values are all Praat defaults, perfectly acceptable for normal speech.
+                # Output is a long string that gets parsed for all the features.
                 voice_report_str = parselmouth.praat.call([sound, pitch, pulses], "Voice report", 0.0, 0.0, 75, 600, 1.3, 1.6, 0.03, 0.45)
                 VPRsplit = voice_report_str.split()
                 feature_list = []
