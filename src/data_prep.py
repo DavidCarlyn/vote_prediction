@@ -88,7 +88,7 @@ def extract_text_features(text_data_dir, output_data_dir):
             with open(os.path.join(output_data_dir, f"text_{case}.pkl"), 'wb') as outfile:
                 pickle.dump(rows, outfile)
 
-# Extract audio features given directory for audio data
+# Extract audio features given directory for audio data.  Written by Dan Weber.
 def extract_audio_features(audio_data_dir, output_data_dir):
     audio_map = {}
     for root, dirs, files in os.walk(audio_data_dir):
