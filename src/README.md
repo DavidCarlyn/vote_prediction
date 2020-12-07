@@ -1,7 +1,5 @@
 To run SVM Experiments:
-    Both:
-    Audio:
-    Textual:
+    python svm_classifier.py
 
 To run NN Experiemnts:
     Both: 
