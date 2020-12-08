@@ -170,7 +170,7 @@ def create_dataloader(data, batch_size=1, random=False):
 def get_args():
     parser = ArgumentParser()
     # Path to our data
-    parser.add_argument('--data_path', type=str, default='../data/datas_new_nor.pkl')
+    parser.add_argument('--data_path', type=str, default='datas_new_nor.pkl')
     # Number of units per hidden layer
     parser.add_argument('--layer_sizes', nargs='*', default=[300, 300, 300])
     # Activation per hidden layer
