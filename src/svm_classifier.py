@@ -11,6 +11,7 @@ from sklearn.preprocessing import StandardScaler
 
 # Written by Seo Eun Yang lines 14-54
 
+# change file directory here for your path to datas_new
 pkl_file = open('data.nosync/datas_new.pkl', 'rb')
 datas = pickle.load(pkl_file)
 pkl_file.close()
