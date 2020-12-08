@@ -9,7 +9,7 @@ To run NN Experiemnts:
     Textual:
         python naive_nn.py --bias --shuffle --exp text
 
-To run BiLSTM Experiemnts:
-    Both:
-    Audio:
-    Textual:
+To run BiLSTM Experiments:
+    python model.py
+    
+    note: datas.pkl and datas_nor.pkl must also be in the same directory as model.py
